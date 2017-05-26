@@ -13,6 +13,7 @@ public class Reader {
 	private int composicionDeGas;
 	private int composicionDePetroleo;
 	private int maximaCantidadDeRigs;
+	private int volumenYacimiento;
 	private Map<Integer, Integer> presionInicialDeParcelas;
 	private Map<Integer,Integer> tipoDeParcelas;
 	private Map<Integer,Integer>	 profundidaDeParcelas;
@@ -38,6 +39,7 @@ public class Reader {
 			 * 30	// 3 Composicin de Gas numero entre 0 y 100
 			 * 50 	// 4 Composicin de Petroleo numero entre 0 y 100
 			 * 4 	// 5 cantidad máxima de RIGS 
+			 * 3000 // 6 volumen de Yacimiento
 			 * 1	 2 1000// Presion inicial de boca de poso de la primer Parcela 1, tipo de Parcela de la parcela 1, profundidad(en metros)
 			 *	"""
 			 *	"""
@@ -65,6 +67,11 @@ public class Reader {
 			this.maximaCantidadDeRigs = Integer.parseInt(five);
 			System.out.println(maximaCantidadDeRigs);
 		
+			String six = br.readLine(); 
+			this.volumenYacimiento = Integer.parseInt(six);
+			System.out.println(volumenYacimiento);
+			
+			
 			presionInicialDeParcelas = new HashMap<Integer, Integer>();
 			tipoDeParcelas = new HashMap<Integer, Integer>();
 			profundidaDeParcelas = new HashMap<Integer, Integer>();
@@ -144,6 +151,9 @@ public class Reader {
 
 	public int getMaximaCantidadDeRigs() {
 		return maximaCantidadDeRigs;
+	}
+	public int getVolumenYacimiento() {
+		return volumenYacimiento;
 	}
 	
 	public Map<Integer, Integer> getPresionInicialDeParcelas(){
