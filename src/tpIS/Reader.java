@@ -25,11 +25,6 @@ public class Reader {
 
 			fr = new FileReader(fileName);
 			br = new BufferedReader(fr);
-			///String sCurrentLine;
-			//Luego leo tantas lineas como la cantidad de Parcelas
-			//while ((sCurrentLine = br.readLine()) != null) {
-			//	System.out.println(sCurrentLine);
-			//}
 			/*
 			 * Los tipos de Parcelas son n tipos, es decir son un un numero fijo
 			 * estos valores se representan mediante los numero del 0 a n-1.
