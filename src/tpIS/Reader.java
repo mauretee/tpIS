@@ -69,17 +69,17 @@ public class Reader {
 			tipoDeParcelas = new HashMap<Integer, Integer>();
 			profundidaDeParcelas = new HashMap<Integer, Integer>();
 			String[] str;
-			int presionInicial;
-			int tipoDeParecela;
-			int profundidadDeParcela;
+			Integer presionInicial;
+			Integer tipoDeParecela;
+			Integer profundidadDeParcela;
 			for( int i = 0; i < cantidadDeParcelas; ++i){
 				Integer j = new Integer(i);
 			    str = null;
 				String linea = br.readLine();
 			    str = linea.split(" ");
-			    presionInicial = Integer.parseInt(str[0]);
-			    tipoDeParecela = Integer.parseInt(str[1]);
-				profundidadDeParcela = Integer.parseInt(str[2]);
+			    presionInicial = new Integer(Integer.parseInt(str[0]));
+			    tipoDeParecela = new Integer(Integer.parseInt(str[1]));
+				profundidadDeParcela = new Integer(Integer.parseInt(str[2]));
 			    presionInicialDeParcelas.put(j, presionInicial);
 			    tipoDeParcelas.put(j,tipoDeParecela);
 			    profundidaDeParcelas.put(j,profundidadDeParcela);
