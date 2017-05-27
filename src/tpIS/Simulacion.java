@@ -16,14 +16,12 @@ public class Simulacion {
 
 
 	public void Simular(){
-
 		while(this._context.Continue()){
-
 			this._logger.Log(String.valueOf(this._context.GetDay()));
 			List<Closure> actions = this._equipoIngenieria.WhatToDo(this._context);
 			for(int i=0; i<actions.size(); i++)
 			{
-				actions.get(i).Apply();
+				actions.get(i).Apply(this._context);
 				this._logger.Log(this._context.GetLastEventsToLog());				
 			}
 		

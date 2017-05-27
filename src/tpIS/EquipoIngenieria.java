@@ -16,10 +16,10 @@ public class EquipoIngenieria {
 		
 		List<Closure> actions = new ArrayList<Closure>(); 
 		for(int i = 0; i< this._criterios.size(); i++){
-			actions.add(this._criterios.get(i).Evaluate(context))
+			actions.add(this._criterios.get(i).Evaluate(context));
 		}
 		
-		return actions 
+		return actions; 
 	}
 	
 }

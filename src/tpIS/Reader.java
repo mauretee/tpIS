@@ -92,6 +92,10 @@ public class Reader {
 			    tipoDeParcelas.put(j,tipoDeParecela);
 			    profundidaDeParcelas.put(j,profundidadDeParcela);
 			}
+			String ten = br.readLine(); 
+			this.limitDayQuantity = Integer.parseInt(ten);
+			
+			System.out.println(limitDayQuantity);			
 			System.out.println(presionInicialDeParcelas);
 			System.out.println(tipoDeParcelas);
 			System.out.println(profundidaDeParcelas);
@@ -170,7 +174,9 @@ public class Reader {
 	}
 
 	public List<Criterio> getCriterios(){
-		return new ArrayList<Criterio>();
+		List<Criterio> result = new ArrayList<Criterio>();		
+		result.add(new CriterioParadaPorDia(this));
+		return result;
 	}
 	
 	public int getLimitDaysQuantity(){
