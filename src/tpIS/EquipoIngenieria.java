@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class EquipoIngenieria {
-
 	
 	private List<Criterio> _criterios;
 	
@@ -15,7 +14,12 @@ public class EquipoIngenieria {
 	
 	public List<Closure> WhatToDo(Context context){
 		
-		return new ArrayList<Closure>();
+		List<Closure> actions = new ArrayList<Closure>(); 
+		for(int i = 0; i< this._criterios.size(); i++){
+			actions.add(this._criterios.get(i).Evaluate(context))
+		}
+		
+		return actions 
 	}
 	
 }
