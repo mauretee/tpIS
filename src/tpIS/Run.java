@@ -4,7 +4,9 @@ package tpIS;
 public class Run {
 
 	public static void main(String[] args) {
-		Reader reader = new Reader();
+
+		Simulacion simulation = new Simulacion();
+		simulation.Simular();
 	}
 
 }
