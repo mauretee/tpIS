@@ -26,6 +26,7 @@ public class Simulacion {
 				actions.get(i).Apply();
 				this._logger.Log(this._context.GetLastEventsToLog());				
 			}
+		
 			this._context.FinishDay();
 
 		}

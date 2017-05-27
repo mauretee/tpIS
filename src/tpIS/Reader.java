@@ -14,6 +14,7 @@ public class Reader {
 	private int composicionDePetroleo;
 	private int maximaCantidadDeRigs;
 	private int volumenYacimiento;
+	private int limitDayQuantity;
 	private Map<Integer, Integer> presionInicialDeParcelas;
 	private Map<Integer,Integer> tipoDeParcelas;
 	private Map<Integer,Integer>	 profundidaDeParcelas;
@@ -168,4 +169,13 @@ public class Reader {
 		return profundidaDeParcelas;
 	}
 
+	public List<Criterio> getCriterios(){
+		return new ArrayList<Criterio>();
+	}
+	
+	public int getLimitDaysQuantity(){
+		return limitDayQuantity;
+	}
+	
+	
 }

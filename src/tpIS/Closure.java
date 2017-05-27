@@ -1,7 +1,7 @@
 package tpIS;
 
 class Closure implements Function{
-	   private int x = value;
+	   private int x = result;
 	   Function f;
 	   Function g;
 
@@ -31,5 +31,5 @@ class Closure implements Function{
 		     x = 1;
 		    
 		   }
-		}
+		
 }

@@ -1,6 +1,6 @@
 package tpIS;
 
 public interface Function {
-	 public final int value;
-	    public int Apply();
+	 public int result=0;
+	 public int Apply();
 }
