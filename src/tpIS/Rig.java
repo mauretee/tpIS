@@ -6,7 +6,7 @@ public class Rig {
 	private int metrosCavados = 0;
 	private boolean cavando = false;
 	
-	public Rig(int VelocidadDeCavadoXDIA, int ConsumoDeCombustibleXDIA) {
+	public Rig(int VelocidadDeCavadoXDIA, double ConsumoDeCombustibleXDIA) {
 		velocidadDeCavadoXDia = VelocidadDeCavadoXDIA;
 		consumCombustibleXDia = ConsumoDeCombustibleXDIA;
 	}
@@ -27,4 +27,23 @@ public class Rig {
 		else 
 			System.err.println("Un Rig no puede cavar en mas de un pozo a la ves");
 	}
+
+	public int getVelocidadDeCavadoXDia() {
+		return velocidadDeCavadoXDia;
+	}
+
+	public double getConsumCombustibleXDia() {
+		return consumCombustibleXDia;
+	}
+
+	public int getMetrosCavados() {
+		return metrosCavados;
+	}
+
+	public boolean isCavando() {
+		return cavando;
+	}
+
+	
+	
 }
