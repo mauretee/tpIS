@@ -24,9 +24,5 @@ public class CriterioParadaPorDia extends CriterioParada {
 			
 		    return new Closure();
 		}  
-		
-		    		
-		
-		
 	}
 }

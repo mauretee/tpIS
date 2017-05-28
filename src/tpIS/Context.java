@@ -2,6 +2,7 @@ package tpIS;
 
 public class Context {
 
+	private String _lastEventToLog = ""; 
 	private int _actualDay;
 	private Boolean _continue;
 	
@@ -11,15 +12,16 @@ public class Context {
 	}
 	
 	public int GetDay(){
-		return this._actualDay; 
+		return this._actualDay;		
 	}
 	
-	public void FinishDay(){
+	public void FinishDay(){		
 		this._actualDay+=1;
+		
 	}
 	
 	public String GetLastEventsToLog(){
-		return "hola";
+		return this._lastEventToLog;
 	}
 	
 	public Boolean Continue(){
@@ -28,6 +30,7 @@ public class Context {
 	
 	public void Finish(){
 		this._continue = false;
+		this._lastEventToLog = "Finalizando simulación";
 	}
 	
 }
