@@ -2,7 +2,7 @@ package tpIS;
 
 import java.util.ArrayList;
 import java.util.List;
-
+//
 public class EquipoIngenieria {
 	
 	private List<Criterio> _criterios;
