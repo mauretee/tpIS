@@ -7,10 +7,12 @@ public class Simulacion {
 	private EquipoIngenieria _equipoIngenieria;
 	private Context _context;
 	private Logger _logger;
+	private Reader _reader;
 
 	public Simulacion(){
-		this._equipoIngenieria= new EquipoIngenieria();
-		this._context= new Context();
+		this._reader = new Reader();
+		this._equipoIngenieria= new EquipoIngenieria(this._reader);
+		this._context= new Context(this._reader);
 		this._logger= new Logger();
 	}
 

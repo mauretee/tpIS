@@ -176,6 +176,7 @@ public class Reader {
 	public List<Criterio> getCriterios(){
 		List<Criterio> result = new ArrayList<Criterio>();		
 		result.add(new CriterioParadaPorDia(this));
+		result.add(new CriterioDePerforacionEnTodaParcela(this));
 		return result;
 	}
 
@@ -197,6 +198,15 @@ public class Reader {
 		return result;
 	}
 	
+	
+	public List<Rig> getRigs(){
+		List<Rig> result = new ArrayList<Rig>();
+		//FIX ME! CREATE RIGS FROM FILE
+		result.add(new Rig());
+				
+		return result;
+	}
+	
 	public Yacimiento getYacimiento(){
 		int volumen = this.getVolumenYacimiento();
 		Composicion composition = this.getComposicion();			
@@ -208,6 +218,16 @@ public class Reader {
 	
 	public int getLimitDaysQuantity(){
 		return limitDayQuantity;
+	}
+
+	
+	public Presupuesto getPresupuesto(){
+		return new Presupuesto();
+	}
+	
+	public EstadoFinanciero getEstadoFinanciero(){
+		//FIX ME! READ THE INITIAL STATUS FROM FILE
+		return new EstadoFinanciero(10000);
 	}
 	
 	
