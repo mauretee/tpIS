@@ -19,9 +19,9 @@ public class Simulacion {
 		while(this._context.Continue()){
 			this._logger.Log("Inicia el dia "+ String.valueOf(this._context.GetDay()));
 			List<Closure> actions = this._equipoIngenieria.WhatToDo(this._context);
-			for(int i=0; i<actions.size(); i++)
+			for(Closure action : actions)
 			{
-				actions.get(i).Apply(this._context);
+				action.Apply(this._context);
 				this._logger.Log(this._context.GetLastEventsToLog());				
 			}
 			this._logger.Log("Finaliza el dia "+ String.valueOf(this._context.GetDay()));
