@@ -19,8 +19,8 @@ public class EquipoIngenieria {
 	public List<Closure> WhatToDo(Context context){
 		
 		List<Closure> actions = new ArrayList<Closure>(); 
-		for(int i = 0; i< this._criterios.size(); i++){
-			actions.add(this._criterios.get(i).Evaluate(context, this._yacimiento, this._presupuesto, this._estadoFinanciero));
+		for(Criterio unCriterio : _criterios){
+			actions.add(unCriterio.Evaluate(context, this._yacimiento, this._presupuesto, this._estadoFinanciero));
 		}
 		
 		return actions; 
