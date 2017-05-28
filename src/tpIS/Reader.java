@@ -15,9 +15,15 @@ public class Reader {
 	private int maximaCantidadDeRigs;
 	private int volumenYacimiento;
 	private int limitDayQuantity;
+	//Variables para parcela
 	private Map<Integer, Integer> presionInicialDeParcelas;
 	private Map<Integer,Integer> tipoDeParcelas;
 	private Map<Integer,Integer>	 profundidaDeParcelas;
+	//Variables para Rig
+	private Map<Integer, Integer> metrosXDiaRig;
+	private Map<Integer,Double> consumoRig;
+	private Map<Integer,Double>	 PrecioRig;
+	private Map<Integer,Integer> cantidadMinimaDeDiasRig;
 		
 	public Reader(){
 		BufferedReader br = null;
@@ -46,6 +52,10 @@ public class Reader {
 			 *	"""
 			 *	"""
 			 *	"""
+			 *	20 5 100 8 //Cantidad de metros q cava por dia el Rig 1, consumo de combustible, precio de alquiler x dia, dias minimos de alquiler
+			 *	""""
+			 *	""""
+			 *	""""
 			 *
 			 */
 			String firstLine = br.readLine();
@@ -71,7 +81,9 @@ public class Reader {
 			String six = br.readLine(); 
 			this.volumenYacimiento = Integer.parseInt(six);
 			System.out.println(volumenYacimiento);
-			
+			/*
+			 * Leemos los parametros de cada parcela
+			 */
 			
 			presionInicialDeParcelas = new HashMap<Integer, Integer>();
 			tipoDeParcelas = new HashMap<Integer, Integer>();
@@ -99,6 +111,37 @@ public class Reader {
 			System.out.println(presionInicialDeParcelas);
 			System.out.println(tipoDeParcelas);
 			System.out.println(profundidaDeParcelas);
+			
+			/*
+			 * Leemos los parametros de cada RIG
+			 */
+			
+			metrosXDiaRig = new HashMap<Integer, Integer>();
+			cantidadMinimaDeDiasRig = new HashMap<Integer, Integer>();
+			consumoRig = new HashMap<Integer, Double>();
+			PrecioRig = new HashMap<Integer, Double>();
+			String[] Entrada;
+			Integer metrosRig;
+			Double combustible;
+			Double precio;
+			Integer minimo;
+			for( int i = 0; i < maximaCantidadDeRigs; ++i){ //FIX ME ????
+				Integer indice = new Integer(i);
+				Entrada = null;
+				String linea = br.readLine();
+				Entrada = linea.split(" ");
+			    metrosRig = new Integer(Integer.parseInt(Entrada[0]));
+			    combustible = new Double(Double.parseDouble(Entrada[1]));
+				precio = new Double(Double.parseDouble(Entrada[2]));
+				minimo = new Integer(Integer.parseInt(Entrada[3]));
+				metrosXDiaRig.put(indice, metrosRig);
+				consumoRig.put(indice,combustible);
+				PrecioRig.put(indice, precio);
+				cantidadMinimaDeDiasRig.put(indice,minimo);
+				
+			}
+			String ten2 = br.readLine(); 
+			this.limitDayQuantity = Integer.parseInt(ten2);
 			
 		} catch (IOException e) {
 
@@ -201,8 +244,11 @@ public class Reader {
 	
 	public List<Rig> getRigs(){
 		List<Rig> result = new ArrayList<Rig>();
-		//FIX ME! CREATE RIGS FROM FILE
-		result.add(new Rig(55, 100000));
+		for( int i = 0; i < maximaCantidadDeRigs; ++i){
+			Rig rig  = new Rig(metrosXDiaRig.get(i), consumoRig.get(i));
+			result.add(rig);
+		}
+		//result.add(new Rig(55, 100000));
 				
 		return result;
 	}
