@@ -33,5 +33,9 @@ public class Context {
 		this._lastEventToLog = "Finalizando simulación";
 	}
 	
+	public void Perforar(Parcela parcela){
+		this._lastEventToLog = "perforar parcela";
+	}
+	
 }
 

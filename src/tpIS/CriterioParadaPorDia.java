@@ -10,7 +10,7 @@ public class CriterioParadaPorDia extends CriterioParada {
 	}
 	
 	@Override
-	public Closure Evaluate(Context context) {
+	public Closure Evaluate(Context context, Yacimiento yacimiento) {
 		// TODO Auto-generated method stub
 		if(context.GetDay() >= this._limitDay){
 			Function parar = new Function() {

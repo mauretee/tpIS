@@ -178,6 +178,33 @@ public class Reader {
 		result.add(new CriterioParadaPorDia(this));
 		return result;
 	}
+
+	public Composicion getComposicion(){
+		Composicion result = new Composicion(this.getComposicionDeAgua(),
+				this.getComposicionDePetroleo(),this.getComposicionDeGas());
+		return result;
+	}
+	
+	public List<Parcela> getParcelas(){
+		List<Parcela> result = new ArrayList<Parcela>();
+		
+		for( int i = 0; i < cantidadDeParcelas; ++i){
+			Parcela parcela  = new Parcela(profundidaDeParcelas.get(i),
+					new TerrenoRocoso(), presionInicialDeParcelas.get(i));
+			result.add(parcela);
+		}
+				
+		return result;
+	}
+	
+	public Yacimiento getYacimiento(){
+		int volumen = this.getVolumenYacimiento();
+		Composicion composition = this.getComposicion();			
+		List<Parcela> parcelas = this.getParcelas();
+		Yacimiento result= new Yacimiento(volumen,composition,parcelas);			
+		return result;
+	}
+
 	
 	public int getLimitDaysQuantity(){
 		return limitDayQuantity;
