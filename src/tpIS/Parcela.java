@@ -5,6 +5,7 @@ public class Parcela {
 	private int presion;
 	private Terreno tipoDeTerreno;
 	private Pozo pozo;
+	
 	public Parcela(int profundidad, Terreno tipoDeTerreno, int presion){
 		this.profundidad =profundidad;
 		this.tipoDeTerreno = tipoDeTerreno;
@@ -16,7 +17,13 @@ public class Parcela {
 	public int getProfundidad() {
 		return profundidad;
 	}
-	public void setPozo(Pozo pozo){
+	/*public void setPozo(Pozo pozo){ //este seter esta mal, rompe inmutavilidad
 		this.pozo = pozo;
+	}
+	*/
+	public void crearPoso() {
+		Estado unEstado = Estado.ParadoPorSindicato ;
+		int capacidad = 10; // QUE ERA ESTO ??
+		pozo = new Pozo(unEstado, presion, capacidad);
 	}
 }
