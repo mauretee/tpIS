@@ -1,36 +1,35 @@
 package tpIS;
+
 import java.io.BufferedWriter;
+import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.io.PrintWriter;
-import java.io.Writer;
-
+import java.util.Date;
+// 
 public class Logger {
-
-	public Logger(){
-		try{
-		    PrintWriter writer = new PrintWriter("log.txt", "UTF-8");		    
-		    writer.close();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+	File file;
+	
+	public Logger() {
+		try {
+			Date fecha = new Date();
+	        file = new File(fecha.toString()+ "log.txt");
+		} finally {
+        	//??
+        }
 		
 	}
 	
 	public void Log(String message){
-		
-		try {
-			Writer output = new BufferedWriter(new FileWriter("log.txt", true));
-			output.append(message+"\n");
-			//output.write(message);			
-			output.close();
-		} catch (IOException e1) {
-			// TODO Auto-generated catch block
-			e1.printStackTrace();
-		}
-				
+        BufferedWriter output = null;
+        try {
+            output = new BufferedWriter(new FileWriter(file));
+            output.append(message);
+        } catch ( IOException e ) {
+            e.printStackTrace();
+        } finally {
+        	try {output.close();}
+        	catch (IOException e) {e.printStackTrace();}
+        }
 	}
 	
 }
-
