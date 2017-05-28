@@ -39,7 +39,7 @@ public class Reader {
 			 * 20	// 2 Composicion de Agua numero entre 0 y 100
 			 * 30	// 3 Composicin de Gas numero entre 0 y 100
 			 * 50 	// 4 Composicin de Petroleo numero entre 0 y 100
-			 * 4 	// 5 cantidad máxima de RIGS 
+			 * 4 	// 5 cantidad maÌ�xima de RIGS 
 			 * 3000 // 6 volumen de Yacimiento
 			 * 1	 2 1000// Presion inicial de boca de poso de la primer Parcela 1, tipo de Parcela de la parcela 1, profundidad(en metros)
 			 *	"""
@@ -191,7 +191,7 @@ public class Reader {
 		
 		for( int i = 0; i < cantidadDeParcelas; ++i){
 			Parcela parcela  = new Parcela(profundidaDeParcelas.get(i),
-					new TerrenoRocoso(), presionInicialDeParcelas.get(i));
+					new TerrenoRocoso(70), presionInicialDeParcelas.get(i));
 			result.add(parcela);
 		}
 				
@@ -202,7 +202,7 @@ public class Reader {
 	public List<Rig> getRigs(){
 		List<Rig> result = new ArrayList<Rig>();
 		//FIX ME! CREATE RIGS FROM FILE
-		result.add(new Rig());
+		result.add(new Rig(55, 100000));
 				
 		return result;
 	}
