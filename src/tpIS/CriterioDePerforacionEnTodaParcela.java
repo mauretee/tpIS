@@ -1,5 +1,7 @@
 package tpIS;
 
+import java.util.List;
+
 public class CriterioDePerforacionEnTodaParcela extends CriterioDePerforacion{
 
 	
@@ -13,10 +15,11 @@ public class CriterioDePerforacionEnTodaParcela extends CriterioDePerforacion{
 			Function perforar = new Function() {
 		        @Override
 		        public void Apply(Context context)  {
-		        	for(int i = 0; i< yacimiento.listaDeParcelas.size(); i++){
-		        		
+		        	for(int i = 0; i< yacimiento.listaDeParcelas.size(); i++){		        		
 		        		context.Perforar(yacimiento.listaDeParcelas.get(i));
-		        		
+		        		List<Rig> rigs = context.getRigs();		        		
+		        		double costo = presupuesto.getCostoDeRig(rigs.get(0));
+		        		estado.debit(costo);		        		
 		        	}
 		        }
 		    };

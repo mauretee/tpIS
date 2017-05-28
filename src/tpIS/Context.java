@@ -1,14 +1,21 @@
 package tpIS;
 
+import java.util.List;
+
 public class Context {
 
 	private String _lastEventToLog = ""; 
 	private int _actualDay;
-	private Boolean _continue;
+	private Boolean _continue;	
+	private List<Rig> _rigs;
+	private List<Planta> _plantas;
+	private List<Tanque> _tanques;	
 	
-	public Context(){
+	public Context(Reader reader){
+		
 		this._actualDay = 0;
 		this._continue = true;
+		this._rigs = reader.getRigs(); 
 	}
 	
 	public int GetDay(){
@@ -35,6 +42,18 @@ public class Context {
 	
 	public void Perforar(Parcela parcela){
 		this._lastEventToLog = "perforar parcela";
+	}
+		
+	public List<Rig> getRigs(){
+		return this._rigs;
+	}
+	
+	public List<Planta> getPlantas(){
+		return this._plantas;
+	}
+	
+	public List<Tanque> getTanques(){
+		return this._tanques;
 	}
 	
 }

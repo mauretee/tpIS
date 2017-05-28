@@ -10,10 +10,11 @@ public class EquipoIngenieria {
 	private Presupuesto _presupuesto;
 	private EstadoFinanciero _estadoFinanciero;
 	
-	public EquipoIngenieria(){
-		Reader reader = new Reader();
+	public EquipoIngenieria(Reader reader){		
 		this._criterios = reader.getCriterios();
 		this._yacimiento = reader.getYacimiento();
+		this._presupuesto = reader.getPresupuesto();
+		this._estadoFinanciero = reader.getEstadoFinanciero();
 	}
 	
 	public List<Closure> WhatToDo(Context context){
