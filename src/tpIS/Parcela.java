@@ -18,6 +18,9 @@ public class Parcela {
 		return profundidad;
 	}
 
+	/*
+	 * FIX ME: Con esta implementacion, muchos Rigs pueden construir el mismo pozo!!!
+	 */
 	public void crearPozo() {
 		if(!tienePozo()) {
 			Estado unEstado = Estado.ParadoPorSindicato ;
