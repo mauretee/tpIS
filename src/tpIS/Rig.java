@@ -28,7 +28,7 @@ public class Rig {
 				metrosCavados += (velocidadDeCavadoXDia*parcelaATrabajar.getTipoDeTerreno().tipoDeTerreno())/100;
 			}
 			else {
-				parcelaATrabajar.crearPoso();
+				parcelaATrabajar.crearPozo();
 				metrosCavados =0;
 				cavando = false;
 				parcelaATrabajar = null;
@@ -53,7 +53,5 @@ public class Rig {
 	public boolean isCavando() {
 		return cavando;
 	}
-
-	
 	
 }

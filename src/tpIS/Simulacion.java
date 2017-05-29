@@ -34,7 +34,7 @@ public class Simulacion {
 		for( int i = 0; i < _reader.getMaximaCantidadDeRigs(); ++i){
 			Rig rig  = new Rig(_reader.getMetrosXDiaRig().get(i), _reader.getConsumoRig().get(i));
 			this._listaRigs.add(rig);
-			costoDelRig rigCost = new costoDelRig(_reader.getPrecioRig().get(i), _reader.getConsumoRig().get(i), _reader.getCantidadMinimaDeDiasRig().get(i));
+			costoDelRig rigCost = new costoDelRig(_reader.getPrecioRig().get(i), _reader.getConsumoRig().get(i), _reader.getCantidadMinimaDeDiasRig().get(i), rig);
 			costosRigs.add(rigCost);
 		}
 		//FIX ME FALTA Q EL READER LEVANTE LOS PRECIOS DE PLANTAS Y TANQUES!

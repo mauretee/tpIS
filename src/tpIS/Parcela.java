@@ -17,11 +17,8 @@ public class Parcela {
 	public int getProfundidad() {
 		return profundidad;
 	}
-	/*public void setPozo(Pozo pozo){ //este seter esta mal, rompe inmutavilidad
-		this.pozo = pozo;
-	}
-	*/
-	public void crearPoso() {
+
+	public void crearPozo() {
 		if(!tienePozo()) {
 			Estado unEstado = Estado.ParadoPorSindicato ;
 			int capacidad = 10; // QUE ERA ESTO ??

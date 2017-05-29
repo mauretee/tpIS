@@ -25,7 +25,8 @@ public class Reader {
 	private Map<Integer,Double> consumoRig;
 	private Map<Integer,Double>	 PrecioRig;
 	private Map<Integer,Integer> cantidadMinimaDeDiasRig;
-		
+
+
 	public Reader(){
 		BufferedReader br = null;
 		FileReader fr = null;
@@ -244,6 +245,15 @@ public class Reader {
 	public Map<Integer, Double> getConsumoRig(){
 		return this.consumoRig;
 	}
+	
+	public Map<Integer, Double> getPrecioRig() {
+		return PrecioRig;
+	}
+	
+	public Map<Integer, Integer> getCantidadMinimaDeDiasRig() {
+		return cantidadMinimaDeDiasRig;
+	}
+	
 	/*
 	
 	public List<Rig> getRigs(){
