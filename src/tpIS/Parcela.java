@@ -22,9 +22,13 @@ public class Parcela {
 	}
 	*/
 	public void crearPoso() {
-		Estado unEstado = Estado.ParadoPorSindicato ;
-		int capacidad = 10; // QUE ERA ESTO ??
-		pozo = new Pozo(unEstado, presion, capacidad);
+		if(!tienePozo()) {
+			Estado unEstado = Estado.ParadoPorSindicato ;
+			int capacidad = 10; // QUE ERA ESTO ??
+			pozo = new Pozo(unEstado, presion, capacidad);
+		}
+		else 
+			System.err.println("Esta parcela ya posee un pozo.");
 	}
 	
 	public boolean tienePozo() {
