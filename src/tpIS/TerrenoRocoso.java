@@ -16,3 +16,4 @@ public class TerrenoRocoso implements Terreno{
 		return resistencia;
 	}
 }
+ 
