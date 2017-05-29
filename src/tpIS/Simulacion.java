@@ -26,13 +26,24 @@ public class Simulacion {
 		}
 		
 		this._listaRigs = new ArrayList<Rig>();
+		List<costoDelRig> costosRigs = new ArrayList<costoDelRig>();
+		/*
+		 * Creamos la lista de rigs que podemos alquilar, y al mismo tiempo creamos su lista
+		 * de precios para poder agregarla al presupuesto (indexado por el mismo orden por ahora)
+		 */
 		for( int i = 0; i < _reader.getMaximaCantidadDeRigs(); ++i){
 			Rig rig  = new Rig(_reader.getMetrosXDiaRig().get(i), _reader.getConsumoRig().get(i));
 			this._listaRigs.add(rig);
+			costoDelRig rigCost = new costoDelRig(_reader.getPrecioRig().get(i), _reader.getConsumoRig().get(i), _reader.getCantidadMinimaDeDiasRig().get(i));
+			costosRigs.add(rigCost);
 		}
+		//FIX ME FALTA Q EL READER LEVANTE LOS PRECIOS DE PLANTAS Y TANQUES!
+		List<Double> preciosPlantas = new ArrayList<Double>();
+		List<Double> preciosTanques = new ArrayList<Double>();
+		
 		this._yacimiento = new Yacimiento(_reader.getVolumenYacimiento(),_composicion,
 				this._parcelas);
-		this._presupuesto = new Presupuesto();
+		this._presupuesto = new Presupuesto(5, 5, 5, costosRigs, preciosPlantas, preciosTanques);
 		this._estadoFinanciero = new EstadoFinanciero(1000); //FIX ME! READ THE INITIAL STATUS FROM FILE
 		this._equipoIngenieria = new EquipoIngenieria(_yacimiento,_presupuesto,_estadoFinanciero);
 		
