@@ -11,12 +11,11 @@ public class Rig {
 		consumCombustibleXDia = ConsumoDeCombustibleXDIA;
 	}
 	
-	public void cavarPozoEnParcela(Parcela unaParcela, EstadoFinanciero unEstadoFinanciero) {
+	public void cavarPozoEnParcela(Parcela unaParcela) {
 		if(!cavando) {
 			cavando = true;
 			if(metrosCavados < unaParcela.getProfundidad()) {
 				metrosCavados += velocidadDeCavadoXDia/ unaParcela.getTipoDeTerreno().tipoDeTerreno();
-				unEstadoFinanciero.debit(consumCombustibleXDia);
 			}
 			else {
 				unaParcela.crearPoso();

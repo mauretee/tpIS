@@ -39,10 +39,6 @@ public class Context {
 		this._continue = false;
 		this._lastEventToLog = "Finalizando simulación";
 	}
-	
-	public void Perforar(Parcela parcela){
-		this._lastEventToLog = "perforar parcela";
-	}
 		
 	public List<Rig> getRigs(){
 		return this._rigs;

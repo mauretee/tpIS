@@ -16,10 +16,13 @@ public class CriterioDePerforacionEnTodaParcela extends CriterioDePerforacion{
 		        @Override
 		        public void Apply(Context context)  {
 		        	for(int i = 0; i< yacimiento.listaDeParcelas.size(); i++){		        		
-		        		context.Perforar(yacimiento.listaDeParcelas.get(i));
-		        		List<Rig> rigs = context.getRigs();		        		
-		        		double costo = presupuesto.getCostoDeRig(rigs.get(0));
-		        		estado.debit(costo);		        		
+		        		
+		        		Rig rig = context.getRigs().get(0);
+		        		rig.cavarPozoEnParcela(yacimiento.listaDeParcelas.get(i));
+		        		
+		        		
+		        		//double costo =  presupuesto.getCostoDeRig(rigs.get(0));
+		        		//estado.debit(costo);		        		
 		        	}
 		        }
 		    };

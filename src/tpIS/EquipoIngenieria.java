@@ -27,4 +27,8 @@ public class EquipoIngenieria {
 		return actions; 
 	}
 	
+	public EstadoFinanciero getEstadoFinanciero(){
+		return this._estadoFinanciero;		
+	}
+	
 }
