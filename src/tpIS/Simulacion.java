@@ -36,7 +36,7 @@ public class Simulacion {
 		this._estadoFinanciero = new EstadoFinanciero(1000); //FIX ME! READ THE INITIAL STATUS FROM FILE
 		this._equipoIngenieria = new EquipoIngenieria(_yacimiento,_presupuesto,_estadoFinanciero);
 		
-		this._context = new Context(this._listaRigs, _reader.getLimitDaysQuantity()); 
+		this._context = new Context(this._listaRigs, _reader.getLimitDaysQuantity());  
 		this._logger= new Logger();
 	}
 
