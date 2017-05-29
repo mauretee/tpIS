@@ -4,33 +4,29 @@
 50
 4
 3000
-1 2 1000
-2 3 2000
-4 2 10000
-5 3 50000
-5 1 60000
+1 2 1000 40
+2 3 2000 10
+4 2 10000 60
+5 3 50000 80
+5 1 60000 25
 10
-1
+2
 100 10 10 5
-100 8 1000 Cantidad de metros que cava por dia el Rig modelo 1, Consumo de combustible por dia en litros, precio de alquiler por dia en pesos, dias minimos de alquiler
-...
-Cantidad de metros que cava por dia el Rig modelo N, Consumo de combustible por dia en litros, precio de alquiler por dia en pesos, dias minimos de alquiler
-Cantidad de pozos a construir.
-Cantidad de modelos distintos de Plantas.
-Cantidad de metros cubicos que procesa por dia la Planta modelo 1, dias de construccion, costo en pesos.
-...
-Cantidad de metros cubicos que procesa por dia la Planta modelo N, dias de construccion, costo en pesos.
-Cantidad de modelos distintos de Tanques.
-Cantidad de metros cubicos de capacidad del Tanque modelo 1, tipo (gas o agua), dias de construccion, costo en pesos.
-...
-Cantidad de metros cubicos de capacidad del Tanque modelo N, tipo (gas o agua), dias de construccion, costo en pesos.
-Precio de compra de agua por metro cubico en pesos.
-Precio de venta del petroleo por metro cubico en pesos.
-Precio de venta del gas por metro cubico en pesos.
-Precio de compra del combustible por metro cubico para los RIGs en pesos.
-Parametro de volumen potencial Alfa1 en  metro cubico.
-Parametro de volumen potencial Alfa2 en metro cubico.
-Volumen maximo diario de reinyeccion en metros cubicos.
-Monto máximo de gastos (para criterio de parada) en pesos.
-Presión critica en (psia).
-Dilución crítica (%).
+200 30 40 7
+3
+2
+3000 12 1000
+2000 8 800
+2
+2500 1 20 1000
+4000 0 50 5000
+3
+100
+50
+30
+0.1
+0.2
+200
+10000
+20
+10

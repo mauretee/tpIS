@@ -21,7 +21,7 @@ public class Simulacion {
 		this._parcelas = new ArrayList<Parcela>();
 		for( int i = 0; i < _reader.getCantidadDeParcelas(); ++i){
 			Parcela parcela  = new Parcela(_reader.getPresionInicialDeParcelas().get(i),
-					new TerrenoRocoso(80), _reader.getPresionInicialDeParcelas().get(i));
+					new TerrenoRocoso(80), _reader.getPresionInicialDeParcelas().get(i), _reader.getResistenciaDeParcelas().get(i));
 			this._parcelas.add(parcela);
 		}
 		
