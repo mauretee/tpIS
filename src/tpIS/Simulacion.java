@@ -14,7 +14,10 @@ public class Simulacion {
 	private Logger _logger;
 	private List<Rig> _listaRigs;
 	//private Reader _reader;
-
+	private Reader _reader;
+	private List<Rig> rigsCavando;
+	private List<Tanque> tanquesEnConstruccion;
+	private List<Planta> plantasEnConstruccion;
 	public Simulacion(Reader _reader){
 		this._composicion = new Composicion(_reader.getComposicionDeAgua(),
 				_reader.getComposicionDePetroleo(),_reader.getComposicionDeGas());
@@ -38,6 +41,10 @@ public class Simulacion {
 		
 		this._context = new Context(this._listaRigs); 
 		this._logger= new Logger();
+		
+		rigsCavando = new ArrayList<Rig>();
+		tanquesEnConstruccion = new ArrayList<Tanque>();
+		plantasEnConstruccion = new ArrayList<Planta>();
 	}
 
 
@@ -50,6 +57,7 @@ public class Simulacion {
 				action.Apply(this._context, this._equipoIngenieria);
 				this._logger.Log(this._context.GetLastEventsToLog());				
 			}
+			tareasEnSimulacion();
 			/*this._logger.Log("Estado financiero actual: "+
 					String.valueOf(this._equipoIngenieria.getEstadoFinanciero().getStatus()));*/
 			this._logger.Log("Finaliza el dia "+ String.valueOf(this._context.GetDay()));
@@ -59,4 +67,32 @@ public class Simulacion {
 
 	}
 	
+	private void tareasEnSimulacion() {
+		//Seguimos contrullendo los pozos
+		if(!rigsCavando.isEmpty()) {
+			for(Rig unRig : rigsCavando){
+				if(unRig.isCavando())
+					unRig.seguirCavando();
+				else
+					rigsCavando.remove(unRig);
+			}			
+		}
+		//seguimos construllendo los tanques
+		if(!tanquesEnConstruccion.isEmpty()){
+			for(Tanque unTanque : tanquesEnConstruccion){
+				if(!unTanque.estaCosntruido())
+					unTanque.construirUnDia();
+				else
+					tanquesEnConstruccion.remove(unTanque);
+			}
+		}
+		if(!plantasEnConstruccion.isEmpty()){
+			for(Planta unaPlanta : plantasEnConstruccion){
+				if(!unaPlanta.plantaEnConstruccion())
+					unaPlanta.construirUnDia();
+				else
+					plantasEnConstruccion.remove(unaPlanta);
+			}
+		}
+	}
 }
