@@ -248,7 +248,7 @@ public class Reader {
 		
 		for( int i = 0; i < cantidadDeParcelas; ++i){
 			Parcela parcela  = new Parcela(profundidaDeParcelas.get(i),
-					new TerrenoRocoso(), presionInicialDeParcelas.get(i));
+					new TerrenoRocoso(80), presionInicialDeParcelas.get(i));
 			result.add(parcela);
 		}
 				
