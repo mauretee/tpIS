@@ -1,7 +1,16 @@
 package tpIS;
 
-public abstract class Criterio {
+import java.util.List;
 
-	public abstract Closure Evaluate(Context context, Yacimiento yacimiento, Presupuesto presupuesto, EstadoFinanciero estado);
+public abstract class Criterio extends Equipo{
 	
+	private Equipo _equipo;
+		
+	public Criterio(Equipo equipo){
+		this._equipo = equipo;
+	}
+		
+	public List<Closure> Evaluate(Context context){
+		return this._equipo.Evaluate(context);
+	}
 }

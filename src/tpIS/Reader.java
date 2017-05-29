@@ -221,13 +221,22 @@ public class Reader {
 		return profundidaDeParcelas;
 	}
 
+	/*
 	public List<Criterio> getCriterios(){
 		List<Criterio> result = new ArrayList<Criterio>();		
 		result.add(new CriterioParadaPorDia(this));
 		result.add(new CriterioDePerforacionEnTodaParcela(this));
 		return result;
-	}
+	}*/
 
+	public Equipo getEquipoIngenieria(){
+		Equipo result = new EquipoIngenieria(this);
+        result = new CriterioParadaPorDia(result);
+        result = new CriterioDePerforacionEnTodaParcela(result);
+        return result;
+		
+	}
+	
 	public Composicion getComposicion(){
 		Composicion result = new Composicion(this.getComposicionDeAgua(),
 				this.getComposicionDePetroleo(),this.getComposicionDeGas());
