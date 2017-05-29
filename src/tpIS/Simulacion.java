@@ -14,7 +14,7 @@ public class Simulacion {
 	private Logger _logger;
 	private List<Rig> _listaRigs;
 	//private Reader _reader;
-	private Reader _reader;
+	
 	public Simulacion(Reader _reader){
 		this._composicion = new Composicion(_reader.getComposicionDeAgua(),
 				_reader.getComposicionDePetroleo(),_reader.getComposicionDeGas());
