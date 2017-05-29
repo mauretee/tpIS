@@ -9,11 +9,4 @@ public class TanqueAgua extends Tanque {
 	public void reinyectar(double cantidad) {
 		extraerVol(cantidad);
 	}
-	
-	public void construirUnDia() {
-		if(!estaCosntruido())
-			diasDeConstruccionActual++;
-		else
-			System.err.println("El talque de agua ya esta construido.");
-	}
 }

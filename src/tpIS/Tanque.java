@@ -32,4 +32,11 @@ public abstract class Tanque {
 	public boolean estaCosntruido() {
 		return diasDeConstruccionActual == diasDeConstruccionTotal;
 	}
+	
+	public void construirUnDia() {
+		if(!estaCosntruido())
+			diasDeConstruccionActual++;
+		else
+			System.err.println("El talque ya esta construido.");
+	}
 }

@@ -4,6 +4,7 @@ public class Pozo {
 	private Estado estado;
 	private int presion;
 	private int capacidad;
+	
 	public Pozo(	 Estado estado, int presion, int capacidad){
 		this.estado = estado;
 		this.presion = presion;

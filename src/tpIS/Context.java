@@ -5,14 +5,16 @@ import java.util.List;
 public class Context {
 
 	private String _lastEventToLog = ""; 
+	private int _limitDay;
 	private int _actualDay;
 	private Boolean _continue;	
 	private List<Rig> _rigs;
 	private List<Planta> _plantas;
 	private List<Tanque> _tanques;	
 	
-	public Context(List<Rig> _rigs){
+	public Context(List<Rig> _rigs, int LimitDay){
 		
+		_limitDay = LimitDay;
 		this._actualDay = 0;
 		this._continue = true;
 		this._rigs = _rigs; 
@@ -50,6 +52,10 @@ public class Context {
 	
 	public List<Tanque> getTanques(){
 		return this._tanques;
+	}
+	
+	public int getLimitDay(){
+		return this._limitDay;
 	}
 	
 }

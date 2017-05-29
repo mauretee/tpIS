@@ -5,6 +5,7 @@ public class Rig {
 	private double consumCombustibleXDia = 1;
 	private int metrosCavados = 0;
 	private boolean cavando = false;
+	private Parcela parcelaATrabajar;
 	
 	public Rig(int VelocidadDeCavadoXDIA, double ConsumoDeCombustibleXDIA) {
 		velocidadDeCavadoXDia = VelocidadDeCavadoXDIA;
@@ -14,17 +15,27 @@ public class Rig {
 	public void cavarPozoEnParcela(Parcela unaParcela) {
 		if(!cavando) {
 			cavando = true;
-			if(metrosCavados < unaParcela.getProfundidad()) {
-				metrosCavados += (velocidadDeCavadoXDia*unaParcela.getTipoDeTerreno().tipoDeTerreno())/100;
-			}
-			else {
-				unaParcela.crearPoso();
-				metrosCavados =0;
-				cavando = false;
-			}
+			parcelaATrabajar = unaParcela;
+			seguirCavando();
 		}
 		else 
 			System.err.println("Un Rig no puede cavar en mas de un pozo a la ves");
+	}
+	
+	public void seguirCavando() {
+		if(cavando) {
+			if(metrosCavados < parcelaATrabajar.getProfundidad()) {
+				metrosCavados += (velocidadDeCavadoXDia*parcelaATrabajar.getTipoDeTerreno().tipoDeTerreno())/100;
+			}
+			else {
+				parcelaATrabajar.crearPoso();
+				metrosCavados =0;
+				cavando = false;
+				parcelaATrabajar = null;
+			}
+		}
+		else
+			System.err.println("Este Rig no esta asignado a ningun pozo.");
 	}
 
 	public int getVelocidadDeCavadoXDia() {

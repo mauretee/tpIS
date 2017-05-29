@@ -4,11 +4,11 @@ import java.util.List;
 
 public class CriterioParadaPorDia extends CriterioParada {
 
-	private int _limitDay;
+	//private int _limitDay;
 	
 	public CriterioParadaPorDia(Equipo equipo) {
 		super(equipo);		
-		this._limitDay = this._reader.getLimitDaysQuantity();
+		//this._limitDay = ;//this._reader.getLimitDaysQuantity();
 	}
 
 	
@@ -17,7 +17,7 @@ public class CriterioParadaPorDia extends CriterioParada {
 	public List<Closure> Evaluate(Context context) {
 		// TODO Auto-generated method stub
 		List<Closure> result = super.Evaluate(context);
-		if(context.GetDay() >= this._limitDay){
+		if(context.GetDay() >= context.getLimitDay()){
 			Function parar = new Function() {
 		        @Override
 		        public void Apply(Context context, Equipo equipo)  {
