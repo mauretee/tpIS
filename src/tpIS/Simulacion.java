@@ -15,10 +15,6 @@ public class Simulacion {
 	private List<Rig> _listaRigs;
 	//private Reader _reader;
 	private Reader _reader;
-<<<<<<< HEAD
-	private List<Rig> rigsCavando;
-	private List<Tanque> tanquesEnConstruccion;
-	private List<Planta> plantasEnConstruccion;
 	public Simulacion(Reader _reader){
 		this._composicion = new Composicion(_reader.getComposicionDeAgua(),
 				_reader.getComposicionDePetroleo(),_reader.getComposicionDeGas());
@@ -41,13 +37,11 @@ public class Simulacion {
 		this._equipoIngenieria = new EquipoIngenieria(_yacimiento,_presupuesto,_estadoFinanciero);
 		
 		this._context = new Context(this._listaRigs); 
-=======
 
 	public Simulacion(){
 		this._reader = new Reader();
 		this._equipoIngenieria=  this._reader.getEquipoIngenieria();// new EquipoIngenieria(this._reader);
 		this._context= new Context(this._reader);
->>>>>>> c93d756c8b3d3edf474eee71064a681aeaaef99c
 		this._logger= new Logger();
 	}
 
