@@ -26,4 +26,8 @@ public class Parcela {
 		int capacidad = 10; // QUE ERA ESTO ??
 		pozo = new Pozo(unEstado, presion, capacidad);
 	}
+	
+	public boolean tienePozo() {
+		return pozo!=null;
+	}
 }
