@@ -15,7 +15,7 @@ public class Rig {
 		if(!cavando) {
 			cavando = true;
 			if(metrosCavados < unaParcela.getProfundidad()) {
-				metrosCavados += velocidadDeCavadoXDia/ unaParcela.getTipoDeTerreno().tipoDeTerreno();
+				metrosCavados += (velocidadDeCavadoXDia*unaParcela.getTipoDeTerreno().tipoDeTerreno())/100;
 			}
 			else {
 				unaParcela.crearPoso();
