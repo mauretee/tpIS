@@ -15,6 +15,7 @@ public class Simulacion {
 	private List<Rig> _listaRigs;
 	//private Reader _reader;
 	private Reader _reader;
+<<<<<<< HEAD
 	private List<Rig> rigsCavando;
 	private List<Tanque> tanquesEnConstruccion;
 	private List<Planta> plantasEnConstruccion;
@@ -40,11 +41,14 @@ public class Simulacion {
 		this._equipoIngenieria = new EquipoIngenieria(_yacimiento,_presupuesto,_estadoFinanciero);
 		
 		this._context = new Context(this._listaRigs); 
+=======
+
+	public Simulacion(){
+		this._reader = new Reader();
+		this._equipoIngenieria=  this._reader.getEquipoIngenieria();// new EquipoIngenieria(this._reader);
+		this._context= new Context(this._reader);
+>>>>>>> c93d756c8b3d3edf474eee71064a681aeaaef99c
 		this._logger= new Logger();
-		
-		rigsCavando = new ArrayList<Rig>();
-		tanquesEnConstruccion = new ArrayList<Tanque>();
-		plantasEnConstruccion = new ArrayList<Planta>();
 	}
 
 
@@ -69,29 +73,27 @@ public class Simulacion {
 	
 	private void tareasEnSimulacion() {
 		//Seguimos contrullendo los pozos
-		if(!rigsCavando.isEmpty()) {
-			for(Rig unRig : rigsCavando){
+		List<Rig> rigs =_context.getRigs();
+		if(!rigs.isEmpty()) {
+			for(Rig unRig : _context.getRigs()){
 				if(unRig.isCavando())
 					unRig.seguirCavando();
-				else
-					rigsCavando.remove(unRig);
-			}			
-		}
-		//seguimos construllendo los tanques
-		if(!tanquesEnConstruccion.isEmpty()){
-			for(Tanque unTanque : tanquesEnConstruccion){
-				if(!unTanque.estaCosntruido())
-					unTanque.construirUnDia();
-				else
-					tanquesEnConstruccion.remove(unTanque);
 			}
 		}
-		if(!plantasEnConstruccion.isEmpty()){
-			for(Planta unaPlanta : plantasEnConstruccion){
-				if(!unaPlanta.plantaEnConstruccion())
+		//seguimos construllendo los tanques
+		List<Tanque> tanques = _context.getTanques();
+		if(!tanques.isEmpty()){
+			for(Tanque unTanque : tanques){
+				if(!unTanque.estaCosntruido())
+					unTanque.construirUnDia();
+			}
+		}
+		//Seguimos construllendo plantas
+		List<Planta> plantas = _context.getPlantas();
+		if(!plantas.isEmpty()){
+			for(Planta unaPlanta : plantas){
+				if(unaPlanta.plantaEnConstruccion())
 					unaPlanta.construirUnDia();
-				else
-					plantasEnConstruccion.remove(unaPlanta);
 			}
 		}
 	}
