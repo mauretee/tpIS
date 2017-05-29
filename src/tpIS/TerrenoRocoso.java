@@ -7,11 +7,13 @@ public class TerrenoRocoso implements Terreno{
 		resistencia = resistenciaDelTerreno;
 	}
 	
+	@Override
 	public int tipoDeTerreno(){
         System.out.println("Rocoso");
         return 1;
 	}
 	
+	@Override
 	public int resistenciaAlRig() {
 		return resistencia;
 	}

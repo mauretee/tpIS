@@ -25,7 +25,7 @@ public class Rig {
 	public void seguirCavando() {
 		if(cavando) {
 			if(metrosCavados < parcelaATrabajar.getProfundidad()) {
-				metrosCavados += (velocidadDeCavadoXDia*parcelaATrabajar.getTipoDeTerreno().tipoDeTerreno())/100;
+				metrosCavados += (velocidadDeCavadoXDia*parcelaATrabajar.getTipoDeTerreno().resistenciaAlRig())/100;
 			}
 			else {
 				parcelaATrabajar.crearPozo();
