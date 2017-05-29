@@ -4,7 +4,6 @@ import java.util.List;
 
 public abstract class Equipo {
 
-	public List<Criterio> _criterios;
 	public Yacimiento _yacimiento;
 	public Presupuesto _presupuesto;
 	public EstadoFinanciero _estadoFinanciero;

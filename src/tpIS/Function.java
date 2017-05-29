@@ -2,5 +2,5 @@ package tpIS;
 
 public interface Function {
 	 
-	 public void Apply(Context context);
+	 public void Apply(Context context, Equipo equipo);
 }

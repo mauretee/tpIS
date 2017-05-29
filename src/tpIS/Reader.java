@@ -118,7 +118,8 @@ public class Reader {
 			/*
 			 * Leemos los parametros de cada RIG
 			 */
-			String rigsCant = br.readLine(); 
+			/*
+			String rigsCant = "1";// br.readLine(); 
 			this.cantidadDeModelosDeRigs = Integer.parseInt(rigsCant);
 
 			metrosXDiaRig = new HashMap<Integer, Integer>();
@@ -135,18 +136,19 @@ public class Reader {
 				Entrada = null;
 				String linea = br.readLine();
 				Entrada = linea.split(" ");
-			    metrosRig = new Integer(Integer.parseInt(Entrada[0]));
-			    combustible = new Double(Double.parseDouble(Entrada[1]));
-				precio = new Double(Double.parseDouble(Entrada[2]));
-				minimo = new Integer(Integer.parseInt(Entrada[3]));
+			    metrosRig = 10;//new Integer(Integer.parseInt(Entrada[0]));
+			    combustible = 10.00;//new Double(Double.parseDouble(Entrada[1]));
+				precio = 10.00;//new Double(Double.parseDouble(Entrada[2]));
+				minimo = 10;//new Integer(Integer.parseInt(Entrada[3]));
 				metrosXDiaRig.put(indice, metrosRig);
 				consumoRig.put(indice,combustible);
 				PrecioRig.put(indice, precio);
 				cantidadMinimaDeDiasRig.put(indice,minimo);
 				
 			}
-			String ten2 = br.readLine(); 
-			this.limitDayQuantity = Integer.parseInt(ten2);
+			String ten2 = br.readLine();
+			*/ 
+			this.limitDayQuantity = 10;//Integer.parseInt(ten2);
 			
 		} catch (IOException e) {
 
@@ -277,7 +279,7 @@ public class Reader {
 
 	
 	public int getLimitDaysQuantity(){
-		return limitDayQuantity;
+		return this.limitDayQuantity;
 	}
 
 	

@@ -23,7 +23,7 @@ public class Simulacion {
 			List<Closure> actions = this._equipoIngenieria.Evaluate(this._context);
 			for(Closure action : actions)
 			{
-				action.Apply(this._context);
+				action.Apply(this._context, this._equipoIngenieria);
 				this._logger.Log(this._context.GetLastEventsToLog());				
 			}
 			/*this._logger.Log("Estado financiero actual: "+

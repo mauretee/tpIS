@@ -5,10 +5,15 @@ import java.util.List;
 public class CriterioParadaPorDia extends CriterioParada {
 
 	private int _limitDay;
+	
 	public CriterioParadaPorDia(Equipo equipo) {
 		super(equipo);
-		this._limitDay = super._reader.getLimitDaysQuantity();
-		// TODO Auto-generated constructor stub
+		
+		this._reader = equipo._reader;		
+		this._yacimiento = equipo._yacimiento;
+		this._presupuesto = equipo._presupuesto;
+		this._estadoFinanciero = equipo._estadoFinanciero;
+		this._limitDay = this._reader.getLimitDaysQuantity();
 	}
 
 	
@@ -20,7 +25,7 @@ public class CriterioParadaPorDia extends CriterioParada {
 		if(context.GetDay() >= this._limitDay){
 			Function parar = new Function() {
 		        @Override
-		        public void Apply(Context context)  {
+		        public void Apply(Context context, Equipo equipo)  {
 		            context.Finish();
 		        }
 		    };
