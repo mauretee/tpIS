@@ -12,10 +12,17 @@ public class Logger {
 	public Logger() {
 		try {
 			Date fecha = new Date();
-	        file = new File(fecha.toString()+ "log.txt");
+	        file = new File(fecha.getTime()+ "log.txt");
 		} finally {
         	//??
         }
+		
+		try {
+			file.createNewFile();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		
 	}
 	
