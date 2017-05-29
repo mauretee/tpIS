@@ -17,7 +17,7 @@ public class Planta {
 		if(plantaEnConstruccion())
 			diasDeConstruccionActual++;
 		
-	} 
+	}
 	
 	public boolean plantaEnConstruccion() {
 		return diasDeConstruccionActual < diasDeConstruccionTotal;
