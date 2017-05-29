@@ -19,5 +19,22 @@ public class Pozo {
 	public Estado getEstado() {
 		return estado;
 	}
+	
+	public void extraer() {
+		estado = estado.Extrayendo;
+	}
+	
+	public void reinyectarPozo() {
+		estado = estado.enReinyeccion;
+	}
+	
+	public void cerrarValvula() {
+		estado = estado.ParadoPorSindicato;
+		calcularPrecion();
+	}
+	
+	private void calcularPrecion() {
+		
+	}
 
 }
