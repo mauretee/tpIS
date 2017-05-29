@@ -1,5 +1,44 @@
 package tpIS;
 
 public class Planta {
-
+	private int diasDeConstruccionActual;
+	private int diasDeConstruccionTotal; //estaria bueno q fuera unsigned int
+	private double poderProcesamientoDia;
+	private double cantidadProcesamientoRestante;
+	
+	public Planta(int diasQueTardaEnConstruirse, double capacidadDeProsesamientoXDia) {
+		diasDeConstruccionTotal = diasQueTardaEnConstruirse;
+		diasDeConstruccionActual = 0;
+		poderProcesamientoDia = capacidadDeProsesamientoXDia;
+		cantidadProcesamientoRestante = poderProcesamientoDia;
+	}
+	
+	public void construirUnDia() {
+		if(plantaEnConstruccion())
+			diasDeConstruccionActual++;
+		
+	}
+	
+	public boolean plantaEnConstruccion() {
+		return diasDeConstruccionActual < diasDeConstruccionTotal;
+	}
+	
+	public void procesar(double cantidadProcesamiento) {
+		if(!plantaEnConstruccion()) {
+			if(cantidadProcesamientoRestante >= cantidadProcesamiento)
+				cantidadProcesamientoRestante -= cantidadProcesamiento;
+			else
+				System.err.println("No hay sufucuente capacidad de procesamiento para procesar dicha cantidad");
+		}
+		else
+			System.err.println("La planta no esta construida aun");
+	}
+	
+	public double getCapacidadDeProcesamiento() {
+		return poderProcesamientoDia;
+	}
+	
+	public double getCapacidadDeProcesamientoRestante() {
+		return cantidadProcesamientoRestante;
+	}
 }
