@@ -5,11 +5,7 @@ import java.util.List;
 public class CriterioDePerforacionEnTodaParcela extends CriterioDePerforacion{
 	
 	public CriterioDePerforacionEnTodaParcela(Equipo equipo) {
-		super(equipo);		
-		this._reader = equipo._reader;		
-		this._yacimiento = equipo._yacimiento;
-		this._presupuesto = equipo._presupuesto;
-		this._estadoFinanciero = equipo._estadoFinanciero;
+		super(equipo);			
 	}
 
 	@Override
@@ -19,13 +15,16 @@ public class CriterioDePerforacionEnTodaParcela extends CriterioDePerforacion{
 			Function perforar = new Function() {
 		        @Override
 		        public void Apply(Context context, Equipo equipo)  {
-		        	for(int i = 0; i< equipo._yacimiento.listaDeParcelas.size(); i++){		        		
+		        	int i = 0;
+		        	for(Parcela parcela : equipo._yacimiento.listaDeParcelas){		        		
+		        		if(i<context.getRigs().size() && !parcela.tienePozo() && !context.getRigs().get(i).isCavando()){
+		        			Rig rig = context.getRigs().get(i);
+			        		rig.cavarPozoEnParcela(parcela);
+			        		//TODO: llamar al calculador de costo y 
+		        		}
+		        				        		
+		        		i++;
 		        		
-		        		Rig rig = context.getRigs().get(0);
-		        		rig.cavarPozoEnParcela(equipo._yacimiento.listaDeParcelas.get(i));		        		
-		        		
-		        		//double costo =  presupuesto.getCostoDeRig(rigs.get(0));
-		        		//estado.debit(costo);		        		
 		        	}
 		        }
 		    };
