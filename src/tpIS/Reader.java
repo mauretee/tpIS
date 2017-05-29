@@ -20,6 +20,7 @@ public class Reader {
 	private Map<Integer,Integer> tipoDeParcelas;
 	private Map<Integer,Integer>	 profundidaDeParcelas;
 	//Variables para Rig
+	private int cantidadDeModelosDeRigs;
 	private Map<Integer, Integer> metrosXDiaRig;
 	private Map<Integer,Double> consumoRig;
 	private Map<Integer,Double>	 PrecioRig;
@@ -52,7 +53,9 @@ public class Reader {
 			 *	"""
 			 *	"""
 			 *	"""
+			 *	5 	//Cantidad de modelos de rigs a ingresar
 			 *	20 5 100 8 //Cantidad de metros q cava por dia el Rig 1, consumo de combustible, precio de alquiler x dia, dias minimos de alquiler
+			 *	""""
 			 *	""""
 			 *	""""
 			 *	""""
@@ -115,7 +118,9 @@ public class Reader {
 			/*
 			 * Leemos los parametros de cada RIG
 			 */
-			
+			String rigsCant = br.readLine(); 
+			this.cantidadDeModelosDeRigs = Integer.parseInt(rigsCant);
+
 			metrosXDiaRig = new HashMap<Integer, Integer>();
 			cantidadMinimaDeDiasRig = new HashMap<Integer, Integer>();
 			consumoRig = new HashMap<Integer, Double>();
@@ -125,7 +130,7 @@ public class Reader {
 			Double combustible;
 			Double precio;
 			Integer minimo;
-			for( int i = 0; i < maximaCantidadDeRigs; ++i){ //FIX ME ????
+			for( int i = 0; i < cantidadDeModelosDeRigs; ++i){ 
 				Integer indice = new Integer(i);
 				Entrada = null;
 				String linea = br.readLine();
@@ -244,7 +249,7 @@ public class Reader {
 	
 	public List<Rig> getRigs(){
 		List<Rig> result = new ArrayList<Rig>();
-		for( int i = 0; i < maximaCantidadDeRigs; ++i){
+		for( int i = 0; i < cantidadDeModelosDeRigs; ++i){
 			Rig rig  = new Rig(metrosXDiaRig.get(i), consumoRig.get(i));
 			result.add(rig);
 		}
