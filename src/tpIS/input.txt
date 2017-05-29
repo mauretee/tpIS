@@ -10,7 +10,8 @@
 5 3 50000
 5 1 60000
 10
-Cantidad de modelos distintos de RIGS.
+1
+100 10 10 5
 Cantidad de metros que cava por dia el Rig modelo 1, Consumo de combustible por dia en litros, precio de alquiler por dia, dias minimos de alquiler
 ...
 Cantidad de metros que cava por dia el Rig modelo N, Consumo de combustible por dia en litros, precio de alquiler por dia, dias minimos de alquiler
