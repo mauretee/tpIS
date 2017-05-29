@@ -220,29 +220,8 @@ public class Reader {
 	public Map<Integer, Integer> getProfundidaDeParcelas(){
 		return profundidaDeParcelas;
 	}
-
+	
 	/*
-	public List<Criterio> getCriterios(){
-		List<Criterio> result = new ArrayList<Criterio>();		
-		result.add(new CriterioParadaPorDia(this));
-		result.add(new CriterioDePerforacionEnTodaParcela(this));
-		return result;
-	}*/
-
-	public Equipo getEquipoIngenieria(){
-		Equipo result = new EquipoIngenieria(this);
-        result = new CriterioParadaPorDia(result);
-        result = new CriterioDePerforacionEnTodaParcela(result);
-        return result;
-		
-	}
-	
-	public Composicion getComposicion(){
-		Composicion result = new Composicion(this.getComposicionDeAgua(),
-				this.getComposicionDePetroleo(),this.getComposicionDeGas());
-		return result;
-	}
-	
 	public List<Parcela> getParcelas(){
 		List<Parcela> result = new ArrayList<Parcela>();
 		
@@ -254,7 +233,18 @@ public class Reader {
 				
 		return result;
 	}
+	*/
+	public int getCantidadDeModelosDeRigs(){
+		return this.cantidadDeModelosDeRigs;
+	}
 	
+	public Map<Integer, Integer> getMetrosXDiaRig(){
+		return this.metrosXDiaRig;
+	}
+	public Map<Integer, Double> getConsumoRig(){
+		return this.consumoRig;
+	}
+	/*
 	
 	public List<Rig> getRigs(){
 		List<Rig> result = new ArrayList<Rig>();
@@ -266,7 +256,8 @@ public class Reader {
 				
 		return result;
 	}
-	
+	*/
+	/*
 	public Yacimiento getYacimiento(){
 		int volumen = this.getVolumenYacimiento();
 		Composicion composition = this.getComposicion();			
@@ -274,21 +265,24 @@ public class Reader {
 		Yacimiento result= new Yacimiento(volumen,composition,parcelas);			
 		return result;
 	}
+	*/
 
 	
 	public int getLimitDaysQuantity(){
 		return this.limitDayQuantity;
 	}
 
-	
+	/*
 	public Presupuesto getPresupuesto(){
 		return new Presupuesto();
 	}
+	*/
 	
+	/*
 	public EstadoFinanciero getEstadoFinanciero(){
 		//FIX ME! READ THE INITIAL STATUS FROM FILE
 		return new EstadoFinanciero(10000);
 	}
-	
+	*/
 	
 }

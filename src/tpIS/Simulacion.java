@@ -1,18 +1,42 @@
 package tpIS;
+import java.util.ArrayList;
 import java.util.List;
 import tpIS.Closure;
 
 public class Simulacion {
-
+	private Composicion _composicion;
+	private List<Parcela> _parcelas;
 	private Equipo _equipoIngenieria;
+	private Yacimiento _yacimiento;
+	private Presupuesto _presupuesto;
+	private EstadoFinanciero _estadoFinanciero;
 	private Context _context;
 	private Logger _logger;
-	private Reader _reader;
+	private List<Rig> _listaRigs;
+	//private Reader _reader;
 
-	public Simulacion(){
-		this._reader = new Reader();
-		this._equipoIngenieria=  this._reader.getEquipoIngenieria();// new EquipoIngenieria(this._reader);
-		this._context= new Context(this._reader);
+	public Simulacion(Reader _reader){
+		this._composicion = new Composicion(_reader.getComposicionDeAgua(),
+				_reader.getComposicionDePetroleo(),_reader.getComposicionDeGas());
+		this._parcelas = new ArrayList<Parcela>();
+		for( int i = 0; i < _reader.getCantidadDeParcelas(); ++i){
+			Parcela parcela  = new Parcela(_reader.getPresionInicialDeParcelas().get(i),
+					new TerrenoRocoso(80), _reader.getPresionInicialDeParcelas().get(i));
+			this._parcelas.add(parcela);
+		}
+		
+		this._listaRigs = new ArrayList<Rig>();
+		for( int i = 0; i < _reader.getMaximaCantidadDeRigs(); ++i){
+			Rig rig  = new Rig(_reader.getMetrosXDiaRig().get(i), _reader.getConsumoRig().get(i));
+			this._listaRigs.add(rig);
+		}
+		this._yacimiento = new Yacimiento(_reader.getVolumenYacimiento(),_composicion,
+				this._parcelas);
+		this._presupuesto = new Presupuesto();
+		this._estadoFinanciero = new EstadoFinanciero(1000); //FIX ME! READ THE INITIAL STATUS FROM FILE
+		this._equipoIngenieria = new EquipoIngenieria(_yacimiento,_presupuesto,_estadoFinanciero);
+		
+		this._context = new Context(this._listaRigs); 
 		this._logger= new Logger();
 	}
 

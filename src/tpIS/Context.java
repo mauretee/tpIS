@@ -11,11 +11,11 @@ public class Context {
 	private List<Planta> _plantas;
 	private List<Tanque> _tanques;	
 	
-	public Context(Reader reader){
+	public Context(List<Rig> _rigs){
 		
 		this._actualDay = 0;
 		this._continue = true;
-		this._rigs = reader.getRigs(); 
+		this._rigs = _rigs; 
 	}
 	
 	public int GetDay(){
