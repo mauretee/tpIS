@@ -1,13 +1,14 @@
 package tpIS;
 
-public abstract class Tanque {
+public abstract class Tanque extends ContextObserver {
 	protected int diasDeConstruccionActual;
 	protected int diasDeConstruccionTotal;
 	//protected double costoConstruccion;
 	protected double volumenTotal;
 	protected double volumenOcupadoActual;
 	
-	public Tanque(double volumen, int diasDeConstruccion) {
+	public Tanque(double volumen, int diasDeConstruccion, Context unContexto) {
+		super(unContexto);
 		diasDeConstruccionTotal= diasDeConstruccion;
 		volumenTotal = volumen;
 		volumenOcupadoActual =0;

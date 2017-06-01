@@ -31,12 +31,7 @@ public class Simulacion {
 		 * Creamos la lista de rigs que podemos alquilar, y al mismo tiempo creamos su lista
 		 * de precios para poder agregarla al presupuesto (indexado por el mismo orden por ahora)
 		 */
-		for( int i = 0; i < _reader.getMaximaCantidadDeRigs(); ++i){
-			Rig rig  = new Rig(_reader.getMetrosXDiaRig().get(i), _reader.getConsumoRig().get(i));
-			this._listaRigs.add(rig);
-			costoDelRig rigCost = new costoDelRig(_reader.getPrecioRig().get(i), _reader.getConsumoRig().get(i), _reader.getCantidadMinimaDeDiasRig().get(i), rig);
-			costosRigs.add(rigCost);
-		}
+
 		//FIX ME FALTA Q EL READER LEVANTE LOS PRECIOS DE PLANTAS Y TANQUES!
 		List<Double> preciosPlantas = new ArrayList<Double>();
 		List<Double> preciosTanques = new ArrayList<Double>();
@@ -48,6 +43,14 @@ public class Simulacion {
 		this._equipoIngenieria = new EquipoIngenieria(_yacimiento,_presupuesto,_estadoFinanciero);
 		
 		this._context = new Context(this._listaRigs, _reader.getLimitDaysQuantity());  
+		
+		for( int i = 0; i < _reader.getMaximaCantidadDeRigs(); ++i){
+			Rig rig  = new Rig(_reader.getMetrosXDiaRig().get(i), _reader.getConsumoRig().get(i), _context);
+			this._listaRigs.add(rig);
+			costoDelRig rigCost = new costoDelRig(_reader.getPrecioRig().get(i), _reader.getConsumoRig().get(i), _reader.getCantidadMinimaDeDiasRig().get(i), rig);
+			costosRigs.add(rigCost);
+		}
+		
 		this._logger= new Logger();
 	}
 

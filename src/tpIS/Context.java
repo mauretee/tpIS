@@ -1,5 +1,6 @@
 package tpIS;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Context {
@@ -11,6 +12,7 @@ public class Context {
 	private List<Rig> _rigs;
 	private List<Planta> _plantas;
 	private List<Tanque> _tanques;	
+	private List<ContextObserver> Observadores;
 	
 	public Context(List<Rig> _rigs, int LimitDay){
 		
@@ -18,6 +20,8 @@ public class Context {
 		this._actualDay = 0;
 		this._continue = true;
 		this._rigs = _rigs; 
+		Observadores = new ArrayList<ContextObserver>();
+		
 	}
 	
 	public int GetDay(){
@@ -26,7 +30,8 @@ public class Context {
 	
 	public void FinishDay(){		
 		this._actualDay+=1;
-		
+		for (ContextObserver observer : Observadores) 
+	         observer.updateDay();		
 	}
 	
 	public String GetLastEventsToLog(){
@@ -56,6 +61,10 @@ public class Context {
 	
 	public int getLimitDay(){
 		return this._limitDay;
+	}
+	
+	public void attach(ContextObserver observer){
+		Observadores.add(observer);		
 	}
 	
 }

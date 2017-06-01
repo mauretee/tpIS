@@ -57,4 +57,5 @@ public class Parcela {
 	public boolean pozoEnConstruccion() {
 		return (profundidadActua == 0) && (profundidadActua < profundidadNecesaria);
 	}
+	
 }

@@ -1,12 +1,13 @@
 package tpIS;
 
-public class Planta {
+public class Planta extends ContextObserver {
 	private int diasDeConstruccionActual;
 	private int diasDeConstruccionTotal; //estaria bueno q fuera unsigned int
 	private double poderProcesamientoDia;
 	private double cantidadProcesamientoRestante;
 	
-	public Planta(int diasQueTardaEnConstruirse, double capacidadDeProsesamientoXDia) {
+	public Planta(int diasQueTardaEnConstruirse, double capacidadDeProsesamientoXDia, Context unContexto) {
+		super(unContexto);
 		diasDeConstruccionTotal = diasQueTardaEnConstruirse;
 		diasDeConstruccionActual = 0;
 		poderProcesamientoDia = capacidadDeProsesamientoXDia;
@@ -40,5 +41,9 @@ public class Planta {
 	
 	public double getCapacidadDeProcesamientoRestante() {
 		return cantidadProcesamientoRestante;
+	}
+	
+	public void updateDay() {
+		
 	}
 }

@@ -1,13 +1,14 @@
 package tpIS;
 
-public class Rig {
+public class Rig extends ContextObserver {
 	private int velocidadDeCavadoXDia = 1;
 	private double consumCombustibleXDia = 1;
 	//private int metrosCavados = 0;
 	private boolean cavando = false;
 	//private Parcela parcelaATrabajar;
 	
-	public Rig(int VelocidadDeCavadoXDIA, double ConsumoDeCombustibleXDIA) {
+	public Rig(int VelocidadDeCavadoXDIA, double ConsumoDeCombustibleXDIA, Context unContexto) {
+		super(unContexto);
 		velocidadDeCavadoXDia = VelocidadDeCavadoXDIA;
 		consumCombustibleXDia = ConsumoDeCombustibleXDIA;
 	}
@@ -52,6 +53,10 @@ public class Rig {
 
 	public boolean isCavando() {
 		return cavando;
+	}
+	
+	public void updateDay() {
+		cavando = false;
 	}
 	
 }
