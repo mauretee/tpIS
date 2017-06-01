@@ -73,13 +73,13 @@ public class Simulacion {
 	
 	private void tareasEnSimulacion() {
 		//Seguimos contrullendo los pozos
-		List<Rig> rigs =_context.getRigs();
+		/*List<Rig> rigs =_context.getRigs();
 		if(!rigs.isEmpty()) {
 			for(Rig unRig : _context.getRigs()){
 				if(unRig.isCavando())
 					unRig.seguirCavando();
 			}
-		}
+		}*/
 		//seguimos construllendo los tanques
 		List<Tanque> tanques = _context.getTanques();
 		if(!tanques.isEmpty()){
