@@ -14,9 +14,11 @@ public class Planta extends ContextObserver {
 		cantidadProcesamientoRestante = poderProcesamientoDia;
 	}
 	
-	public void construirUnDia() {
+	private void construirUnDia() {
 		if(plantaEnConstruccion())
 			diasDeConstruccionActual++;
+		else
+			System.err.println("Esta planta no esta en construccion.");
 		
 	}
 	
@@ -44,6 +46,7 @@ public class Planta extends ContextObserver {
 	}
 	
 	public void updateDay() {
-		
+		if(plantaEnConstruccion())
+			construirUnDia();
 	}
 }

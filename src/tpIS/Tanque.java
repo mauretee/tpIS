@@ -34,7 +34,7 @@ public abstract class Tanque extends ContextObserver {
 		return diasDeConstruccionActual == diasDeConstruccionTotal;
 	}
 	
-	public void construirUnDia() {
+	protected void construirUnDia() {
 		if(!estaCosntruido())
 			diasDeConstruccionActual++;
 		else

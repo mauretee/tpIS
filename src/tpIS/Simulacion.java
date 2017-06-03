@@ -75,29 +75,6 @@ public class Simulacion {
 	}
 	
 	private void tareasEnSimulacion() {
-		//Seguimos contrullendo los pozos
-		/*List<Rig> rigs =_context.getRigs();
-		if(!rigs.isEmpty()) {
-			for(Rig unRig : _context.getRigs()){
-				if(unRig.isCavando())
-					unRig.seguirCavando();
-			}
-		}*/
-		//seguimos construllendo los tanques
-		List<Tanque> tanques = _context.getTanques();
-		if(!tanques.isEmpty()){
-			for(Tanque unTanque : tanques){
-				if(!unTanque.estaCosntruido())
-					unTanque.construirUnDia();
-			}
-		}
-		//Seguimos construllendo plantas
-		List<Planta> plantas = _context.getPlantas();
-		if(!plantas.isEmpty()){
-			for(Planta unaPlanta : plantas){
-				if(unaPlanta.plantaEnConstruccion())
-					unaPlanta.construirUnDia();
-			}
-		}
+
 	}
 }

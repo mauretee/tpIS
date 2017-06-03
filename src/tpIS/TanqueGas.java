@@ -12,6 +12,7 @@ public class TanqueGas extends Tanque {
 	}
 	
 	public void updateDay() {
-		
+		if(!estaCosntruido())
+			construirUnDia();
 	}
 }

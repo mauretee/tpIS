@@ -11,6 +11,7 @@ public class TanqueAgua extends Tanque {
 	}
 	
 	public void updateDay() {
-		
+		if(!estaCosntruido())
+			construirUnDia();
 	}
 }

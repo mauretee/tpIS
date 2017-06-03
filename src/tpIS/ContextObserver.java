@@ -1,10 +1,11 @@
 package tpIS;
 
 public abstract class ContextObserver {
-	Context unUncontexto;
+	Context unContexto;
 	
-	public ContextObserver(Context UnUncontexto) {
-		unUncontexto = UnUncontexto;
+	public ContextObserver(Context UnContexto) {
+		unContexto = UnContexto;
+		unContexto.attach(this);
 	}
 	
 	public void updateDay(){}
