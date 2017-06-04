@@ -30,6 +30,7 @@ public class Simulacion {
 			this._context.FinishDay();
 
 		}
+		this._logger.Log("Finaliza la simulacion");
 
 	}
 	

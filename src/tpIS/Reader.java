@@ -87,6 +87,7 @@ public class Reader {
 			presionInicialDeParcelas = new HashMap<Integer, Integer>();
 			tipoDeParcelas = new HashMap<Integer, Integer>();
 			profundidaDeParcelas = new HashMap<Integer, Integer>();
+			resistenciaDeParcelas = new HashMap<Integer, Integer>();
 			String[] str;
 			Integer presionInicial;
 			Integer tipoDeParecela;
@@ -152,6 +153,11 @@ public class Reader {
 			Integer cantidadDeProcesamientoInt;
 			Integer cantidadDeDiasDeConstrucionInt;
 			Integer costoDePlantasInt;
+			cantidadDeProcesamiento = new HashMap<Integer, Integer>();
+			cantidadDeDiasDeConstrucion = new HashMap<Integer, Integer>();
+			costoDePlantas = new HashMap<Integer, Integer>();
+			
+			
 			for(int i = 0; i < cantidadDePlantas; ++i){
 				Integer indice = new Integer(i);
 				String line = br.readLine();
@@ -176,6 +182,12 @@ public class Reader {
 			Integer tipoDeTanquesInt;
 			Integer diasDeConstrucionDeTanqueInt;
 			Integer costoDeTanquesInt;
+			
+			capacidadDeTanques = new HashMap<Integer, Integer>();
+			tipoDeTanques = new HashMap<Integer, Integer>();
+			diasDeConstrucionDeTanque = new HashMap<Integer, Integer>();
+			costoDeTanques = new HashMap<Integer, Integer>();
+			
 			for(int i = 0; i < cantidaDeModelosDeTanque; ++i){
 				Integer indice = new Integer(i);
 				String line = br.readLine();
@@ -357,8 +369,9 @@ public class Reader {
 		return new EstadoFinanciero(1000);
 	}
 	
-	public EquipoIngenieria getEquipoIngenieria(){
-		EquipoIngenieria result = new EquipoIngenieria(this);
+	public Equipo getEquipoIngenieria(){
+		Equipo result = new EquipoIngenieria(this);
+		result = new CriterioParadaPorDia(result);		
 		return result;
 	}
 }
