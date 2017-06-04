@@ -6,11 +6,11 @@ import java.util.List;
 public class EquipoIngenieria extends Equipo{
 	
 		
-	public EquipoIngenieria(Yacimiento yacimiento, Presupuesto presupuesto, EstadoFinanciero estadoFinanciero){
-		//this._reader = reader;		
-		this._yacimiento = yacimiento; //reader.getYacimiento();
-		this._presupuesto = presupuesto; //reader.getPresupuesto();
-		this._estadoFinanciero = estadoFinanciero; //reader.getEstadoFinanciero();		
+	public EquipoIngenieria(Reader reader){
+		this._reader = reader;		
+		this._yacimiento = reader.getYacimiento();
+		this._presupuesto = reader.getPresupuesto();
+		this._estadoFinanciero = reader.getEstadoFinanciero();		
 	}
 	
 	@Override

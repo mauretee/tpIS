@@ -6,7 +6,6 @@ import java.util.List;
 public class Context {
 
 	private String _lastEventToLog = ""; 
-	private int _limitDay;
 	private int _actualDay;
 	private Boolean _continue;	
 	private List<Rig> _rigs;
@@ -14,12 +13,10 @@ public class Context {
 	private List<Tanque> _tanques;	
 	private List<ContextObserver> Observadores;
 	
-	public Context(List<Rig> _rigs, int LimitDay){
-		
-		_limitDay = LimitDay;
+	public Context(){
+			
 		this._actualDay = 0;
-		this._continue = true;
-		this._rigs = _rigs; 
+		this._continue = true;		
 		Observadores = new ArrayList<ContextObserver>();
 		
 	}
@@ -58,10 +55,7 @@ public class Context {
 	public List<Tanque> getTanques(){
 		return this._tanques;
 	}
-	
-	public int getLimitDay(){
-		return this._limitDay;
-	}
+		
 	
 	public void attach(ContextObserver observer){
 		Observadores.add(observer);		

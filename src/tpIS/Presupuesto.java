@@ -1,26 +1,15 @@
 package tpIS;
 
 import java.util.List;
+import java.util.Map;
 
 public class Presupuesto {	
 	
-	private double precioPetroleo;
-	private double precioGas;
-	private double precioDeCompraDeAgua; //para los camionsitos de agua
-	private List<costoDelRig> costosDeLosRigs;
-	private List<Double> precioDePlantas;
-	private List<Double> precioDeTanques; //hay precio distinto por tanque de agua o gas??
 	
+	private Map<Object, Double> _costs;
 	
-	public Presupuesto(double precioPetroleo, double precioGas, double precioDeCompraDeAgua,
-			List<costoDelRig> costosDeLosRigs, List<Double> precioDePlantas, List<Double> precioDeTanques) {
-		super();
-		this.precioPetroleo = precioPetroleo;
-		this.precioGas = precioGas;
-		this.precioDeCompraDeAgua = precioDeCompraDeAgua;
-		this.costosDeLosRigs = costosDeLosRigs;
-		this.precioDePlantas = precioDePlantas;
-		this.precioDeTanques = precioDeTanques;
+	public Presupuesto(Map<Object, Double> costs) {		
+		this._costs = costs;
 	}
 
 	public double getCostoDeRig(Rig rig){		
@@ -28,45 +17,26 @@ public class Presupuesto {
 	}
 	
 	public double getCostoDeRigHastaElDia(int CantidadDeDias, Rig rig){	
-		costoDelRig costoRig;
-		costoRig= costosDeLosRigs.get(0);
-		for(int i=0; i<costosDeLosRigs.size();i++) {
-			if(costosDeLosRigs.get(i).getRigAsociado().equals(rig)) {
-				costoRig= costosDeLosRigs.get(i);
-				break;
-			}
+		//costoDelRig costoRig;
+					
+		double costoRigByDay= this._costs.get((Object)rig);		
+		double costoRig = 0;
+		/*
+		if(rig.getDiasMinimoDeAlquiler() >= CantidadDeDias) {
+			costoRig = costoRigByDay*CantidadDeDias + this._costs.get(rig.getTipoCombustible()) *CantidadDeDias;
 		}
-		
-		if(costoRig.getDiasMinimoDeAlquiler() >= CantidadDeDias) {
-			return costoRig.getPrecioRigs() + costoRig.getCombustibleDelRig()*CantidadDeDias;
+		else{
+			costoRig = costoRigByDay*rig.getDiasMinimoDeAlquiler() + this._costs.get(rig.getDiasMinimoDeAlquiler()) *CantidadDeDias;
 		}
-		else
-			System.err.println("La cantidad de dias debe ser >= que la minima de alquiler");
-	return 0; //??
+		*/
+		return costoRig; //??
 	}
 
-	public double getPrecioPetroleo() {
-		return precioPetroleo;
+	
+	public double getPrice(Object obj){
+		double result =this._costs.get(obj);		
+		return result; 
 	}
-
-	public double getPrecioGas() {
-		return precioGas;
-	}
-
-	public double getPrecioDeCompraDeAgua() {
-		return precioDeCompraDeAgua;
-	}
-
-	public List<costoDelRig> getCostosDeLosRigs() {
-		return costosDeLosRigs;
-	}
-
-	public List<Double> getPrecioDePlantas() {
-		return precioDePlantas;
-	}
-
-	public List<Double> getPrecioDeTanques() {
-		return precioDeTanques;
-	}
+	
 	
 }

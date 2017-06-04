@@ -323,4 +323,42 @@ public class Reader {
 		return dilucionCritica;
 	}
 
+	public Composicion getComposicion(){
+		Composicion result = new Composicion(this.getComposicionDeAgua(),
+				this.getComposicionDePetroleo(),this.getComposicionDeGas());
+		return result;
+	}
+	
+	
+	public List<Parcela> getParcelas(){
+		List<Parcela> parcels = new ArrayList<Parcela>();
+		for( int i = 0; i < this.getCantidadDeParcelas(); ++i){
+			Parcela parcela  = new Parcela(this.getPresionInicialDeParcelas().get(i),
+					new TerrenoRocoso(80), this.getPresionInicialDeParcelas().get(i), this.getResistenciaDeParcelas().get(i));
+			parcels.add(parcela);
+		}
+		return parcels;
+	}
+	
+	public Yacimiento getYacimiento(){
+		Yacimiento deposit = new Yacimiento(this.getVolumenYacimiento(),this.getComposicion(),
+				this.getParcelas());
+		
+		return deposit;		
+	}
+	
+	public Presupuesto getPresupuesto(){
+		Map<Object, Double> costos = new HashMap<Object, Double>();
+		Presupuesto budget = new Presupuesto(costos);
+		return budget;
+	}
+	
+	public EstadoFinanciero getEstadoFinanciero(){
+		return new EstadoFinanciero(1000);
+	}
+	
+	public EquipoIngenieria getEquipoIngenieria(){
+		EquipoIngenieria result = new EquipoIngenieria(this);
+		return result;
+	}
 }
