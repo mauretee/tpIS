@@ -13,6 +13,7 @@ public abstract class Tanque extends ContextObserver {
 		volumenTotal = volumen;
 		volumenOcupadoActual =0;
 		diasDeConstruccionActual =0;
+		unContexto.attachTanque(this);
 	}
 	
 	public double getVolumenTotal() {
