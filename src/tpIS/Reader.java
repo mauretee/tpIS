@@ -87,6 +87,7 @@ public class Reader {
 			presionInicialDeParcelas = new HashMap<Integer, Integer>();
 			tipoDeParcelas = new HashMap<Integer, Integer>();
 			profundidaDeParcelas = new HashMap<Integer, Integer>();
+			resistenciaDeParcelas = new HashMap<Integer, Integer>();
 			String[] str;
 			Integer presionInicial;
 			Integer tipoDeParecela;
@@ -149,6 +150,9 @@ public class Reader {
 			String linea = br.readLine();
 			cantidadDePlantas = new Integer(Integer.parseInt(linea));
 
+			cantidadDeProcesamiento = new HashMap<Integer, Integer>();
+			cantidadDeDiasDeConstrucion = new HashMap<Integer, Integer>();
+			costoDePlantas = new HashMap<Integer, Integer>();
 			Integer cantidadDeProcesamientoInt;
 			Integer cantidadDeDiasDeConstrucionInt;
 			Integer costoDePlantasInt;
@@ -170,6 +174,10 @@ public class Reader {
 			private Map<Integer, Integer> diasDeConstrucionDeTanque;
 			private Map<Integer, Integer> costoDeTanques;
 			*/
+			capacidadDeTanques = new HashMap<Integer, Integer>();
+			tipoDeTanques = new HashMap<Integer, Integer>();
+			diasDeConstrucionDeTanque = new HashMap<Integer, Integer>();
+			costoDeTanques = new HashMap<Integer, Integer>();
 			String lineaVeinte = br.readLine();
 			cantidaDeModelosDeTanque = Integer.parseInt(lineaVeinte);
 			Integer capacidaDeTanquesInt;
@@ -185,9 +193,9 @@ public class Reader {
 				diasDeConstrucionDeTanqueInt = new Integer(Integer.parseInt(Entrada[2]));
 				costoDeTanquesInt = new Integer(Integer.parseInt(Entrada[3]));
 				capacidadDeTanques.put(indice, capacidaDeTanquesInt);
-				tipoDeTanques.put(indice, tipoDeTanquesInt);;
-				diasDeConstrucionDeTanque.put(indice, diasDeConstrucionDeTanqueInt);;
-				costoDeTanques.put(indice, costoDeTanquesInt);;
+				tipoDeTanques.put(indice, tipoDeTanquesInt);
+				diasDeConstrucionDeTanque.put(indice, diasDeConstrucionDeTanqueInt);
+				costoDeTanques.put(indice, costoDeTanquesInt);
 			}
 			
 		} catch (IOException e) {
