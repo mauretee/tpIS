@@ -369,4 +369,13 @@ public class Reader {
 		EquipoIngenieria result = new EquipoIngenieria(this);
 		return result;
 	}
+	
+	
+	//FIX ME IMPLEMENTAR LA FUNCION DE CREACION DEL CATALOGO DE RIGS
+	public CatalogoDeRigs getCatalogoDeRigs() {
+		List<ModeloRig> Modelos = new ArrayList<ModeloRig>();
+		CatalogoDeRigs catalogo = new CatalogoDeRigs(Modelos);
+		
+		return catalogo;
+	}
 }

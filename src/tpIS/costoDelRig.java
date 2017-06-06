@@ -1,5 +1,7 @@
 package tpIS;
-
+/*
+ * Esta clase va a ser borrada!!!
+ */
 public class costoDelRig {
 	private double precioRig;
 	private double combustibleDelRig;

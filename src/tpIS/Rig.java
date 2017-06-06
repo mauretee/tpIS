@@ -1,31 +1,23 @@
 package tpIS;
 
 public class Rig extends ContextObserver {
-	private int velocidadDeCavadoXDia = 1;
-	private double consumCombustibleXDia = 1;
+	private int diasAlquilado=1;
+	private ModeloRig modelo;
+	
 	private boolean cavando = false;
 	
-	public Rig(int VelocidadDeCavadoXDIA, double ConsumoDeCombustibleXDIA, Context unContexto) {
+	public Rig(ModeloRig Modelo, Context unContexto) {
 		super(unContexto);
-		velocidadDeCavadoXDia = VelocidadDeCavadoXDIA;
-		consumCombustibleXDia = ConsumoDeCombustibleXDIA;
+		modelo = Modelo;
 	}
 	
 	public void cavarPozoEnParcela(Parcela unaParcela) {
 		if(!cavando) {
 			cavando = true;
-			unaParcela.cavar(velocidadDeCavadoXDia/((velocidadDeCavadoXDia*unaParcela.getTipoDeTerreno().resistenciaAlRig())/100));
+			unaParcela.cavar(modelo.getVelocidadDeCavadoXDia()/((modelo.getVelocidadDeCavadoXDia()*unaParcela.getTipoDeTerreno().resistenciaAlRig())/100));
 		}
 		else 
 			System.err.println("Un Rig no puede cavar en mas de un pozo a la ves");
-	}
-
-	public int getVelocidadDeCavadoXDia() {
-		return velocidadDeCavadoXDia;
-	}
-
-	public double getConsumCombustibleXDia() {
-		return consumCombustibleXDia;
 	}
 
 	public boolean isCavando() {
@@ -34,6 +26,11 @@ public class Rig extends ContextObserver {
 	
 	public void updateDay() {
 		cavando = false;
+		diasAlquilado++;
+	}
+	
+	public ModeloRig getModelo() {
+		return modelo;
 	}
 	
 }
