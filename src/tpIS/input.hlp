@@ -9,9 +9,9 @@ Presion inicial de boca de poso de la primer Parcela 1, tipo de Parcela de la pa
 Presion inicial de boca de poso de la primer Parcela N, tipo de Parcela de la parcela N, profundidad en metros, resistencia %(0..100).
 Cantidad de dias de la consecion del yacimiento.
 Cantidad de modelos distintos de RIGS.
-Cantidad de metros que cava por dia el Rig modelo 1, Consumo de combustible por dia en litros, precio de alquiler por dia en pesos, dias minimos de alquiler
+Cantidad de metros que cava por dia el Rig modelo 1, Consumo de combustible por dia en litros, precio de alquiler por dia en pesos, dias minimos de alquiler.
 ...
-Cantidad de metros que cava por dia el Rig modelo N, Consumo de combustible por dia en litros, precio de alquiler por dia en pesos, dias minimos de alquiler
+Cantidad de metros que cava por dia el Rig modelo N, Consumo de combustible por dia en litros, precio de alquiler por dia en pesos, dias minimos de alquiler.
 Cantidad de pozos a construir.
 Cantidad de modelos distintos de Plantas.
 Cantidad de metros cubicos que procesa por dia la Planta modelo 1, dias de construccion, costo en pesos.

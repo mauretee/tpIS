@@ -374,8 +374,12 @@ public class Reader {
 	//FIX ME IMPLEMENTAR LA FUNCION DE CREACION DEL CATALOGO DE RIGS
 	public CatalogoDeRigs getCatalogoDeRigs() {
 		List<ModeloRig> Modelos = new ArrayList<ModeloRig>();
-		CatalogoDeRigs catalogo = new CatalogoDeRigs(Modelos);
-		
+		//metrosXDiaRig.i
+		for(int i = 0; i < this.getCantidadDeModelosDeRigs(); ++i){
+			ModeloRig nuevoModelo = new ModeloRig(PrecioRig.get(i),consumoRig.get(i),cantidadMinimaDeDiasRig.get(i),metrosXDiaRig.get(i));
+			Modelos.add(nuevoModelo);
+		}		
+		CatalogoDeRigs catalogo = new CatalogoDeRigs(Modelos);	
 		return catalogo;
 	}
 }

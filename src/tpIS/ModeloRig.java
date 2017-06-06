@@ -3,13 +3,13 @@ package tpIS;
 public class ModeloRig {
 	private double precioRig;
 	private int diasMinimoDeAlquiler;
-	private int velocidadDeCavadoXDia = 1;
-	private double consumCombustibleXDia = 1;
+	private int velocidadDeCavadoXDia;// = 1;
+	private double consumCombustibleXDia;// = 1;
 	
 	public ModeloRig(double precio, double combustible, int dias, int velocidad) {
 		precioRig = precio;
 		diasMinimoDeAlquiler = dias;
-		velocidadDeCavadoXDia = 1;
+		velocidadDeCavadoXDia = velocidad;
 		consumCombustibleXDia = combustible;
 	}
 	
