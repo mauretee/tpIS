@@ -10,7 +10,8 @@ public class EquipoIngenieria extends Equipo{
 		this._reader = reader;		
 		this._yacimiento = reader.getYacimiento();
 		this._presupuesto = reader.getPresupuesto();
-		this._estadoFinanciero = reader.getEstadoFinanciero();		
+		this._estadoFinanciero = reader.getEstadoFinanciero();	
+		unCatalogoDeRigs = reader.getCatalogoDeRigs();
 	}
 	
 	@Override

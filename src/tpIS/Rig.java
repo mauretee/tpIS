@@ -1,55 +1,24 @@
 package tpIS;
 
 public class Rig extends ContextObserver {
-	private int velocidadDeCavadoXDia = 1;
-	private double consumCombustibleXDia = 1;
-	//private int metrosCavados = 0;
-	private boolean cavando = false;
-	//private Parcela parcelaATrabajar;
+	private int diasAlquilado=1;
+	private ModeloRig modelo;
 	
-	public Rig(int VelocidadDeCavadoXDIA, double ConsumoDeCombustibleXDIA, Context unContexto) {
+	private boolean cavando = false;
+	
+	public Rig(ModeloRig Modelo, Context unContexto) {
 		super(unContexto);
-		velocidadDeCavadoXDia = VelocidadDeCavadoXDIA;
-		consumCombustibleXDia = ConsumoDeCombustibleXDIA;
+		modelo = Modelo;
 	}
 	
 	public void cavarPozoEnParcela(Parcela unaParcela) {
 		if(!cavando) {
 			cavando = true;
-			unaParcela.cavar(velocidadDeCavadoXDia/((velocidadDeCavadoXDia*unaParcela.getTipoDeTerreno().resistenciaAlRig())/100));
-			//parcelaATrabajar = unaParcela; //FIX ME
+			unaParcela.cavar(modelo.getVelocidadDeCavadoXDia()/((modelo.getVelocidadDeCavadoXDia()*unaParcela.getTipoDeTerreno().resistenciaAlRig())/100));
 		}
 		else 
 			System.err.println("Un Rig no puede cavar en mas de un pozo a la ves");
 	}
-	
-	/*public void seguirCavando() {
-		if(cavando) {
-			if(metrosCavados < parcelaATrabajar.getProfundidad()) {
-				metrosCavados += (velocidadDeCavadoXDia*parcelaATrabajar.getTipoDeTerreno().resistenciaAlRig())/100;
-			}
-			else {
-				parcelaATrabajar.crearPozo();
-				metrosCavados =0;
-				cavando = false;
-				parcelaATrabajar = null;
-			}
-		}
-		else
-			System.err.println("Este Rig no esta asignado a ningun pozo.");
-	}*/
-
-	public int getVelocidadDeCavadoXDia() {
-		return velocidadDeCavadoXDia;
-	}
-
-	public double getConsumCombustibleXDia() {
-		return consumCombustibleXDia;
-	}
-
-	/*public int getMetrosCavados() {
-		return metrosCavados;
-	}*/
 
 	public boolean isCavando() {
 		return cavando;
@@ -57,6 +26,11 @@ public class Rig extends ContextObserver {
 	
 	public void updateDay() {
 		cavando = false;
+		diasAlquilado++;
+	}
+	
+	public ModeloRig getModelo() {
+		return modelo;
 	}
 	
 }

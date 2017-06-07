@@ -151,6 +151,9 @@ public class Reader {
 			String linea = br.readLine();
 			cantidadDePlantas = new Integer(Integer.parseInt(linea));
 
+			cantidadDeProcesamiento = new HashMap<Integer, Integer>();
+			cantidadDeDiasDeConstrucion = new HashMap<Integer, Integer>();
+			costoDePlantas = new HashMap<Integer, Integer>();
 			Integer cantidadDeProcesamientoInt;
 			Integer cantidadDeDiasDeConstrucionInt;
 			Integer costoDePlantasInt;
@@ -177,6 +180,10 @@ public class Reader {
 			private Map<Integer, Integer> diasDeConstrucionDeTanque;
 			private Map<Integer, Integer> costoDeTanques;
 			*/
+			capacidadDeTanques = new HashMap<Integer, Integer>();
+			tipoDeTanques = new HashMap<Integer, Integer>();
+			diasDeConstrucionDeTanque = new HashMap<Integer, Integer>();
+			costoDeTanques = new HashMap<Integer, Integer>();
 			String lineaVeinte = br.readLine();
 			cantidaDeModelosDeTanque = Integer.parseInt(lineaVeinte);
 			Integer capacidaDeTanquesInt;
@@ -198,9 +205,9 @@ public class Reader {
 				diasDeConstrucionDeTanqueInt = new Integer(Integer.parseInt(Entrada[2]));
 				costoDeTanquesInt = new Integer(Integer.parseInt(Entrada[3]));
 				capacidadDeTanques.put(indice, capacidaDeTanquesInt);
-				tipoDeTanques.put(indice, tipoDeTanquesInt);;
-				diasDeConstrucionDeTanque.put(indice, diasDeConstrucionDeTanqueInt);;
-				costoDeTanques.put(indice, costoDeTanquesInt);;
+				tipoDeTanques.put(indice, tipoDeTanquesInt);
+				diasDeConstrucionDeTanque.put(indice, diasDeConstrucionDeTanqueInt);
+				costoDeTanques.put(indice, costoDeTanquesInt);
 			}
 			
 		} catch (IOException e) {
@@ -379,5 +386,18 @@ public class Reader {
 		result = new CriterioParadaPorDia(result);		
 		result = new CriterioDeParadaXPerdidaDeCapital(result);
 		return result;
+	}
+	
+	
+	//FIX ME IMPLEMENTAR LA FUNCION DE CREACION DEL CATALOGO DE RIGS
+	public CatalogoDeRigs getCatalogoDeRigs() {
+		List<ModeloRig> Modelos = new ArrayList<ModeloRig>();
+		//metrosXDiaRig.i
+		for(int i = 0; i < this.getCantidadDeModelosDeRigs(); ++i){
+			ModeloRig nuevoModelo = new ModeloRig(PrecioRig.get(i),consumoRig.get(i),cantidadMinimaDeDiasRig.get(i),metrosXDiaRig.get(i));
+			Modelos.add(nuevoModelo);
+		}		
+		CatalogoDeRigs catalogo = new CatalogoDeRigs(Modelos);	
+		return catalogo;
 	}
 }

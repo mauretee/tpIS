@@ -12,6 +12,7 @@ public class Planta extends ContextObserver {
 		diasDeConstruccionActual = 0;
 		poderProcesamientoDia = capacidadDeProsesamientoXDia;
 		cantidadProcesamientoRestante = poderProcesamientoDia;
+		unContexto.attachPlanta(this);
 	}
 	
 	private void construirUnDia() {

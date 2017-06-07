@@ -8,7 +8,7 @@ public class Context {
 	private String _lastEventToLog = ""; 
 	private int _actualDay;
 	private Boolean _continue;	
-	private List<Rig> _rigs;
+	private List<Rig> rigsAlquilados;
 	private List<Planta> _plantas;
 	private List<Tanque> _tanques;	
 	private List<ContextObserver> Observadores;
@@ -18,6 +18,10 @@ public class Context {
 		this._actualDay = 0;
 		this._continue = true;		
 		Observadores = new ArrayList<ContextObserver>();
+		rigsAlquilados = new ArrayList<Rig>();
+		_plantas = new ArrayList<Planta>();
+		_tanques = new ArrayList<Tanque> ();
+		
 		
 	}
 	
@@ -43,9 +47,9 @@ public class Context {
 		this._continue = false;
 		this._lastEventToLog = "Finalizando simulación";
 	}
-		
+	
 	public List<Rig> getRigs(){
-		return this._rigs;
+		return this.rigsAlquilados;
 	}
 	
 	public List<Planta> getPlantas(){
@@ -59,6 +63,14 @@ public class Context {
 	
 	public void attach(ContextObserver observer){
 		Observadores.add(observer);		
+	}
+	
+	public void attachPlanta(Planta unaPlanta) {
+		_plantas.add(unaPlanta);
+	}
+	
+	public void attachTanque(Tanque unTanque) {
+		_tanques.add(unTanque);
 	}
 	
 }

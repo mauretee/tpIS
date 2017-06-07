@@ -1,6 +1,5 @@
 package tpIS;
 
-import java.util.List;
 import java.util.Map;
 
 public class Presupuesto {	
@@ -12,23 +11,23 @@ public class Presupuesto {
 		this._costs = costs;
 	}
 
-	public double getCostoDeRig(Rig rig){		
-		return 0;
+	public double getCostoDeRig(Rig rig){
+		return _costs.get((Object)rig);
 	}
 	
 	public double getCostoDeRigHastaElDia(int CantidadDeDias, Rig rig){	
 		//costoDelRig costoRig;
 					
-		double costoRigByDay= this._costs.get((Object)rig);		
-		double costoRig = 0;
-		/*
-		if(rig.getDiasMinimoDeAlquiler() >= CantidadDeDias) {
-			costoRig = costoRigByDay*CantidadDeDias + this._costs.get(rig.getTipoCombustible()) *CantidadDeDias;
+		//double costoRigByDay= this._costs.get((Object)rig);		
+		double costoRig = _costs.get((Object)rig);
+		
+		if(rig.getModelo().getDiasMinimoDeAlquiler() <= CantidadDeDias) {
+			costoRig *= CantidadDeDias;
 		}
 		else{
-			costoRig = costoRigByDay*rig.getDiasMinimoDeAlquiler() + this._costs.get(rig.getDiasMinimoDeAlquiler()) *CantidadDeDias;
+			System.err.println("La cantidad de dias de alquiler debe ser mayor o igual a la minima del Rig");
 		}
-		*/
+		
 		return costoRig; //??
 	}
 

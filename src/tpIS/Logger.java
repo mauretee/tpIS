@@ -29,8 +29,9 @@ public class Logger {
 	public void Log(String message){
         BufferedWriter output = null;
         try {
-            output = new BufferedWriter(new FileWriter(file));
+            output = new BufferedWriter(new FileWriter(file, true));
             output.append(message);
+            output.newLine();
         } catch ( IOException e ) {
             e.printStackTrace();
         } finally {
