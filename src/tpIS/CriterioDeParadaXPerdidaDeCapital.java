@@ -10,7 +10,7 @@ private EstadoFinanciero unEstadoFinanciero;
 	public CriterioDeParadaXPerdidaDeCapital(Equipo equipo) {
 		super(equipo);	
 		unEstadoFinanciero = equipo._estadoFinanciero; 
-		this.limitCapital = unEstadoFinanciero.getStatus();
+		this.limitCapital = this._reader.getLimitFinancialStatus();
 	}
 
 	
@@ -22,7 +22,7 @@ private EstadoFinanciero unEstadoFinanciero;
 		if(unEstadoFinanciero.getStatus() < this.limitCapital){
 			Function parar = new Function() {
 		        @Override
-		        public void Apply(Context context, Equipo equipo)  {
+		        public void Apply(Context context, Equipo equipo, Object anObject)  {
 		            context.Finish();
 		        }
 		    };

@@ -21,8 +21,8 @@ public class Simulacion {
 			List<Closure> actions = this._equipoIngenieria.Evaluate(this._context);
 			for(Closure action : actions)
 			{
-				action.Apply(this._context, this._equipoIngenieria);
-				this._logger.Log(this._context.GetLastEventsToLog());				
+				action.Apply(this._context, this._equipoIngenieria, null); //NULL SUX!
+				//this._logger.Log(this._context.GetLastEventsToLog());				
 			}
 			/*this._logger.Log("Estado financiero actual: "+
 					String.valueOf(this._equipoIngenieria.getEstadoFinanciero().getStatus()));*/
