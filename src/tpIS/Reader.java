@@ -15,6 +15,7 @@ public class Reader {
 	private int maximaCantidadDeRigs;
 	private int volumenYacimiento;
 	private int limitDayQuantity;
+	private int limitFinancialStatus;
 	//Variables para parcela
 	private Map<Integer, Integer> presionInicialDeParcelas;
 	private Map<Integer,Integer> tipoDeParcelas;
@@ -301,6 +302,10 @@ public class Reader {
 		return this.limitDayQuantity;
 	}
 
+	public int getLimitFinancialStatus(){
+		return this.limitFinancialStatus;
+	}
+	
 	public int getCantidadDePososAConstruir(){
 		return cantidadDePososAConstruir;
 	}
@@ -372,6 +377,7 @@ public class Reader {
 	public Equipo getEquipoIngenieria(){
 		Equipo result = new EquipoIngenieria(this);
 		result = new CriterioParadaPorDia(result);		
+		result = new CriterioDeParadaXPerdidaDeCapital(result);
 		return result;
 	}
 }

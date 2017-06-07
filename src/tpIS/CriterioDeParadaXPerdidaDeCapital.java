@@ -10,7 +10,7 @@ private EstadoFinanciero unEstadoFinanciero;
 	public CriterioDeParadaXPerdidaDeCapital(Equipo equipo) {
 		super(equipo);	
 		unEstadoFinanciero = equipo._estadoFinanciero; 
-		this.limitCapital = unEstadoFinanciero.getStatus();
+		this.limitCapital = this._reader.getLimitFinancialStatus();
 	}
 
 	
