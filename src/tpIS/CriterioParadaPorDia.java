@@ -7,7 +7,7 @@ public class CriterioParadaPorDia extends CriterioParada {
 	private int _limitDay;
 	
 	public CriterioParadaPorDia(Equipo equipo) {
-		super(equipo);		
+		super(equipo);				
 		this._limitDay = this._reader.getLimitDaysQuantity();
 	}
 
