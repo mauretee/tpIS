@@ -30,7 +30,7 @@ public class CriterioDePerforacionEnTodaParcela extends CriterioDePerforacion{
 		        			Elejido.cavarPozoEnParcela(parcela);
 		        			
 		        			/*Rig rig = context.getRigs().get(i);
-			        		rig.cavarPozoEnParcela(parcela);*/
+			        		rig.cavarPozoEnParcela(parcela);*/ 
 			        		//TODO: llamar al calculador de costo y 
 		        		}
 		        				        		
