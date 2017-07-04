@@ -54,6 +54,7 @@ public class CriterioEleccionDeRigsxMasBarato extends CriterioEleccionDeRigs{
 			        		context.elegirRigParaCavar(rigElegido);
 			        		context.alquilarUnRig(rigElegido);
 			        		//TODO falta calcular el costo!
+			        		equipo._estadoFinanciero.debit(equipo._presupuesto.getCostoDeRigHastaElDia(mejorModelo.getDiasMinimoDeAlquiler(), rigElegido));
 		        		}
 		        		else {
 			        		System.err.println("NO EXITEN MODELOS DE RIGS");

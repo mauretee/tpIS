@@ -22,7 +22,11 @@ public class EquipoIngenieria extends Equipo{
 	@Override
 	public List<Closure> Evaluate(Context context){
 		
-		List<Closure> actions = new ArrayList<Closure>(); 		
+		List<Closure> actions = new ArrayList<Closure>();
+		//Closure C= new Closure((Function) criteriosDeParada.Evaluate(context));
+		actions.add(new Closure((Function) criteriosDeParada.Evaluate(context)));
+		actions.add(new Closure((Function) criteriosDePerforacionDeParcela.Evaluate(context)));
+		//actions.add(new Closure((Function) criteriosDeSeleccionDeRigs.Evaluate(context)));
 		return actions; 
 	}
 	
