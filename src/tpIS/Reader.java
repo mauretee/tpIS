@@ -357,8 +357,10 @@ public class Reader {
 	public List<Parcela> getParcelas(){
 		List<Parcela> parcels = new ArrayList<Parcela>();
 		for( int i = 0; i < this.getCantidadDeParcelas(); ++i){
+			//TODO FIXME!!!! se le tiene q pasar un contexto!!!
+			Context unContextoFRUTA = new Context();
 			Parcela parcela  = new Parcela(this.getPresionInicialDeParcelas().get(i),
-					new TerrenoRocoso(80), this.getPresionInicialDeParcelas().get(i), this.getResistenciaDeParcelas().get(i));
+					new TerrenoRocoso(80), this.getPresionInicialDeParcelas().get(i), this.getResistenciaDeParcelas().get(i),unContextoFRUTA);
 			parcels.add(parcela);
 		}
 		return parcels;

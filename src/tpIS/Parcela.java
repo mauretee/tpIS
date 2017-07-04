@@ -1,6 +1,6 @@
 package tpIS;
 
-public class Parcela {
+public class Parcela extends ContextObserver{
 	private int profundidadNecesaria;
 	private int profundidadActua;
 	private int presionInicial;
@@ -8,7 +8,8 @@ public class Parcela {
 	//private int resistencia; //Deprecated (?
 	private Pozo pozo;
 	
-	public Parcela(int profundidad, Terreno tipoDeTerreno, int presion, int resistencia){
+	public Parcela(int profundidad, Terreno tipoDeTerreno, int presion, int resistencia, Context unContexto){
+		super(unContexto);
 		this.profundidadNecesaria =profundidad;
 		this.tipoDeTerreno = tipoDeTerreno;
 		this.presionInicial = presion;
@@ -67,6 +68,11 @@ public class Parcela {
 			System.err.println("Esta parzela NO TIENE POZO AUN!!!");
 		
 		return dummy;
+	}
+	
+	public void updateDay() {
+		if(tienePozo()) 
+			pozo.cerrarValvula();
 	}
 	
 }
