@@ -37,7 +37,16 @@ public class Context {
 	public void FinishDay(){		
 		this._actualDay+=1;
 		for (ContextObserver observer : Observadores) 
-	         observer.updateDay();		
+	         observer.updateDay();
+		
+		actualizarRigs();
+	}
+	
+	private void actualizarRigs() {
+		for(Rig unRig : rigsAlquilados) {
+			if(unRig.getDiasQueLlevaAlquilado()>= unRig.getLimiteDeDiasEnAlquiler())
+				rigsAlquilados.remove(unRig);
+		}
 	}
 	
 	public String GetLastEventsToLog(){

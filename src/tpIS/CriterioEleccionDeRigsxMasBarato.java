@@ -50,7 +50,7 @@ public class CriterioEleccionDeRigsxMasBarato extends CriterioEleccionDeRigs{
 			        			if(unModelo.getPrecioRig() < mejorModelo.getPrecioRig())
 			        				mejorModelo = unModelo;
 			        		}
-			        		Rig rigElegido= new Rig(mejorModelo, context);
+			        		Rig rigElegido= new Rig(mejorModelo, context, mejorModelo.getDiasMinimoDeAlquiler());
 			        		context.elegirRigParaCavar(rigElegido);
 			        		context.alquilarUnRig(rigElegido);
 			        		//TODO falta calcular el costo!
