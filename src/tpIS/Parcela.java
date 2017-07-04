@@ -55,7 +55,18 @@ public class Parcela {
 	}
 	
 	public boolean pozoEnConstruccion() {
-		return (profundidadActua == 0) && (profundidadActua < profundidadNecesaria);
+		return (profundidadActua > 0) && (profundidadActua < profundidadNecesaria);
+	}
+	
+	public Pozo getPozo() {
+		Estado unEstado = Estado.ParadoPorSindicato ;
+		Pozo dummy = new Pozo(unEstado, 0, 0);
+		if(tienePozo())
+			return pozo;
+		else
+			System.err.println("Esta parzela NO TIENE POZO AUN!!!");
+		
+		return dummy;
 	}
 	
 }
