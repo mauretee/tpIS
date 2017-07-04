@@ -16,14 +16,17 @@ public class CriterioEleccionDeRigsxMasBarato extends CriterioEleccionDeRigs{
 				/*
 				 * (non-Javadoc)
 				 * @see tpIS.Function#Apply(tpIS.Context, tpIS.Equipo, java.lang.Object)
-				 * 
 				 */
 				
 		        @Override
 		        public void Apply(Context context, Equipo equipo)  {
 		        	/*
 		        	 * Este criterio en particular ignora por completo la parcela.
+		        	 * Buscamos el rig mas barato en la lista de rigs alquilados
+		        	 * de no haber ninguno que se pueda utilizar alli, creamos el modelo mas barato
 		        	 */
+		        	boolean noElegido = true;
+		        	
 		        	if(!context.getRigs().isEmpty()) {
 		        		Rig MenorRig;
 		        		MenorRig= context.getRigs().get(0);
@@ -36,10 +39,12 @@ public class CriterioEleccionDeRigsxMasBarato extends CriterioEleccionDeRigs{
 		        		
 		        		if(!MenorRig.isCavando()) {
 		        			context.elegirRigParaCavar(MenorRig);
+		        			noElegido = false;
 		        		}
 		        		
 		        	}
-		        	else if(!equipo.unCatalogoDeRigs.getModelosRigs().isEmpty()) {
+		        	if(noElegido) {
+		        		if(!equipo.unCatalogoDeRigs.getModelosRigs().isEmpty()) {
 		        			ModeloRig mejorModelo = equipo.unCatalogoDeRigs.getModelosRigs().get(0);
 			        		for(ModeloRig unModelo : equipo.unCatalogoDeRigs.getModelosRigs()) {
 			        			if(unModelo.getPrecioRig() < mejorModelo.getPrecioRig())
@@ -47,9 +52,12 @@ public class CriterioEleccionDeRigsxMasBarato extends CriterioEleccionDeRigs{
 			        		}
 			        		Rig rigElegido= new Rig(mejorModelo, context);
 			        		context.elegirRigParaCavar(rigElegido);
+			        		context.alquilarUnRig(rigElegido);
+			        		//TODO falta calcular el costo!
 		        		}
-		        	else {
-		        		System.err.println("NO EXITEN MODELOS DE RIGS");
+		        		else {
+			        		System.err.println("NO EXITEN MODELOS DE RIGS");
+			        	}
 		        	}
 		        }
 		        

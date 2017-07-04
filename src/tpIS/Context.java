@@ -57,6 +57,10 @@ public class Context {
 		return this.rigsAlquilados;
 	}
 	
+	public void alquilarUnRig(Rig unRig) {
+		rigsAlquilados.add(unRig);
+	}
+	
 	public List<Planta> getPlantas(){
 		return this._plantas;
 	}
