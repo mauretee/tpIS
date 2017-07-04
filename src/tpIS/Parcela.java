@@ -5,14 +5,14 @@ public class Parcela {
 	private int profundidadActua;
 	private int presionInicial;
 	private Terreno tipoDeTerreno;
-	private int resistencia; //Deprecated (?
+	//private int resistencia; //Deprecated (?
 	private Pozo pozo;
 	
 	public Parcela(int profundidad, Terreno tipoDeTerreno, int presion, int resistencia){
 		this.profundidadNecesaria =profundidad;
 		this.tipoDeTerreno = tipoDeTerreno;
 		this.presionInicial = presion;
-		this.resistencia = resistencia;
+		//this.resistencia = resistencia;
 	}
 	
 	public Terreno getTipoDeTerreno() {
@@ -22,9 +22,9 @@ public class Parcela {
 		return profundidadNecesaria;
 	}
 	
-	public int getResistencia(){
+	/*public int getResistencia(){
 		return resistencia;
-	}
+	}*/
 
 	private void crearPozo() {
 		if(!tienePozo()) {

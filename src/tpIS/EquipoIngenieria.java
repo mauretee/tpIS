@@ -12,6 +12,11 @@ public class EquipoIngenieria extends Equipo{
 		this._presupuesto = reader.getPresupuesto();
 		this._estadoFinanciero = reader.getEstadoFinanciero();	
 		unCatalogoDeRigs = reader.getCatalogoDeRigs();
+		
+		//TODO ITERACION 1 HARCODEADA
+		criteriosDeParada = new CriterioParadaPorDia(this);
+		criteriosDePerforacionDeParcela = new CriterioDePerforacionEnTodaParcela(this);
+		criteriosDeSeleccionDeRigs = new CriterioEleccionDeRigsxMasBarato(this);
 	}
 	
 	@Override

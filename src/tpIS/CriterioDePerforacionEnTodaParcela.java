@@ -25,15 +25,14 @@ public class CriterioDePerforacionEnTodaParcela extends CriterioDePerforacion{
 		        			 * guardando q rig selecciono en el contexto.
 		        			 */
 		        			context.setParcela_ACavar(parcela);
-		        			CriterioEleccionDeRigs unCriterioRig = new CriterioEleccionDeRigsxMasBarato(equipo);
-		        			unCriterioRig.Evaluate(context).get(0).Apply(context, equipo);
+		        			/*CriterioEleccionDeRigs unCriterioRig = new CriterioEleccionDeRigsxMasBarato(equipo);
+		        			unCriterioRig.Evaluate(context).get(0).Apply(context, equipo);*/
+		        			equipo.criteriosDeSeleccionDeRigs.Evaluate(context).get(0).Apply(context, equipo);
 		        			Rig rigElegido = context.getRigElegidoParaCavar();
 		        			rigElegido.cavarPozoEnParcela(parcela);
 		        			
 			        		//TODO: llamar al calculador de costo y 
 		        		}
-		        				        		
-		        		//i++;
 		        		
 		        	}
 		        }
