@@ -20,7 +20,7 @@ public class CriterioParadaPorDia extends CriterioParada {
 		if(context.GetDay() >= this._limitDay){
 			Function parar = new Function() {
 		        @Override
-		        public void Apply(Context context, Equipo equipo, Object anObject)  {
+		        public void Apply(Context context, Equipo equipo)  {
 		            context.Finish();
 		        }
 		    };

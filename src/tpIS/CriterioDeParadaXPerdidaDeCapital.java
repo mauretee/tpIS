@@ -22,7 +22,7 @@ private EstadoFinanciero unEstadoFinanciero;
 		if(unEstadoFinanciero.getStatus() < this.limitCapital){
 			Function parar = new Function() {
 		        @Override
-		        public void Apply(Context context, Equipo equipo, Object anObject)  {
+		        public void Apply(Context context, Equipo equipo)  {
 		            context.Finish();
 		        }
 		    };

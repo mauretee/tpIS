@@ -4,8 +4,8 @@ class Closure implements Function{
 	   Function f;
 
 	   @Override
-	   public void Apply(Context context, Equipo equipo, Object anObject)  {
-		  f.Apply(context, equipo, anObject);
+	   public void Apply(Context context, Equipo equipo)  {
+		  f.Apply(context, equipo);
 	   }
 	   
 	   public Closure(Function function) {		  
@@ -15,7 +15,7 @@ class Closure implements Function{
 	   public Closure() {		  
 		  f = new Function() {
 		        @Override
-		        public void Apply(Context context, Equipo equipo, Object anObject)  {
+		        public void Apply(Context context, Equipo equipo)  {
 		        	
 		        }
 		    };

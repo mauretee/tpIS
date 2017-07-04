@@ -16,11 +16,14 @@ public class CriterioEleccionDeRigsxMasBarato extends CriterioEleccionDeRigs{
 				/*
 				 * (non-Javadoc)
 				 * @see tpIS.Function#Apply(tpIS.Context, tpIS.Equipo, java.lang.Object)
-				 * Jamas en mi vida vi algo tan feo
+				 * 
 				 */
 				
 		        @Override
-		        public void Apply(Context context, Equipo equipo, Object rigElejido)  {
+		        public void Apply(Context context, Equipo equipo)  {
+		        	/*
+		        	 * Este criterio en particular ignora por completo la parcela.
+		        	 */
 		        	if(!context.getRigs().isEmpty()) {
 		        		Rig MenorRig;
 		        		MenorRig= context.getRigs().get(0);
@@ -32,22 +35,24 @@ public class CriterioEleccionDeRigsxMasBarato extends CriterioEleccionDeRigs{
 		        		}
 		        		
 		        		if(!MenorRig.isCavando()) {
-		        			rigElejido = (Object) MenorRig;
+		        			context.elegirRigParaCavar(MenorRig);
 		        		}
 		        		
 		        	}
-		        	else {
-		        		if(!equipo.unCatalogoDeRigs.getModelosRigs().isEmpty()) {
+		        	else if(!equipo.unCatalogoDeRigs.getModelosRigs().isEmpty()) {
 		        			ModeloRig mejorModelo = equipo.unCatalogoDeRigs.getModelosRigs().get(0);
 			        		for(ModeloRig unModelo : equipo.unCatalogoDeRigs.getModelosRigs()) {
 			        			if(unModelo.getPrecioRig() < mejorModelo.getPrecioRig())
 			        				mejorModelo = unModelo;
 			        		}
-			        		rigElejido= (Object) new Rig(mejorModelo, context);
+			        		Rig rigElegido= new Rig(mejorModelo, context);
+			        		context.elegirRigParaCavar(rigElegido);
 		        		}
+		        	else {
+		        		System.err.println("NO EXITEN MODELOS DE RIGS");
 		        	}
-		        	
 		        }
+		        
 		    };
 		    result.add(new Closure(elegirRig));
 		    return result;	
