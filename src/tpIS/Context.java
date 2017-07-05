@@ -92,8 +92,14 @@ public class Context {
 	}
 
 	public Parcela getParcela_ACavar() {
-		//TODO FIX ME MANEJO DE ERRORES
-		return parcela_ACavar;
+		if(parcela_ACavar != null)
+			return parcela_ACavar;
+		else {
+			System.err.println("ERROR en Contexto! No hay parcela para cavar elegida.");
+			TerrenoArenoso terrenoNulo = new TerrenoArenoso(1);
+			Parcela unaParcela = new Parcela(0 ,terrenoNulo , 0, 0, this);
+			return unaParcela;
+		}
 	}
 
 	public void setParcela_ACavar(Parcela parcela_ACavar) {
