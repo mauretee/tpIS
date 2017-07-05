@@ -29,6 +29,10 @@ public class CriterioDeConstruccionDePlantaMasBarata extends CriterioDeConstrucc
 		        	Planta P= new Planta(1,2,context);
 		        	context.attachPlanta(P);
 		        }
+		        @Override
+		        public void LogAction(Context context)  {
+		        	context.SetLastEventsToLog("se construye planta");
+		        }
 		        
 		    };
 		    result.add(new Closure(elegirRig));

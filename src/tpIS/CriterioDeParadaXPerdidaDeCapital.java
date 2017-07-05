@@ -25,6 +25,10 @@ private EstadoFinanciero unEstadoFinanciero;
 		        public void Apply(Context context, Equipo equipo)  {
 		            context.Finish();
 		        }
+		        @Override
+		        public void LogAction(Context context)  {
+		        	context.SetLastEventsToLog("se llegó al criterio de parada por falta de capital");
+		        }
 		    };
 		    
 		    result.add(new Closure(parar));

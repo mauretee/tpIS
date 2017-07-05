@@ -59,6 +59,11 @@ public class Context {
 		return this._lastEventToLog;
 	}
 	
+	public void SetLastEventsToLog(String value){
+		this._lastEventToLog = value;
+	}
+	
+	
 	public Boolean Continue(){
 		return this._continue;
 	}

@@ -64,6 +64,11 @@ public class CriterioEleccionDeRigsxMasBarato extends CriterioEleccionDeRigs{
 		        	}
 		        }
 		        
+		        @Override
+		        public void LogAction(Context context)  {
+		        	context.SetLastEventsToLog("se elige rig");
+		        }
+		        
 		    };
 		    result.add(new Closure(elegirRig));
 		    return result;	

@@ -23,6 +23,10 @@ public class CriterioParadaPorDia extends CriterioParada {
 		        public void Apply(Context context, Equipo equipo)  {
 		            context.Finish();
 		        }
+		        @Override
+		        public void LogAction(Context context)  {
+		        	context.SetLastEventsToLog("se llego al criterio de parada por dia");
+		        }
 		    };
 		    
 		    result.add(new Closure(parar));

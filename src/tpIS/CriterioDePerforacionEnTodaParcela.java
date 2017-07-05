@@ -34,6 +34,12 @@ public class CriterioDePerforacionEnTodaParcela extends CriterioDePerforacion{
 		        		
 		        	}
 		        }
+		        
+		        @Override
+		        public void LogAction(Context context)  {
+		        	context.SetLastEventsToLog("se perfora parcela");
+		        }
+		        
 		    };
 		    result.add(new Closure(perforar));
 		    return result;	

@@ -29,6 +29,10 @@ public class CriterioDeAperturaDePosoEnTodaParcela extends CriterioDeAperturaDeP
 		        		
 		        	}
 		        }
+		        @Override
+		        public void LogAction(Context context)  {
+		        	context.SetLastEventsToLog("se abre pozo");
+		        }
 		    };
 		    result.add(new Closure(perforar));
 		    return result;	
