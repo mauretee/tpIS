@@ -25,8 +25,7 @@ public class CriterioDePerforacionEnTodaParcela extends CriterioDePerforacion{
 		        			 */
 		        			context.setParcela_ACavar(parcela);
 		        			/*CriterioEleccionDeRigs unCriterioRig = new CriterioEleccionDeRigsxMasBarato(equipo);
-		        			unCriterioRig.Evaluate(context).get(0).Apply(context, equipo);*/
-		        			equipo.criteriosDeSeleccionDeRigs.Evaluate(context).get(0).Apply(context, equipo);
+		        			unCriterioRig.Evaluate(context).get(0).Apply(context, equipo);*/		        			
 		        			Rig rigElegido = context.getRigElegidoParaCavar();
 		        			rigElegido.cavarPozoEnParcela(parcela);
 		        			

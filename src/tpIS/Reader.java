@@ -366,6 +366,7 @@ public class Reader {
 		return parcels;
 	}
 	
+	
 	public Yacimiento getYacimiento(){
 		Yacimiento deposit = new Yacimiento(this.getVolumenYacimiento(),this.getComposicion(),
 				this.getParcelas());
@@ -386,7 +387,10 @@ public class Reader {
 	public Equipo getEquipoIngenieria(){
 		Equipo result = new EquipoIngenieria(this);
 		result = new CriterioParadaPorDia(result);		
-		result = new CriterioDeParadaXPerdidaDeCapital(result);
+		result = new CriterioDeParadaXPerdidaDeCapital(result);	
+		result = new CriterioEleccionDeRigsxMasBarato(result);
+		result = new CriterioDePerforacionEnTodaParcela(result);
+		
 		return result;
 	}
 	

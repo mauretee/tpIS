@@ -3,6 +3,7 @@ package tpIS;
 public class TerrenoArenoso implements Terreno {
 	private int resistencia = 0;
 	
+	
 	public TerrenoArenoso(int resistenciaDelTerreno) {
 		resistencia = resistenciaDelTerreno;
 	}

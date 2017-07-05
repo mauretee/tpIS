@@ -1,5 +1,5 @@
 package tpIS;
-
+import tpIS.TerrenoArenoso;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -43,10 +43,16 @@ public class Context {
 	}
 	
 	private void actualizarRigs() {
+		List<Rig> rigsToRemove = new ArrayList<Rig>();
 		for(Rig unRig : rigsAlquilados) {
 			if(unRig.getDiasQueLlevaAlquilado()>= unRig.getLimiteDeDiasEnAlquiler())
-				rigsAlquilados.remove(unRig);
+				rigsToRemove.add(unRig);				
 		}
+		
+		for(Rig unRig : rigsToRemove) {			
+			rigsAlquilados.remove(unRig);				
+		}
+		
 	}
 	
 	public String GetLastEventsToLog(){

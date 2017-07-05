@@ -9,6 +9,7 @@ public class Composicion {
 		this.petroleo = petroleo;
 		this.gas = gas;
 	}
+	
 	public int getAgua() {
 		return agua;
 	}

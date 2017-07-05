@@ -13,6 +13,7 @@ public class ModeloRig {
 		consumCombustibleXDia = combustible;
 	}
 	
+	
 	public int getDiasMinimoDeAlquiler() {
 		return diasMinimoDeAlquiler;
 	}

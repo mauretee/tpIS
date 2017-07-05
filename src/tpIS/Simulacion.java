@@ -1,6 +1,8 @@
 package tpIS;
+import tpIS.Logger;
 import java.util.List;
 import tpIS.Closure;
+
 
 public class Simulacion {	
 	private Equipo _equipoIngenieria;	

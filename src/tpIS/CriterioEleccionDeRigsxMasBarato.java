@@ -44,9 +44,9 @@ public class CriterioEleccionDeRigsxMasBarato extends CriterioEleccionDeRigs{
 		        		
 		        	}
 		        	if(noElegido) {
-		        		if(!equipo.unCatalogoDeRigs.getModelosRigs().isEmpty()) {
-		        			ModeloRig mejorModelo = equipo.unCatalogoDeRigs.getModelosRigs().get(0);
-			        		for(ModeloRig unModelo : equipo.unCatalogoDeRigs.getModelosRigs()) {
+		        		if(!equipo.getCatalogoDeRigs().getModelosRigs().isEmpty()) {
+		        			ModeloRig mejorModelo = equipo.getCatalogoDeRigs().getModelosRigs().get(0);
+			        		for(ModeloRig unModelo : equipo.getCatalogoDeRigs().getModelosRigs()) {
 			        			if(unModelo.getPrecioRig() < mejorModelo.getPrecioRig())
 			        				mejorModelo = unModelo;
 			        		}
@@ -54,7 +54,9 @@ public class CriterioEleccionDeRigsxMasBarato extends CriterioEleccionDeRigs{
 			        		context.elegirRigParaCavar(rigElegido);
 			        		context.alquilarUnRig(rigElegido);
 			        		//TODO falta calcular el costo!
-			        		equipo._estadoFinanciero.debit(equipo._presupuesto.getCostoDeRigHastaElDia(mejorModelo.getDiasMinimoDeAlquiler(), rigElegido));
+			        		//TODO AGREGAR LOS COSTOS AL HASH MAP DEL PRESUPUESTO, EL COSTO TIENE QUE SER POR MODELO Y HAY Q PASARLE EL MODELO ELEGIDO,
+			        		//NO UN NUEVO RIG XQ NO LO VA A ENCONTRAR NUNCA EN EL HASHMAP
+			        		//equipo.getEstadoFinanciero().debit(equipo.getPresupuesto().getCostoDeRigHastaElDia(mejorModelo.getDiasMinimoDeAlquiler(), rigElegido));
 		        		}
 		        		else {
 			        		System.err.println("NO EXITEN MODELOS DE RIGS");

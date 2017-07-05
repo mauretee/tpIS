@@ -12,6 +12,7 @@ public abstract class Criterio extends Equipo{
 		this._yacimiento = equipo._yacimiento;
 		this._presupuesto = equipo._presupuesto;
 		this._estadoFinanciero = equipo._estadoFinanciero;
+		this.unCatalogoDeRigs = equipo.unCatalogoDeRigs;
 
 	}
 		
