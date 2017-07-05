@@ -15,7 +15,7 @@ public class CriterioDePerforacionEnTodaParcela extends CriterioDePerforacion{
 			Function perforar = new Function() {
 		        @Override
 		        public void Apply(Context context, Equipo equipo)  {
-		        	for(Parcela parcela : equipo._yacimiento.listaDeParcelas){		        		
+		        	for(Parcela parcela : equipo.getYacimiento().listaDeParcelas){		        		
 		        		if(!parcela.tienePozo() && !parcela.pozoEnConstruccion()) {
 		        			
 		        			/*

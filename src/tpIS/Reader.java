@@ -376,6 +376,8 @@ public class Reader {
 	
 	public Presupuesto getPresupuesto(){
 		Map<Object, Double> costos = new HashMap<Object, Double>();
+		
+		
 		Presupuesto budget = new Presupuesto(costos);
 		return budget;
 	}
@@ -387,9 +389,11 @@ public class Reader {
 	public Equipo getEquipoIngenieria(){
 		Equipo result = new EquipoIngenieria(this);
 		result = new CriterioParadaPorDia(result);		
-		result = new CriterioDeParadaXPerdidaDeCapital(result);	
+		result = new CriterioDeParadaXPerdidaDeCapital(result);
+		result = new CriterioConstruccionDePlantaSiNoExiste(result);
 		result = new CriterioEleccionDeRigsxMasBarato(result);
 		result = new CriterioDePerforacionEnTodaParcela(result);
+		result = new CriterioDeExtraccionEnTodaParcela(result);
 		
 		return result;
 	}

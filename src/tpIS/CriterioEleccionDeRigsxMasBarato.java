@@ -56,7 +56,7 @@ public class CriterioEleccionDeRigsxMasBarato extends CriterioEleccionDeRigs{
 			        		//TODO falta calcular el costo!
 			        		//TODO AGREGAR LOS COSTOS AL HASH MAP DEL PRESUPUESTO, EL COSTO TIENE QUE SER POR MODELO Y HAY Q PASARLE EL MODELO ELEGIDO,
 			        		//NO UN NUEVO RIG XQ NO LO VA A ENCONTRAR NUNCA EN EL HASHMAP
-			        		//equipo.getEstadoFinanciero().debit(equipo.getPresupuesto().getCostoDeRigHastaElDia(mejorModelo.getDiasMinimoDeAlquiler(), rigElegido));
+			        		//equipo.getEstadoFinanciero().debit(equipo.getPresupuesto().getCostoDeRigHastaElDia(mejorModelo.getDiasMinimoDeAlquiler(), rigElegido.getModelo()));
 		        		}
 		        		else {
 			        		System.err.println("NO EXITEN MODELOS DE RIGS");

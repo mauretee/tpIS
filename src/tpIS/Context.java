@@ -14,6 +14,7 @@ public class Context {
 	private List<ContextObserver> Observadores;
 	private Parcela parcela_ACavar;
 	private Rig rigElegido;
+	private int volumenExtraidoHoy;
 	
 	public Context(){
 			
@@ -40,6 +41,7 @@ public class Context {
 	         observer.updateDay();
 		
 		actualizarRigs();
+		this.volumenExtraidoHoy = 0;
 	}
 	
 	private void actualizarRigs() {
@@ -125,5 +127,36 @@ public class Context {
 		this.rigElegido = rigElegido;
 	}
 	
+	public int getCapacityToExtract(){
+		int globalCapacity = 0;
+		
+		for(Planta planta : this.getPlantas()){
+			globalCapacity += planta.getCapacidadDeProcesamientoRestante();
+		}
+				
+		return globalCapacity;
+	}
+	
+	public void Extract(Pozo pozo, double volumen){
+		pozo.extraer();
+		for(Planta planta: this.getPlantas()){
+	
+			if(volumen>0){
+				
+				if(planta.getCapacidadDeProcesamientoRestante() >= volumen){
+					planta.procesar(volumen);
+					break;
+				}
+				else{
+					volumen -= planta.getCapacidadDeProcesamientoRestante();
+					planta.procesar(planta.getCapacidadDeProcesamientoRestante());
+			
+				}				
+				
+			}
+						
+		}
+	
+	}
 }
 

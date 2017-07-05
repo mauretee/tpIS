@@ -27,5 +27,9 @@ public abstract class Equipo {
 	}
 	
 	
+	public Yacimiento getYacimiento(){
+		return this._yacimiento;		
+	}
+	
 
 }

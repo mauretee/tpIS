@@ -15,13 +15,13 @@ public class Presupuesto {
 		return _costs.get((Object)rig);
 	}
 	
-	public double getCostoDeRigHastaElDia(int CantidadDeDias, Rig rig){	
+	public double getCostoDeRigHastaElDia(int CantidadDeDias, ModeloRig rigModel){	
 		//costoDelRig costoRig;
 					
 		//double costoRigByDay= this._costs.get((Object)rig);		
-		double costoRig = _costs.get((Object)rig);
+		double costoRig = _costs.get((Object)rigModel);
 		
-		if(rig.getModelo().getDiasMinimoDeAlquiler() <= CantidadDeDias) {
+		if(rigModel.getDiasMinimoDeAlquiler() <= CantidadDeDias) {
 			costoRig *= CantidadDeDias;
 		}
 		else{
