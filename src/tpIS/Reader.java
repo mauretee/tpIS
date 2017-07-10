@@ -8,6 +8,7 @@ import java.util.*;
 
 public class Reader {
 	//"/Users/mauro/Desktop/Computacion/IS1/Tp/tpIS/src/tpIS/input.txt"
+	//"D:\School\UBA\Ing del sorf\tpIS-master\src\tpIS\input.txt"
 	private int cantidadDeParcelas;
 	private int composicionDeAgua;
 	private int composicionDeGas;
@@ -381,7 +382,7 @@ public class Reader {
 		Presupuesto budget = new Presupuesto(costos);
 		return budget;
 	}
-	
+	//FIXME HARCODEADO!!!
 	public EstadoFinanciero getEstadoFinanciero(){
 		return new EstadoFinanciero(1000);
 	}
@@ -399,7 +400,7 @@ public class Reader {
 	}
 	
 	
-	//FIX ME IMPLEMENTAR LA FUNCION DE CREACION DEL CATALOGO Y PRESUPUESTO!!!
+	//FIXME IMPLEMENTAR LA FUNCION DE CREACION DEL CATALOGO Y PRESUPUESTO!!!
 	public Catalogo getCatalogo() {
 		List<ModeloRig> ModelosRigs = new ArrayList<ModeloRig>();
 		List<ModeloTanque> ModelosTanques = new ArrayList<ModeloTanque>();

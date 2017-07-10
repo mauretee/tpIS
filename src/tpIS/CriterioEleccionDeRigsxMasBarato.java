@@ -1,5 +1,6 @@
 package tpIS;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class CriterioEleccionDeRigsxMasBarato extends CriterioEleccionDeRigs{
@@ -30,38 +31,29 @@ public class CriterioEleccionDeRigsxMasBarato extends CriterioEleccionDeRigs{
 		        	if(!context.getRigs().isEmpty()) {
 		        		Rig MenorRig;
 		        		MenorRig= context.getRigs().get(0);
+		        		List<Rig> YaElegidos = new ArrayList<Rig>();
 		        		
-		        		for(Rig unRig : context.getRigs()) {
-		        			if(!unRig.isCavando())
-			        			if(MenorRig.getModelo().getconsumCombustibleXDia() > unRig.getModelo().getconsumCombustibleXDia())
-			        				MenorRig = unRig;		        				
-		        		}
-		        		
-		        		if(!MenorRig.isCavando()) {
-		        			context.elegirRigParaCavar(MenorRig);
-		        			noElegido = false;
-		        		}
-		        		
-		        	}
-		        	if(noElegido) {
-		        		if(!equipo.getCatalogo().getModelosRigs().isEmpty()) {
-		        			ModeloRig mejorModelo = equipo.getCatalogo().getModelosRigs().get(0);
-			        		for(ModeloRig otroModelo : equipo.getCatalogo().getModelosRigs()) {
-			        			if(otroModelo.getPrecioRig() < mejorModelo.getPrecioRig())
-			        				mejorModelo = otroModelo;
+		        		while(noElegido) {
+			        		for(Rig unRig : context.getRigs()) {
+			        			if(!YaElegidos.contains(unRig))
+				        			if(MenorRig.getModelo().getconsumCombustibleXDia() > unRig.getModelo().getconsumCombustibleXDia())
+				        				MenorRig = unRig;		        				
 			        		}
-			        		Rig rigElegido= new Rig(mejorModelo, context, mejorModelo.getDiasMinimoDeAlquiler());
-			        		context.elegirRigParaCavar(rigElegido);
-			        		context.alquilarUnRig(rigElegido);
-			        		//TODO falta calcular el costo!
-			        		//TODO AGREGAR LOS COSTOS AL HASH MAP DEL PRESUPUESTO, EL COSTO TIENE QUE SER POR MODELO Y HAY Q PASARLE EL MODELO ELEGIDO,
-			        		//NO UN NUEVO RIG XQ NO LO VA A ENCONTRAR NUNCA EN EL HASHMAP
-			        		//equipo.getEstadoFinanciero().debit(equipo.getPresupuesto().getCostoDeRigHastaElDia(mejorModelo.getDiasMinimoDeAlquiler(), rigElegido.getModelo()));
+			        		YaElegidos.add(MenorRig);
+			        		
+			        		if(!MenorRig.isCavando()) {
+			        			context.elegirRigParaCavar(MenorRig);
+			        			noElegido = false;
+			        		}
+			        		
+			        		if(YaElegidos.size() == context.getRigs().size()) {
+			        			System.err.println("ERROR al elegir rigs, Estan todos cavando!");
+			        			noElegido=false;
+			        		}
 		        		}
-		        		else {
-			        		System.err.println("NO EXITEN MODELOS DE RIGS");
-			        	}
 		        	}
+		        	else 
+		        		System.err.println("ERROR en criterio de eleccion de rig. No hay rigs alquilados.");
 		        }
 		        
 		        @Override

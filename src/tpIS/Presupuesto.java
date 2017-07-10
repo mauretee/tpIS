@@ -4,7 +4,6 @@ import java.util.Map;
 
 public class Presupuesto {	
 	
-	
 	private Map<Object, Double> _costs;
 	
 	public Presupuesto(Map<Object, Double> costs) {		
@@ -31,11 +30,17 @@ public class Presupuesto {
 		return costoRig; //??
 	}
 
+	public double getCostoDePlanta(ModeloPlanta plantModel){
+		return _costs.get((Object)plantModel);
+	}
+	
+	public double getCostoDeTanque(ModeloTanque tankModel){
+		return _costs.get((Object)tankModel);
+	}
 	
 	public double getPrice(Object obj){
 		double result =this._costs.get(obj);		
 		return result; 
 	}
-	
 	
 }

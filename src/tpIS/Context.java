@@ -137,6 +137,11 @@ public class Context {
 		return globalCapacity;
 	}
 	
+	/*
+	 * Porq el contexto decide de q pozo extraer??
+	 * Ni se fija si el pozo esta abierto o en reinyeccion.
+	 */
+	
 	public void Extract(Pozo pozo, double volumen){
 		pozo.extraer();
 		for(Planta planta: this.getPlantas()){
