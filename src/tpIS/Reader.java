@@ -399,15 +399,17 @@ public class Reader {
 	}
 	
 	
-	//FIX ME IMPLEMENTAR LA FUNCION DE CREACION DEL CATALOGO DE RIGS
-	public CatalogoDeRigs getCatalogoDeRigs() {
-		List<ModeloRig> Modelos = new ArrayList<ModeloRig>();
+	//FIX ME IMPLEMENTAR LA FUNCION DE CREACION DEL CATALOGO Y PRESUPUESTO!!!
+	public Catalogo getCatalogo() {
+		List<ModeloRig> ModelosRigs = new ArrayList<ModeloRig>();
+		List<ModeloTanque> ModelosTanques = new ArrayList<ModeloTanque>();
+		List<ModeloPlanta> ModelosPlantas = new ArrayList<ModeloPlanta>();
 		//metrosXDiaRig.i
 		for(int i = 0; i < this.getCantidadDeModelosDeRigs(); ++i){
 			ModeloRig nuevoModelo = new ModeloRig(PrecioRig.get(i),consumoRig.get(i),cantidadMinimaDeDiasRig.get(i),metrosXDiaRig.get(i));
-			Modelos.add(nuevoModelo);
+			ModelosRigs.add(nuevoModelo);
 		}		
-		CatalogoDeRigs catalogo = new CatalogoDeRigs(Modelos);	
+		Catalogo catalogo = new Catalogo(ModelosRigs, ModelosTanques, ModelosPlantas);	
 		return catalogo;
 	}
 }
