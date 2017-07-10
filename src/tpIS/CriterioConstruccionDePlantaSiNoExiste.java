@@ -26,7 +26,8 @@ public class CriterioConstruccionDePlantaSiNoExiste extends CriterioDeConstrucci
 		        	//TODO No tenemos modelos de plantas... ??
 		        	//for(Planta unaPlanta : equipo._presupuesto.getPlantas() ?????)
 					if(context.getPlantas().isEmpty()){
-						Planta P= new Planta(1,2,context);
+						ModeloPlanta MP = new ModeloPlanta(1,2);
+						Planta P= new Planta(MP ,context);
 			        	context.attachPlanta(P);
 						
 					}

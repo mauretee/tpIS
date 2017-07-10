@@ -2,19 +2,35 @@ package tpIS;
 
 import java.util.List;
 
-public class CatalogoDeRigs {
+public class Catalogo {
 	private List<ModeloRig> ModelosRigs;
+	private List<ModeloTanque> ModelosDeTanques;
+	private List<ModeloPlanta> ModelosPlantas;
 
-	public CatalogoDeRigs(List<ModeloRig> modelosRigs) {
+	public Catalogo(List<ModeloRig> modelosRigs, List<ModeloTanque> modelosTanques, List<ModeloPlanta> ModelosDePlantas) {
 		ModelosRigs=modelosRigs;
+		ModelosDeTanques = modelosTanques;
+		ModelosPlantas = ModelosDePlantas;
 	}
 
 	public List<ModeloRig> getModelosRigs() {
 		return ModelosRigs;
 	}
 	
-	public void agregarModelo(ModeloRig nuevo) {
+	public List<ModeloTanque> getModelosDeTanques() {
+		return ModelosDeTanques;
+	}
+	
+	public void agregarModeloDeRig(ModeloRig nuevo) {
 		ModelosRigs.add(nuevo);
+	}
+	
+	public void agregarModeloDeTanque(ModeloTanque nuevo) {
+		ModelosDeTanques.add(nuevo);
+	}
+	
+	public void agregarModeloDePlanta(ModeloPlanta nuevo) {
+		ModelosPlantas.add(nuevo);
 	}
 	
 }

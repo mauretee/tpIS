@@ -2,8 +2,8 @@ package tpIS;
 
 public class TanqueGas extends Tanque {
 
-	public TanqueGas(double volumen, int diasDeConstruccion, Context unContexto) {
-		super(volumen, diasDeConstruccion, unContexto);
+	public TanqueGas(ModeloTanque unModelo, Context unContexto) {
+		super(unModelo, unContexto);
 		// TODO Auto-generated constructor stub
 	}
 	

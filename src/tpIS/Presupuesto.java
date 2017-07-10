@@ -11,8 +11,8 @@ public class Presupuesto {
 		this._costs = costs;
 	}
 
-	public double getCostoDeRig(Rig rig){
-		return _costs.get((Object)rig);
+	public double getCostoDeRig(ModeloRig rigModel){
+		return _costs.get((Object)rigModel);
 	}
 	
 	public double getCostoDeRigHastaElDia(int CantidadDeDias, ModeloRig rigModel){	

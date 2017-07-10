@@ -6,15 +6,15 @@ public abstract class Equipo {
 
 	public Yacimiento _yacimiento;
 	public Presupuesto _presupuesto;
-	public CatalogoDeRigs unCatalogoDeRigs;
+	public Catalogo unCatalogo;
 	public EstadoFinanciero _estadoFinanciero;	
 	public Reader _reader;
 	
 	public abstract List<Closure> Evaluate(Context context);
 	
 	
-	public CatalogoDeRigs getCatalogoDeRigs(){
-		return this.unCatalogoDeRigs;		
+	public Catalogo getCatalogo(){
+		return this.unCatalogo;		
 	}
 	
 	

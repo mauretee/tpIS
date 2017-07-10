@@ -2,16 +2,14 @@ package tpIS;
 
 public class Planta extends ContextObserver {
 	private int diasDeConstruccionActual;
-	private int diasDeConstruccionTotal; //estaria bueno q fuera unsigned int
-	private double poderProcesamientoDia;
 	private double cantidadProcesamientoRestante;
+	private ModeloPlanta modelo;
 	
-	public Planta(int diasQueTardaEnConstruirse, double capacidadDeProsesamientoXDia, Context unContexto) {
+	public Planta(ModeloPlanta unModelo, Context unContexto) {
 		super(unContexto);
-		diasDeConstruccionTotal = diasQueTardaEnConstruirse;
+		modelo = unModelo;
 		diasDeConstruccionActual = 0;
-		poderProcesamientoDia = capacidadDeProsesamientoXDia;
-		cantidadProcesamientoRestante = poderProcesamientoDia;
+		cantidadProcesamientoRestante = unModelo.getPoderProcesamientoDia();
 		unContexto.attachPlanta(this);
 	}
 	
@@ -24,7 +22,7 @@ public class Planta extends ContextObserver {
 	}
 	
 	public boolean plantaEnConstruccion() {
-		return diasDeConstruccionActual < diasDeConstruccionTotal;
+		return diasDeConstruccionActual < modelo.getDiasDeConstruccionTotal();
 	}
 	
 	public void procesar(double cantidadProcesamiento) {
@@ -38,10 +36,6 @@ public class Planta extends ContextObserver {
 			System.err.println("La planta no esta construida aun");
 	}
 	
-	public double getCapacidadDeProcesamiento() {
-		return poderProcesamientoDia;
-	}
-	
 	public double getCapacidadDeProcesamientoRestante() {
 		return cantidadProcesamientoRestante;
 	}
@@ -49,5 +43,9 @@ public class Planta extends ContextObserver {
 	public void updateDay() {
 		if(plantaEnConstruccion())
 			construirUnDia();
+	}
+
+	public ModeloPlanta getModelo() {
+		return modelo;
 	}
 }

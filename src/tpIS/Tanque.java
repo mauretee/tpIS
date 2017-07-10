@@ -2,25 +2,25 @@ package tpIS;
 
 public abstract class Tanque extends ContextObserver {
 	protected int diasDeConstruccionActual;
-	protected int diasDeConstruccionTotal;
-	//protected double costoConstruccion;
-	protected double volumenTotal;
 	protected double volumenOcupadoActual;
+	protected ModeloTanque modelo;
 	
-	public Tanque(double volumen, int diasDeConstruccion, Context unContexto) {
+	public Tanque(ModeloTanque unModelo, Context unContexto) {
 		super(unContexto);
-		diasDeConstruccionTotal= diasDeConstruccion;
-		volumenTotal = volumen;
 		volumenOcupadoActual =0;
 		diasDeConstruccionActual =0;
 		unContexto.attachTanque(this);
 	}
 	
 	public double getVolumenTotal() {
-		return volumenTotal;
+		return modelo.getVolumenTotal();
 	}
 	public double getVolumenOcupadoActual() {
 		return volumenOcupadoActual;
+	}
+	
+	public ModeloTanque getModelo() {
+		return modelo;
 	}
 	
 	protected void extraerVol(double vol) {
@@ -32,7 +32,7 @@ public abstract class Tanque extends ContextObserver {
 	}
 	
 	public boolean estaCosntruido() {
-		return diasDeConstruccionActual == diasDeConstruccionTotal;
+		return diasDeConstruccionActual == modelo.getDiasDeConstruccionTotal();
 	}
 	
 	protected void construirUnDia() {

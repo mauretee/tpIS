@@ -44,11 +44,11 @@ public class CriterioEleccionDeRigsxMasBarato extends CriterioEleccionDeRigs{
 		        		
 		        	}
 		        	if(noElegido) {
-		        		if(!equipo.getCatalogoDeRigs().getModelosRigs().isEmpty()) {
-		        			ModeloRig mejorModelo = equipo.getCatalogoDeRigs().getModelosRigs().get(0);
-			        		for(ModeloRig unModelo : equipo.getCatalogoDeRigs().getModelosRigs()) {
-			        			if(unModelo.getPrecioRig() < mejorModelo.getPrecioRig())
-			        				mejorModelo = unModelo;
+		        		if(!equipo.getCatalogo().getModelosRigs().isEmpty()) {
+		        			ModeloRig mejorModelo = equipo.getCatalogo().getModelosRigs().get(0);
+			        		for(ModeloRig otroModelo : equipo.getCatalogo().getModelosRigs()) {
+			        			if(otroModelo.getPrecioRig() < mejorModelo.getPrecioRig())
+			        				mejorModelo = otroModelo;
 			        		}
 			        		Rig rigElegido= new Rig(mejorModelo, context, mejorModelo.getDiasMinimoDeAlquiler());
 			        		context.elegirRigParaCavar(rigElegido);

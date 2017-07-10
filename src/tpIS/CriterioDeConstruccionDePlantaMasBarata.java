@@ -26,12 +26,13 @@ public class CriterioDeConstruccionDePlantaMasBarata extends CriterioDeConstrucc
 		        	 */
 		        	//TODO No tenemos modelos de plantas... ??
 		        	//for(Planta unaPlanta : equipo._presupuesto.getPlantas() ?????)
-		        	Planta P= new Planta(1,2,context);
+		        	ModeloPlanta MP = new ModeloPlanta(1,2);
+					Planta P= new Planta(MP ,context);
 		        	context.attachPlanta(P);
 		        }
 		        @Override
 		        public void LogAction(Context context)  {
-		        	context.SetLastEventsToLog("se construye planta");
+		        	context.SetLastEventsToLog("se Comienza la construccion de una planta, de modelo: ");
 		        }
 		        
 		    };
