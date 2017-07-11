@@ -9,6 +9,10 @@ public class Presupuesto {
 	public Presupuesto(Map<Object, Double> costs) {		
 		this._costs = costs;
 	}
+	
+	public void agregarArticulo(Object unArticulo, double unCostos) {
+		
+	}
 
 	public double getCostoDeRig(ModeloRig rigModel){
 		return _costs.get((Object)rigModel);

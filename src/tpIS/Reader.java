@@ -19,9 +19,10 @@ public class Reader {
 	private int limitFinancialStatus;
 	//Variables para parcela
 	private Map<Integer, Integer> presionInicialDeParcelas;
-	private Map<Integer,Integer> tipoDeParcelas;
 	private Map<Integer,Integer>	 profundidaDeParcelas;
 	private Map<Integer, Integer> resistenciaDeParcelas;
+	//variables para Terreno
+	private Map<Integer,Integer> tipoDeParcelas;
 	//Variables para Rig
 	private int cantidadDeModelosDeRigs;
 	private Map<Integer, Integer> metrosXDiaRig;
@@ -32,15 +33,15 @@ public class Reader {
 	private int cantidadDePososAConstruir;
 	//Variable para Planta
 	private int cantidadDePlantas;
-	private Map<Integer, Integer> cantidadDeProcesamiento;
+	private Map<Integer, Double> cantidadDeProcesamiento;
 	private Map<Integer, Integer> cantidadDeDiasDeConstrucion;
-	private Map<Integer, Integer> costoDePlantas;
+	private Map<Integer, Double> costoDePlantas;
 	//Variable para Tange
 	private int cantidaDeModelosDeTanque;
-	private Map<Integer, Integer> capacidadDeTanques;
+	private Map<Integer, Double> capacidadDeTanques;
 	private Map<Integer, Integer> tipoDeTanques;
 	private Map<Integer, Integer> diasDeConstrucionDeTanque;
-	private Map<Integer, Integer> costoDeTanques;
+	private Map<Integer, Double> costoDeTanques;
 	// Precios
 	private int precioDeCompraDeAgua;
 	private int ventaDePetroleo;
@@ -152,24 +153,24 @@ public class Reader {
 			String linea = br.readLine();
 			cantidadDePlantas = new Integer(Integer.parseInt(linea));
 
-			cantidadDeProcesamiento = new HashMap<Integer, Integer>();
+			cantidadDeProcesamiento = new HashMap<Integer, Double>();
 			cantidadDeDiasDeConstrucion = new HashMap<Integer, Integer>();
-			costoDePlantas = new HashMap<Integer, Integer>();
-			Integer cantidadDeProcesamientoInt;
+			costoDePlantas = new HashMap<Integer, Double>();
+			Double cantidadDeProcesamientoInt;
 			Integer cantidadDeDiasDeConstrucionInt;
-			Integer costoDePlantasInt;
-			cantidadDeProcesamiento = new HashMap<Integer, Integer>();
+			Double costoDePlantasInt;
+			cantidadDeProcesamiento = new HashMap<Integer, Double>();
 			cantidadDeDiasDeConstrucion = new HashMap<Integer, Integer>();
-			costoDePlantas = new HashMap<Integer, Integer>();
+			costoDePlantas = new HashMap<Integer, Double>();
 			
 			
 			for(int i = 0; i < cantidadDePlantas; ++i){
 				Integer indice = new Integer(i);
 				String line = br.readLine();
 				Entrada = line.split(" ");
-				cantidadDeProcesamientoInt = new Integer(Integer.parseInt(Entrada[0]));
+				cantidadDeProcesamientoInt = new Double(Double.parseDouble(Entrada[0]));
 				cantidadDeDiasDeConstrucionInt = new Integer(Integer.parseInt(Entrada[1]));
-				costoDePlantasInt = new Integer(Integer.parseInt(Entrada[2]));
+				costoDePlantasInt = new Double(Double.parseDouble(Entrada[2]));
 				cantidadDeProcesamiento.put(indice,cantidadDeProcesamientoInt);
 				cantidadDeDiasDeConstrucion.put(indice,cantidadDeDiasDeConstrucionInt);
 				costoDePlantas.put(indice, costoDePlantasInt);
@@ -181,30 +182,30 @@ public class Reader {
 			private Map<Integer, Integer> diasDeConstrucionDeTanque;
 			private Map<Integer, Integer> costoDeTanques;
 			*/
-			capacidadDeTanques = new HashMap<Integer, Integer>();
+			capacidadDeTanques = new HashMap<Integer, Double>();
 			tipoDeTanques = new HashMap<Integer, Integer>();
 			diasDeConstrucionDeTanque = new HashMap<Integer, Integer>();
-			costoDeTanques = new HashMap<Integer, Integer>();
+			costoDeTanques = new HashMap<Integer, Double>();
 			String lineaVeinte = br.readLine();
 			cantidaDeModelosDeTanque = Integer.parseInt(lineaVeinte);
-			Integer capacidaDeTanquesInt;
+			Double capacidaDeTanquesInt;
 			Integer tipoDeTanquesInt;
 			Integer diasDeConstrucionDeTanqueInt;
-			Integer costoDeTanquesInt;
+			Double costoDeTanquesInt;
 			
-			capacidadDeTanques = new HashMap<Integer, Integer>();
+			capacidadDeTanques = new HashMap<Integer, Double>();
 			tipoDeTanques = new HashMap<Integer, Integer>();
 			diasDeConstrucionDeTanque = new HashMap<Integer, Integer>();
-			costoDeTanques = new HashMap<Integer, Integer>();
+			costoDeTanques = new HashMap<Integer, Double>();
 			
 			for(int i = 0; i < cantidaDeModelosDeTanque; ++i){
 				Integer indice = new Integer(i);
 				String line = br.readLine();
 				Entrada = line.split(" ");
-				capacidaDeTanquesInt = new Integer(Integer.parseInt(Entrada[0]));
+				capacidaDeTanquesInt = new Double(Double.parseDouble(Entrada[0]));
 				tipoDeTanquesInt = new Integer(Integer.parseInt(Entrada[1]));
 				diasDeConstrucionDeTanqueInt = new Integer(Integer.parseInt(Entrada[2]));
-				costoDeTanquesInt = new Integer(Integer.parseInt(Entrada[3]));
+				costoDeTanquesInt = new Double(Double.parseDouble(Entrada[3]));
 				capacidadDeTanques.put(indice, capacidaDeTanquesInt);
 				tipoDeTanques.put(indice, tipoDeTanquesInt);
 				diasDeConstrucionDeTanque.put(indice, diasDeConstrucionDeTanqueInt);
@@ -355,29 +356,27 @@ public class Reader {
 	}
 	
 	
-	public List<Parcela> getParcelas(){
+	public List<Parcela> getParcelas(Context unContexto){
 		List<Parcela> parcels = new ArrayList<Parcela>();
 		for( int i = 0; i < this.getCantidadDeParcelas(); ++i){
-			//TODO FIXME!!!! se le tiene q pasar un contexto!!!
-			Context unContextoFRUTA = new Context();
+			//FIXME Tipo de terreno siempre es rocoso!!!
 			Parcela parcela  = new Parcela(this.getPresionInicialDeParcelas().get(i),
-					new TerrenoRocoso(80), this.getPresionInicialDeParcelas().get(i), this.getResistenciaDeParcelas().get(i),unContextoFRUTA);
+					new TerrenoRocoso(tipoDeParcelas.get(i)), this.getPresionInicialDeParcelas().get(i), this.getResistenciaDeParcelas().get(i), unContexto);
 			parcels.add(parcela);
 		}
 		return parcels;
 	}
 	
 	
-	public Yacimiento getYacimiento(){
+	public Yacimiento getYacimiento(Context unContexto){
 		Yacimiento deposit = new Yacimiento(this.getVolumenYacimiento(),this.getComposicion(),
-				this.getParcelas());
+				this.getParcelas(unContexto));
 		
 		return deposit;		
 	}
 	
 	public Presupuesto getPresupuesto(){
 		Map<Object, Double> costos = new HashMap<Object, Double>();
-		
 		
 		Presupuesto budget = new Presupuesto(costos);
 		return budget;
@@ -387,8 +386,8 @@ public class Reader {
 		return new EstadoFinanciero(1000);
 	}
 	
-	public Equipo getEquipoIngenieria(){
-		Equipo result = new EquipoIngenieria(this);
+	public Equipo getEquipoIngenieria(Context unContexto){
+		Equipo result = new EquipoIngenieria(this, unContexto);
 		result = new CriterioParadaPorDia(result);		
 		result = new CriterioDeParadaXPerdidaDeCapital(result);
 		result = new CriterioConstruccionDePlantaSiNoExiste(result);
@@ -400,8 +399,8 @@ public class Reader {
 	}
 	
 	
-	//FIXME IMPLEMENTAR LA FUNCION DE CREACION DEL CATALOGO Y PRESUPUESTO!!!
-	public Catalogo getCatalogo() {
+	//TODO Testear...
+	public Catalogo getCatalogo(Presupuesto unPresupuesto) {
 		List<ModeloRig> ModelosRigs = new ArrayList<ModeloRig>();
 		List<ModeloTanque> ModelosTanques = new ArrayList<ModeloTanque>();
 		List<ModeloPlanta> ModelosPlantas = new ArrayList<ModeloPlanta>();
@@ -409,7 +408,19 @@ public class Reader {
 		for(int i = 0; i < this.getCantidadDeModelosDeRigs(); ++i){
 			ModeloRig nuevoModelo = new ModeloRig(PrecioRig.get(i),consumoRig.get(i),cantidadMinimaDeDiasRig.get(i),metrosXDiaRig.get(i));
 			ModelosRigs.add(nuevoModelo);
-		}		
+			unPresupuesto.agregarArticulo(nuevoModelo, PrecioRig.get(i));
+		}	
+		for(int i = 0; i < cantidadDePlantas; ++i){
+			ModeloPlanta nuevoModelo = new ModeloPlanta(cantidadDeDiasDeConstrucion.get(i), cantidadDeProcesamiento.get(i));
+			ModelosPlantas.add(nuevoModelo);
+			unPresupuesto.agregarArticulo(nuevoModelo, costoDePlantas.get(i));
+		}
+		for(int i = 0; i < cantidaDeModelosDeTanque; ++i){
+			ModeloTanque nuevoModelo = new ModeloTanque(diasDeConstrucionDeTanque.get(i), capacidadDeTanques.get(i));
+			ModelosTanques.add(nuevoModelo);
+			unPresupuesto.agregarArticulo(nuevoModelo, costoDeTanques.get(i));
+		}
+		
 		Catalogo catalogo = new Catalogo(ModelosRigs, ModelosTanques, ModelosPlantas);	
 		return catalogo;
 	}

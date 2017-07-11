@@ -6,12 +6,12 @@ import java.util.List;
 public class EquipoIngenieria extends Equipo{
 	
 		
-	public EquipoIngenieria(Reader reader){
+	public EquipoIngenieria(Reader reader, Context unContexto){
 		this._reader = reader;		
-		this._yacimiento = reader.getYacimiento();
+		this._yacimiento = reader.getYacimiento(unContexto);
 		this._presupuesto = reader.getPresupuesto();
 		this._estadoFinanciero = reader.getEstadoFinanciero();	
-		this.unCatalogo = reader.getCatalogo();
+		this.unCatalogo = reader.getCatalogo(_presupuesto);
 				
 	}
 	

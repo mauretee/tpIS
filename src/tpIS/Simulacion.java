@@ -10,9 +10,9 @@ public class Simulacion {
 	private Logger _logger;	
 
 	
-	public Simulacion(Reader _reader){		
-		this._equipoIngenieria = _reader.getEquipoIngenieria();  		
-		this._context = new Context();  		
+	public Simulacion(Reader _reader){			
+		this._context = new Context();  	
+		this._equipoIngenieria = _reader.getEquipoIngenieria(_context);  	
 		this._logger= new Logger();
 	}
 
