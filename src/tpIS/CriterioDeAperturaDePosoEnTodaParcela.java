@@ -2,7 +2,7 @@ package tpIS;
 
 import java.util.List;
 
-public class CriterioDeAperturaDePosoEnTodaParcela extends CriterioDeAperturaDePoso {
+public class CriterioDeAperturaDePosoEnTodaParcela extends CriterioDeAperturaDePozo {
 
 	public CriterioDeAperturaDePosoEnTodaParcela(Equipo equipo) {
 		super(equipo);

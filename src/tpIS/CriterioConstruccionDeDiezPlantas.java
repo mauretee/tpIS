@@ -2,9 +2,9 @@ package tpIS;
 
 import java.util.List;
 
-public class CriterioConstruccionDePlantaSiNoExiste extends CriterioDeConstruccionDePlanta{
+public class CriterioConstruccionDeDiezPlantas extends CriterioDeConstruccionDePlanta{
 	
-	public CriterioConstruccionDePlantaSiNoExiste(Equipo equipo) {
+	public CriterioConstruccionDeDiezPlantas(Equipo equipo) {
 		super(equipo);			
 	}
 	
@@ -26,11 +26,11 @@ public class CriterioConstruccionDePlantaSiNoExiste extends CriterioDeConstrucci
 		        	 */
 		        	//TODO No tenemos modelos de plantas... ??
 		        	//for(Planta unaPlanta : equipo._presupuesto.getPlantas() ?????)
-					if(context.getPlantas().isEmpty()){
+					if(context.getPlantas().isEmpty() || context.getPlantas().size() < 10){
 						ModeloPlanta MP = new ModeloPlanta(1,2);
 						Planta P= new Planta(MP ,context);
 			        	context.attachPlanta(P);
-						this.textToLog = "se construye planta";
+						this.textToLog = "se construye planta procesadora con capacidad diaria de procesamiento de: "+ String.valueOf(P.getModelo().getPoderProcesamientoDia()) ;
 					}
 					else{
 						this.textToLog = "";

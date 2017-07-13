@@ -13,22 +13,32 @@ public class CriterioDeExtraccionEnTodaParcela extends CriterioExtraccion{
 
 		List<Closure> result = super.Evaluate(context);
 			Function perforar = new Function() {
-		        @Override
+		        private String textToLog ="";
+				@Override
 		        public void Apply(Context context, Equipo equipo)  {
+		        	int nroParcela = 0;
 		        	for(Parcela parcela : equipo.getYacimiento().listaDeParcelas){		        		
 		        		if(parcela.tienePozo() && parcela.getPozo().getEstado()!= Estado.Extrayendo && context.getCapacityToExtract()>0 ) {
 		        					        		
 		        			//revisar
-		        			context.Extract(parcela.getPozo(), parcela.getPozo().getCapacidad());		        			
+		        			context.Extract(parcela.getPozo(), parcela.getPozo().getCapacidad());
+		        			if(!this.textToLog.isEmpty()){
+	        					this.textToLog = this.textToLog+ " - ";	
+	        				}
+	        				this.textToLog = this.textToLog + "se extrae en parcela nro: "+String.valueOf(nroParcela);
 		        					        					        						        		
 		        		}
-		        		
+		        		nroParcela++;
 		        	}
 		        }
 		        
 		        @Override
 		        public void LogAction(Context context)  {
-		        	context.SetLastEventsToLog("se extrae en parcela");
+		        	if(this.textToLog != null && this.textToLog != ""){
+		        		context.SetLastEventsToLog(this.textToLog);
+		        		
+		        	}
+		        	
 		        }
 		        
 		    };

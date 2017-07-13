@@ -22,7 +22,7 @@ public class CriterioDeConstruccionDePlantaMasBarata extends CriterioDeConstrucc
 		        @Override
 		        public void Apply(Context context, Equipo equipo)  {
 		        	/*
-		        	 * Este criterio Construlle la planta mas barata q encuentre en el presupuesto.
+		        	 * Este criterio Construye la planta mas barata q encuentre en el presupuesto.
 		        	 */
 		        	//TODO No tenemos modelos de plantas... ??
 		        	//for(Planta unaPlanta : equipo._presupuesto.getPlantas() ?????)

@@ -390,9 +390,9 @@ public class Reader {
 		Equipo result = new EquipoIngenieria(this, unContexto);
 		result = new CriterioParadaPorDia(result);		
 		result = new CriterioDeParadaXPerdidaDeCapital(result);
-		result = new CriterioConstruccionDePlantaSiNoExiste(result);
-		result = new CriterioEleccionDeRigsxMasBarato(result);
-		result = new CriterioDePerforacionEnTodaParcela(result);
+		result = new CriterioDeAlquilerDeRigXPrecioYCantidadMenorAParcelas(result);	
+		result = new CriterioConstruccionDeDiezPlantas(result);		
+		result = new CriterioDeEleccionMasBaratoYPerforacionEnTodaParcela(result);
 		result = new CriterioDeExtraccionEnTodaParcela(result);
 		
 		return result;

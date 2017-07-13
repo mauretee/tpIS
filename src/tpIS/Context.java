@@ -42,6 +42,7 @@ public class Context {
 		
 		actualizarRigs();
 		this.volumenExtraidoHoy = 0;
+		this._lastEventToLog= "";
 	}
 	
 	private void actualizarRigs() {
@@ -97,7 +98,7 @@ public class Context {
 	}
 	
 	public void attachPlanta(Planta unaPlanta) {
-		_plantas.add(unaPlanta);
+		this._plantas.add(unaPlanta);
 	}
 	
 	public void attachTanque(Tanque unTanque) {
@@ -123,15 +124,15 @@ public class Context {
 		return rigElegido;
 	}
 
-	public void elegirRigParaCavar(Rig rigElegido) {
-		this.rigElegido = rigElegido;
-	}
 	
 	public int getCapacityToExtract(){
 		int globalCapacity = 0;
 		
 		for(Planta planta : this.getPlantas()){
-			globalCapacity += planta.getCapacidadDeProcesamientoRestante();
+			if(!planta.plantaEnConstruccion()){
+				globalCapacity += planta.getCapacidadDeProcesamientoRestante();	
+			}
+			
 		}
 				
 		return globalCapacity;
