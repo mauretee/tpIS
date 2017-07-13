@@ -30,7 +30,7 @@ public class CriterioDeAlquilerDeRigXPrecioYCantidadMenorAParcelas extends Crite
 		        	this.textToLog="";
 		        	if(context.getRigs().size() < equipo.getYacimiento().listaDeParcelas.size()){
 		        	
-		        		if(!equipo.getCatalogo().getModelosRigs().isEmpty() && context.getRigs().size() < equipo.getYacimiento().listaDeParcelas.size()) {
+		        		if(!equipo.getCatalogo().getModelosRigs().isEmpty()) {
 		        			ModeloRig mejorModelo = equipo.getCatalogo().getModelosRigs().get(0);
 			        		for(ModeloRig otroModelo : equipo.getCatalogo().getModelosRigs()) {
 			        			if(otroModelo.getPrecioRig() < mejorModelo.getPrecioRig())
@@ -42,7 +42,7 @@ public class CriterioDeAlquilerDeRigXPrecioYCantidadMenorAParcelas extends Crite
 			        		//TODO falta calcular el costo!
 			        		//TODO AGREGAR LOS COSTOS AL HASH MAP DEL PRESUPUESTO, EL COSTO TIENE QUE SER POR MODELO Y HAY Q PASARLE EL MODELO ELEGIDO,
 			        		//NO UN NUEVO RIG XQ NO LO VA A ENCONTRAR NUNCA EN EL HASHMAP
-			        		//equipo.getEstadoFinanciero().debit(equipo.getPresupuesto().getCostoDeRigHastaElDia(mejorModelo.getDiasMinimoDeAlquiler(), rigElegido.getModelo()));
+			        		equipo.getEstadoFinanciero().debit(equipo.getPresupuesto().getCostoDeRigHastaElDia(mejorModelo.getDiasMinimoDeAlquiler(), rigElegido.getModelo()));
 		        		}
 		        		else {
 		        			this.textToLog = "NO EXITEN MODELOS DE RIGS";		        		

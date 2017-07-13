@@ -26,8 +26,9 @@ public class CriterioDeConstruccionDePlantaMasBarata extends CriterioDeConstrucc
 		        	 */
 		        	//TODO No tenemos modelos de plantas... ??
 		        	//for(Planta unaPlanta : equipo._presupuesto.getPlantas() ?????)
-		        	ModeloPlanta MP = new ModeloPlanta(1,2);
-					Planta P= new Planta(MP ,context);
+				ModeloPlanta MP = equipo.getCatalogo().getModeloPlantas().get(0);
+		        	//ModeloPlanta MP = new ModeloPlanta(1,2);
+				Planta P= new Planta(MP ,context);
 		        	context.attachPlanta(P);
 		        }
 		        @Override

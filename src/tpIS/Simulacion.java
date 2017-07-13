@@ -23,6 +23,7 @@ public class Simulacion {
 			List<Closure> actions = this._equipoIngenieria.Evaluate(this._context);
 			for(Closure action : actions)
 			{
+				//System.out.println("Entro a las actions");
 				action.Apply(this._context, this._equipoIngenieria);
 				action.LogAction(this._context);
 				this._logger.Log(this._context.GetLastEventsToLog());				

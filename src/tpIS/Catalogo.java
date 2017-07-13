@@ -21,6 +21,10 @@ public class Catalogo {
 		return ModelosDeTanques;
 	}
 	
+	public List<ModeloPlanta> getModeloPlantas() {
+		return ModelosPlantas;
+	}
+	
 	public void agregarModeloDeRig(ModeloRig nuevo) {
 		ModelosRigs.add(nuevo);
 	}

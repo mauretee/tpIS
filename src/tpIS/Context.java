@@ -124,6 +124,9 @@ public class Context {
 		return rigElegido;
 	}
 
+	public void elegirRigParaCavar(Rig rigElegido) {
+		 this.rigElegido = rigElegido;
+	}
 	
 	public int getCapacityToExtract(){
 		int globalCapacity = 0;
@@ -147,9 +150,9 @@ public class Context {
 		pozo.extraer();
 		for(Planta planta: this.getPlantas()){
 	
-			if(volumen>0){
+			if(volumen>0 && !planta.plantaEnConstruccion()){
 				
-				if(planta.getCapacidadDeProcesamientoRestante() >= volumen){
+				if(planta.getCapacidadDeProcesamientoRestante() >= volumen ){
 					planta.procesar(volumen);
 					break;
 				}

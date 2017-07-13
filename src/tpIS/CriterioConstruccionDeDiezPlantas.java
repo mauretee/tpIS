@@ -27,7 +27,8 @@ public class CriterioConstruccionDeDiezPlantas extends CriterioDeConstruccionDeP
 		        	//TODO No tenemos modelos de plantas... ??
 		        	//for(Planta unaPlanta : equipo._presupuesto.getPlantas() ?????)
 					if(context.getPlantas().isEmpty() || context.getPlantas().size() < 10){
-						ModeloPlanta MP = new ModeloPlanta(1,2);
+						ModeloPlanta MP = equipo.getCatalogo().getModeloPlantas().get(0);
+						//ModeloPlanta MP = new ModeloPlanta(1,2);
 						Planta P= new Planta(MP ,context);
 			        	context.attachPlanta(P);
 						this.textToLog = "se construye planta procesadora con capacidad diaria de procesamiento de: "+ String.valueOf(P.getModelo().getPoderProcesamientoDia()) ;
