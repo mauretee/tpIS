@@ -1,0 +1,809 @@
+Inicia el dia 0
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :1
+se construye planta procesadora con capacidad diaria de procesamiento de: 3000.0
+no se puede perforar en parcela nro: 0 porque todos los rigs estan siendo utilizados - se cava en parcela nro: 0 con un rig de valor: 10.0 - no se puede perforar en parcela nro: 1 porque todos los rigs estan siendo utilizados - no se puede perforar en parcela nro: 2 porque todos los rigs estan siendo utilizados - no se puede perforar en parcela nro: 3 porque todos los rigs estan siendo utilizados - no se puede perforar en parcela nro: 4 porque todos los rigs estan siendo utilizados
+no se puede perforar en parcela nro: 0 porque todos los rigs estan siendo utilizados - se cava en parcela nro: 0 con un rig de valor: 10.0 - no se puede perforar en parcela nro: 1 porque todos los rigs estan siendo utilizados - no se puede perforar en parcela nro: 2 porque todos los rigs estan siendo utilizados - no se puede perforar en parcela nro: 3 porque todos los rigs estan siendo utilizados - no se puede perforar en parcela nro: 4 porque todos los rigs estan siendo utilizados
+Finaliza el dia 0
+Inicia el dia 1
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :2
+se construye planta procesadora con capacidad diaria de procesamiento de: 3000.0
+se cava en parcela nro: 1 con un rig de valor: 10.0 - no se puede perforar en parcela nro: 2 porque todos los rigs estan siendo utilizados - no se puede perforar en parcela nro: 3 porque todos los rigs estan siendo utilizados - no se puede perforar en parcela nro: 4 porque todos los rigs estan siendo utilizados
+se cava en parcela nro: 1 con un rig de valor: 10.0 - no se puede perforar en parcela nro: 2 porque todos los rigs estan siendo utilizados - no se puede perforar en parcela nro: 3 porque todos los rigs estan siendo utilizados - no se puede perforar en parcela nro: 4 porque todos los rigs estan siendo utilizados
+Finaliza el dia 1
+Inicia el dia 2
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :3
+se construye planta procesadora con capacidad diaria de procesamiento de: 3000.0
+se cava en parcela nro: 2 con un rig de valor: 10.0 - no se puede perforar en parcela nro: 3 porque todos los rigs estan siendo utilizados - no se puede perforar en parcela nro: 4 porque todos los rigs estan siendo utilizados
+se cava en parcela nro: 2 con un rig de valor: 10.0 - no se puede perforar en parcela nro: 3 porque todos los rigs estan siendo utilizados - no se puede perforar en parcela nro: 4 porque todos los rigs estan siendo utilizados
+Finaliza el dia 2
+Inicia el dia 3
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se construye planta procesadora con capacidad diaria de procesamiento de: 3000.0
+se cava en parcela nro: 3 con un rig de valor: 10.0 - no se puede perforar en parcela nro: 4 porque todos los rigs estan siendo utilizados
+se cava en parcela nro: 3 con un rig de valor: 10.0 - no se puede perforar en parcela nro: 4 porque todos los rigs estan siendo utilizados
+Finaliza el dia 3
+Inicia el dia 4
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se construye planta procesadora con capacidad diaria de procesamiento de: 3000.0
+se cava en parcela nro: 4 con un rig de valor: 10.0
+se cava en parcela nro: 4 con un rig de valor: 10.0
+Finaliza el dia 4
+Inicia el dia 5
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+Finaliza el dia 5
+Inicia el dia 6
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+Finaliza el dia 6
+Inicia el dia 7
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+Finaliza el dia 7
+Inicia el dia 8
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+Finaliza el dia 8
+Inicia el dia 9
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+Finaliza el dia 9
+Inicia el dia 10
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+Finaliza el dia 10
+Inicia el dia 11
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+Finaliza el dia 11
+Inicia el dia 12
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1 - se extrae en parcela nro: 2 - se extrae en parcela nro: 3 - se extrae en parcela nro: 4
+Finaliza el dia 12
+Inicia el dia 13
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1 - se extrae en parcela nro: 2 - se extrae en parcela nro: 3 - se extrae en parcela nro: 4
+Finaliza el dia 13
+Inicia el dia 14
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1 - se extrae en parcela nro: 2 - se extrae en parcela nro: 3 - se extrae en parcela nro: 4
+Finaliza el dia 14
+Inicia el dia 15
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1 - se extrae en parcela nro: 2 - se extrae en parcela nro: 3 - se extrae en parcela nro: 4
+Finaliza el dia 15
+Inicia el dia 16
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1 - se extrae en parcela nro: 2 - se extrae en parcela nro: 3 - se extrae en parcela nro: 4
+Finaliza el dia 16
+Inicia el dia 17
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1 - se extrae en parcela nro: 2 - se extrae en parcela nro: 3 - se extrae en parcela nro: 4
+Finaliza el dia 17
+Inicia el dia 18
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1 - se extrae en parcela nro: 2 - se extrae en parcela nro: 3 - se extrae en parcela nro: 4
+Finaliza el dia 18
+Inicia el dia 19
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1 - se extrae en parcela nro: 2 - se extrae en parcela nro: 3 - se extrae en parcela nro: 4
+Finaliza el dia 19
+Inicia el dia 20
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1 - se extrae en parcela nro: 2 - se extrae en parcela nro: 3 - se extrae en parcela nro: 4
+Finaliza el dia 20
+Inicia el dia 21
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1 - se extrae en parcela nro: 2 - se extrae en parcela nro: 3 - se extrae en parcela nro: 4
+Finaliza el dia 21
+Inicia el dia 22
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1 - se extrae en parcela nro: 2 - se extrae en parcela nro: 3 - se extrae en parcela nro: 4
+Finaliza el dia 22
+Inicia el dia 23
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1 - se extrae en parcela nro: 2 - se extrae en parcela nro: 3 - se extrae en parcela nro: 4
+Finaliza el dia 23
+Inicia el dia 24
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1 - se extrae en parcela nro: 2 - se extrae en parcela nro: 3 - se extrae en parcela nro: 4
+Finaliza el dia 24
+Inicia el dia 25
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1 - se extrae en parcela nro: 2 - se extrae en parcela nro: 3 - se extrae en parcela nro: 4
+Finaliza el dia 25
+Inicia el dia 26
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1 - se extrae en parcela nro: 2 - se extrae en parcela nro: 3 - se extrae en parcela nro: 4
+Finaliza el dia 26
+Inicia el dia 27
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1 - se extrae en parcela nro: 2 - se extrae en parcela nro: 3 - se extrae en parcela nro: 4
+Finaliza el dia 27
+Inicia el dia 28
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1 - se extrae en parcela nro: 2 - se extrae en parcela nro: 3 - se extrae en parcela nro: 4
+Finaliza el dia 28
+Inicia el dia 29
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1 - se extrae en parcela nro: 2 - se extrae en parcela nro: 3 - se extrae en parcela nro: 4
+Finaliza el dia 29
+Inicia el dia 30
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1 - se extrae en parcela nro: 2 - se extrae en parcela nro: 3 - se extrae en parcela nro: 4
+Finaliza el dia 30
+Inicia el dia 31
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1 - se extrae en parcela nro: 2 - se extrae en parcela nro: 3 - se extrae en parcela nro: 4
+Finaliza el dia 31
+Inicia el dia 32
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1 - se extrae en parcela nro: 2 - se extrae en parcela nro: 3 - se extrae en parcela nro: 4
+Finaliza el dia 32
+Inicia el dia 33
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1 - se extrae en parcela nro: 2 - se extrae en parcela nro: 3 - se extrae en parcela nro: 4
+Finaliza el dia 33
+Inicia el dia 34
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1 - se extrae en parcela nro: 2 - se extrae en parcela nro: 3 - se extrae en parcela nro: 4
+Finaliza el dia 34
+Inicia el dia 35
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1 - se extrae en parcela nro: 2 - se extrae en parcela nro: 3 - se extrae en parcela nro: 4
+Finaliza el dia 35
+Inicia el dia 36
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1 - se extrae en parcela nro: 2 - se extrae en parcela nro: 3 - se extrae en parcela nro: 4
+Finaliza el dia 36
+Inicia el dia 37
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1 - se extrae en parcela nro: 2 - se extrae en parcela nro: 3 - se extrae en parcela nro: 4
+Finaliza el dia 37
+Inicia el dia 38
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1 - se extrae en parcela nro: 2 - se extrae en parcela nro: 3 - se extrae en parcela nro: 4
+Finaliza el dia 38
+Inicia el dia 39
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1 - se extrae en parcela nro: 2 - se extrae en parcela nro: 3 - se extrae en parcela nro: 4
+Finaliza el dia 39
+Inicia el dia 40
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1 - se extrae en parcela nro: 2 - se extrae en parcela nro: 3 - se extrae en parcela nro: 4
+Finaliza el dia 40
+Inicia el dia 41
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1 - se extrae en parcela nro: 2 - se extrae en parcela nro: 3 - se extrae en parcela nro: 4
+Finaliza el dia 41
+Inicia el dia 42
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1 - se extrae en parcela nro: 2 - se extrae en parcela nro: 3 - se extrae en parcela nro: 4
+Finaliza el dia 42
+Inicia el dia 43
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1 - se extrae en parcela nro: 2 - se extrae en parcela nro: 3 - se extrae en parcela nro: 4
+Finaliza el dia 43
+Inicia el dia 44
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1 - se extrae en parcela nro: 2 - se extrae en parcela nro: 3 - se extrae en parcela nro: 4
+Finaliza el dia 44
+Inicia el dia 45
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1 - se extrae en parcela nro: 2 - se extrae en parcela nro: 3 - se extrae en parcela nro: 4
+Finaliza el dia 45
+Inicia el dia 46
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1 - se extrae en parcela nro: 2 - se extrae en parcela nro: 3 - se extrae en parcela nro: 4
+Finaliza el dia 46
+Inicia el dia 47
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1 - se extrae en parcela nro: 2 - se extrae en parcela nro: 3 - se extrae en parcela nro: 4
+Finaliza el dia 47
+Inicia el dia 48
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1 - se extrae en parcela nro: 2 - se extrae en parcela nro: 3 - se extrae en parcela nro: 4
+Finaliza el dia 48
+Inicia el dia 49
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1 - se extrae en parcela nro: 2 - se extrae en parcela nro: 3 - se extrae en parcela nro: 4
+Finaliza el dia 49
+Inicia el dia 50
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1 - se extrae en parcela nro: 2 - se extrae en parcela nro: 3 - se extrae en parcela nro: 4
+Finaliza el dia 50
+Inicia el dia 51
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1 - se extrae en parcela nro: 2 - se extrae en parcela nro: 3 - se extrae en parcela nro: 4
+Finaliza el dia 51
+Inicia el dia 52
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1 - se extrae en parcela nro: 2 - se extrae en parcela nro: 3 - se extrae en parcela nro: 4
+Finaliza el dia 52
+Inicia el dia 53
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1 - se extrae en parcela nro: 2 - se extrae en parcela nro: 3 - se extrae en parcela nro: 4
+Finaliza el dia 53
+Inicia el dia 54
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1 - se extrae en parcela nro: 2 - se extrae en parcela nro: 3 - se extrae en parcela nro: 4
+Finaliza el dia 54
+Inicia el dia 55
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1 - se extrae en parcela nro: 2 - se extrae en parcela nro: 3 - se extrae en parcela nro: 4
+Finaliza el dia 55
+Inicia el dia 56
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1 - se extrae en parcela nro: 2 - se extrae en parcela nro: 3 - se extrae en parcela nro: 4
+Finaliza el dia 56
+Inicia el dia 57
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1 - se extrae en parcela nro: 2 - se extrae en parcela nro: 3 - se extrae en parcela nro: 4
+Finaliza el dia 57
+Inicia el dia 58
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1 - se extrae en parcela nro: 2 - se extrae en parcela nro: 3 - se extrae en parcela nro: 4
+Finaliza el dia 58
+Inicia el dia 59
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1 - se extrae en parcela nro: 2 - se extrae en parcela nro: 3 - se extrae en parcela nro: 4
+Finaliza el dia 59
+Inicia el dia 60
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1 - se extrae en parcela nro: 2 - se extrae en parcela nro: 3 - se extrae en parcela nro: 4
+Finaliza el dia 60
+Inicia el dia 61
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1 - se extrae en parcela nro: 2 - se extrae en parcela nro: 3 - se extrae en parcela nro: 4
+Finaliza el dia 61
+Inicia el dia 62
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1 - se extrae en parcela nro: 2 - se extrae en parcela nro: 3 - se extrae en parcela nro: 4
+Finaliza el dia 62
+Inicia el dia 63
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1 - se extrae en parcela nro: 2 - se extrae en parcela nro: 3 - se extrae en parcela nro: 4
+Finaliza el dia 63
+Inicia el dia 64
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1 - se extrae en parcela nro: 2 - se extrae en parcela nro: 3 - se extrae en parcela nro: 4
+Finaliza el dia 64
+Inicia el dia 65
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1 - se extrae en parcela nro: 2 - se extrae en parcela nro: 3 - se extrae en parcela nro: 4
+Finaliza el dia 65
+Inicia el dia 66
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1 - se extrae en parcela nro: 2 - se extrae en parcela nro: 3 - se extrae en parcela nro: 4
+Finaliza el dia 66
+Inicia el dia 67
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1 - se extrae en parcela nro: 2 - se extrae en parcela nro: 3 - se extrae en parcela nro: 4
+Finaliza el dia 67
+Inicia el dia 68
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1 - se extrae en parcela nro: 2 - se extrae en parcela nro: 3 - se extrae en parcela nro: 4
+Finaliza el dia 68
+Inicia el dia 69
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1 - se extrae en parcela nro: 2 - se extrae en parcela nro: 3 - se extrae en parcela nro: 4
+Finaliza el dia 69
+Inicia el dia 70
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1 - se extrae en parcela nro: 2 - se extrae en parcela nro: 3 - se extrae en parcela nro: 4
+Finaliza el dia 70
+Inicia el dia 71
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1 - se extrae en parcela nro: 2 - se extrae en parcela nro: 3 - se extrae en parcela nro: 4
+Finaliza el dia 71
+Inicia el dia 72
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1 - se extrae en parcela nro: 2 - se extrae en parcela nro: 3 - se extrae en parcela nro: 4
+Finaliza el dia 72
+Inicia el dia 73
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1 - se extrae en parcela nro: 2 - se extrae en parcela nro: 3 - se extrae en parcela nro: 4
+Finaliza el dia 73
+Inicia el dia 74
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1 - se extrae en parcela nro: 2 - se extrae en parcela nro: 3 - se extrae en parcela nro: 4
+Finaliza el dia 74
+Inicia el dia 75
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1 - se extrae en parcela nro: 2 - se extrae en parcela nro: 3 - se extrae en parcela nro: 4
+Finaliza el dia 75
+Inicia el dia 76
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1 - se extrae en parcela nro: 2 - se extrae en parcela nro: 3 - se extrae en parcela nro: 4
+Finaliza el dia 76
+Inicia el dia 77
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1 - se extrae en parcela nro: 2 - se extrae en parcela nro: 3 - se extrae en parcela nro: 4
+Finaliza el dia 77
+Inicia el dia 78
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1 - se extrae en parcela nro: 2 - se extrae en parcela nro: 3 - se extrae en parcela nro: 4
+Finaliza el dia 78
+Inicia el dia 79
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1 - se extrae en parcela nro: 2 - se extrae en parcela nro: 3 - se extrae en parcela nro: 4
+Finaliza el dia 79
+Inicia el dia 80
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1 - se extrae en parcela nro: 2 - se extrae en parcela nro: 3 - se extrae en parcela nro: 4
+Finaliza el dia 80
+Inicia el dia 81
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1 - se extrae en parcela nro: 2 - se extrae en parcela nro: 3 - se extrae en parcela nro: 4
+Finaliza el dia 81
+Inicia el dia 82
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1 - se extrae en parcela nro: 2 - se extrae en parcela nro: 3 - se extrae en parcela nro: 4
+Finaliza el dia 82
+Inicia el dia 83
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1 - se extrae en parcela nro: 2 - se extrae en parcela nro: 3 - se extrae en parcela nro: 4
+Finaliza el dia 83
+Inicia el dia 84
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1 - se extrae en parcela nro: 2 - se extrae en parcela nro: 3 - se extrae en parcela nro: 4
+Finaliza el dia 84
+Inicia el dia 85
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1 - se extrae en parcela nro: 2 - se extrae en parcela nro: 3 - se extrae en parcela nro: 4
+Finaliza el dia 85
+Inicia el dia 86
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1 - se extrae en parcela nro: 2 - se extrae en parcela nro: 3 - se extrae en parcela nro: 4
+Finaliza el dia 86
+Inicia el dia 87
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1 - se extrae en parcela nro: 2 - se extrae en parcela nro: 3 - se extrae en parcela nro: 4
+Finaliza el dia 87
+Inicia el dia 88
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1 - se extrae en parcela nro: 2 - se extrae en parcela nro: 3 - se extrae en parcela nro: 4
+Finaliza el dia 88
+Inicia el dia 89
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1 - se extrae en parcela nro: 2 - se extrae en parcela nro: 3 - se extrae en parcela nro: 4
+Finaliza el dia 89
+Inicia el dia 90
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1 - se extrae en parcela nro: 2 - se extrae en parcela nro: 3 - se extrae en parcela nro: 4
+Finaliza el dia 90
+Inicia el dia 91
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1 - se extrae en parcela nro: 2 - se extrae en parcela nro: 3 - se extrae en parcela nro: 4
+Finaliza el dia 91
+Inicia el dia 92
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1 - se extrae en parcela nro: 2 - se extrae en parcela nro: 3 - se extrae en parcela nro: 4
+Finaliza el dia 92
+Inicia el dia 93
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1 - se extrae en parcela nro: 2 - se extrae en parcela nro: 3 - se extrae en parcela nro: 4
+Finaliza el dia 93
+Inicia el dia 94
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1 - se extrae en parcela nro: 2 - se extrae en parcela nro: 3 - se extrae en parcela nro: 4
+Finaliza el dia 94
+Inicia el dia 95
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1 - se extrae en parcela nro: 2 - se extrae en parcela nro: 3 - se extrae en parcela nro: 4
+Finaliza el dia 95
+Inicia el dia 96
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1 - se extrae en parcela nro: 2 - se extrae en parcela nro: 3 - se extrae en parcela nro: 4
+Finaliza el dia 96
+Inicia el dia 97
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1 - se extrae en parcela nro: 2 - se extrae en parcela nro: 3 - se extrae en parcela nro: 4
+Finaliza el dia 97
+Inicia el dia 98
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1 - se extrae en parcela nro: 2 - se extrae en parcela nro: 3 - se extrae en parcela nro: 4
+Finaliza el dia 98
+Inicia el dia 99
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1 - se extrae en parcela nro: 2 - se extrae en parcela nro: 3 - se extrae en parcela nro: 4
+Finaliza el dia 99
+Inicia el dia 100
+se llego al criterio de parada por dia
+se llego al criterio de parada por dia
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1 - se extrae en parcela nro: 2 - se extrae en parcela nro: 3 - se extrae en parcela nro: 4
+Finaliza el dia 100
+Finaliza la simulacion
