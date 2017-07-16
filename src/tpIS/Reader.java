@@ -393,7 +393,9 @@ public class Reader {
 		result = new CriterioParadaPorDia(result);		
 		result = new CriterioDeParadaXPerdidaDeCapital(result);
 		result = new CriterioDeAlquilerDeRigXPrecioYCantidadMenorAParcelas(result);	
-		result = new CriterioConstruccionDeDiezPlantas(result);		
+		result = new CriterioConstruccionDeTanqueDeAguaSiNoExiste(result);		
+		result = new CriterioConstruccionDeTanqueDeGasSiNoExiste(result);
+		result = new CriterioConstruccionDeDiezPlantas(result);
 		result = new CriterioDeEleccionMasBaratoYPerforacionEnTodaParcela(result);
 		result = new CriterioDeExtraccionEnTodaParcela(result);
 		result = new CriterioDeVentaDeTodoElPetroleoAcumulado(result);

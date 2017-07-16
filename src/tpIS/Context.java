@@ -10,7 +10,8 @@ public class Context {
 	private Boolean _continue;	
 	private List<Rig> rigsAlquilados;
 	private List<Planta> _plantas;
-	private List<Tanque> _tanques;	
+	private List<Tanque> _tanquesAgua;	
+	private List<Tanque> _tanquesGas;
 	private List<ContextObserver> Observadores;
 	private Parcela parcela_ACavar;
 	private Rig rigElegido;
@@ -23,7 +24,8 @@ public class Context {
 		Observadores = new ArrayList<ContextObserver>();
 		rigsAlquilados = new ArrayList<Rig>();
 		_plantas = new ArrayList<Planta>();
-		_tanques = new ArrayList<Tanque> ();
+		_tanquesAgua = new ArrayList<Tanque> ();
+		_tanquesGas = new ArrayList<Tanque> ();
 		TerrenoArenoso terrenoNulo = new TerrenoArenoso(1);
 		Parcela unaParcela = new Parcela(0 ,terrenoNulo , 0, 0, this);
 		
@@ -95,8 +97,12 @@ public class Context {
 		return this._plantas;
 	}
 	
-	public List<Tanque> getTanques(){
-		return this._tanques;
+	public List<Tanque> getTanquesDeAgua(){	
+		return this._tanquesAgua;
+	}
+	
+	public List<Tanque> getTanquesDeGas(){
+		return this._tanquesGas;
 	}
 		
 	
@@ -108,8 +114,12 @@ public class Context {
 		this._plantas.add(unaPlanta);
 	}
 	
-	public void attachTanque(Tanque unTanque) {
-		_tanques.add(unTanque);
+	public void attachTanqueAgua(Tanque unTanque) {
+		_tanquesAgua.add(unTanque);
+	}
+	
+	public void attachTanqueGas(Tanque unTanque) {
+		_tanquesGas.add(unTanque);
 	}
 
 	public Parcela getParcela_ACavar() {

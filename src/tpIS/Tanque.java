@@ -9,7 +9,7 @@ public abstract class Tanque extends ContextObserver {
 		super(unContexto);
 		volumenOcupadoActual =0;
 		diasDeConstruccionActual =0;
-		unContexto.attachTanque(this);
+		this.modelo= unModelo;
 	}
 	
 	public double getVolumenTotal() {
@@ -31,12 +31,12 @@ public abstract class Tanque extends ContextObserver {
 		volumenOcupadoActual += vol;
 	}
 	
-	public boolean estaCosntruido() {
+	public boolean estaConstruido() {
 		return diasDeConstruccionActual == modelo.getDiasDeConstruccionTotal();
 	}
 	
 	protected void construirUnDia() {
-		if(!estaCosntruido())
+		if(!estaConstruido())
 			diasDeConstruccionActual++;
 		else
 			System.err.println("El talque ya esta construido.");
