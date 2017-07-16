@@ -14,7 +14,7 @@ public class Context {
 	private List<ContextObserver> Observadores;
 	private Parcela parcela_ACavar;
 	private Rig rigElegido;
-	private int volumenExtraidoHoy;
+	private double volumenExtraido;
 	
 	public Context(){
 			
@@ -40,8 +40,7 @@ public class Context {
 		for (ContextObserver observer : Observadores) 
 	         observer.updateDay();
 		
-		actualizarRigs();
-		this.volumenExtraidoHoy = 0;
+		actualizarRigs();		
 		this._lastEventToLog= "";
 	}
 	
@@ -56,6 +55,14 @@ public class Context {
 			rigsAlquilados.remove(unRig);				
 		}
 		
+	}
+	
+	public void addVolumenExtraido(double volumen){
+		this.volumenExtraido+=volumen;
+	}
+	
+	public double getVolumenExtraido(){
+		return this.volumenExtraido;
 	}
 	
 	public String GetLastEventsToLog(){
@@ -146,6 +153,10 @@ public class Context {
 	 * Ni se fija si el pozo esta abierto o en reinyeccion.
 	 */
 	
+	public void SalePetroleo(double volumen){
+		this.volumenExtraido -= volumen;
+	}
+	
 	public void Extract(Pozo pozo, double volumen){
 		pozo.extraer();
 		for(Planta planta: this.getPlantas()){
@@ -154,12 +165,14 @@ public class Context {
 				
 				if(planta.getCapacidadDeProcesamientoRestante() >= volumen ){
 					planta.procesar(volumen);
+					this.addVolumenExtraido(volumen);
 					break;
 				}
 				else{
 					volumen -= planta.getCapacidadDeProcesamientoRestante();
+					this.addVolumenExtraido(planta.getCapacidadDeProcesamientoRestante());
 					planta.procesar(planta.getCapacidadDeProcesamientoRestante());
-			
+					
 				}				
 				
 			}

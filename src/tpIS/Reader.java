@@ -375,6 +375,8 @@ public class Reader {
 		return deposit;		
 	}
 	
+	//FIXME LOS COSTOS NO SE LEVANTAN DEL READER
+	
 	public Presupuesto getPresupuesto(){
 		Map<Object, Double> costos = new HashMap<Object, Double>();
 		
@@ -383,7 +385,7 @@ public class Reader {
 	}
 	//FIXME HARCODEADO!!!
 	public EstadoFinanciero getEstadoFinanciero(){
-		return new EstadoFinanciero(1000);
+		return new EstadoFinanciero(10000);
 	}
 	
 	public Equipo getEquipoIngenieria(Context unContexto){
@@ -394,6 +396,7 @@ public class Reader {
 		result = new CriterioConstruccionDeDiezPlantas(result);		
 		result = new CriterioDeEleccionMasBaratoYPerforacionEnTodaParcela(result);
 		result = new CriterioDeExtraccionEnTodaParcela(result);
+		result = new CriterioDeVentaDeTodoElPetroleoAcumulado(result);
 		
 		return result;
 	}

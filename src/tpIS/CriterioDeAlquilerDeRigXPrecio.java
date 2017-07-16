@@ -37,10 +37,7 @@ public class CriterioDeAlquilerDeRigXPrecio extends CriterioEleccionDeRigs {
 		        		}
 		        		Rig rigElegido= new Rig(mejorModelo, context, mejorModelo.getDiasMinimoDeAlquiler());
 		        		context.alquilarUnRig(rigElegido);
-		        		this.textToLog = "se Alquila un rig por el precio de: "+ String.valueOf(rigElegido.getModelo().getPrecioRig()) ;
-		        		//TODO falta calcular el costo!
-		        		//TODO AGREGAR LOS COSTOS AL HASH MAP DEL PRESUPUESTO, EL COSTO TIENE QUE SER POR MODELO Y HAY Q PASARLE EL MODELO ELEGIDO,
-		        		//NO UN NUEVO RIG XQ NO LO VA A ENCONTRAR NUNCA EN EL HASHMAP
+		        		this.textToLog = "se Alquila un rig por el precio de: "+ String.valueOf(rigElegido.getModelo().getPrecioRig()) ;		        		//
 		        		equipo.getEstadoFinanciero().debit(equipo.getPresupuesto().getCostoDeRigHastaElDia(mejorModelo.getDiasMinimoDeAlquiler(), rigElegido.getModelo()));
 	        		}
 	        		else {

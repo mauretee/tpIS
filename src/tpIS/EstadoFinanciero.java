@@ -5,7 +5,7 @@ public class EstadoFinanciero {
 	private double _accountStatus;
 	
 	public EstadoFinanciero(double initialAccountStatus){
-		this._accountStatus = 100000;//initialAccountStatus;
+		this._accountStatus = initialAccountStatus;
 	}
 	
 	public void acredit(double credit){

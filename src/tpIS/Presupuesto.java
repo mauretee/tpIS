@@ -19,10 +19,8 @@ public class Presupuesto {
 	}
 	
 	public double getCostoDeRigHastaElDia(int CantidadDeDias, ModeloRig rigModel){	
-		//costoDelRig costoRig;
-					
-		//double costoRigByDay= this._costs.get((Object)rig);		
-		double costoRig = _costs.get((Object)rigModel);
+							
+		double costoRig = 10; // _costs.get((Object)rigModel);
 		
 		if(rigModel.getDiasMinimoDeAlquiler() <= CantidadDeDias) {
 			costoRig *= CantidadDeDias;
@@ -35,15 +33,24 @@ public class Presupuesto {
 	}
 
 	public double getCostoDePlanta(ModeloPlanta plantModel){
-		return _costs.get((Object)plantModel);
+		//FIX ME: NO SESETEAN COSTOS EN EL READER
+		return 100;//_costs.get((Object)plantModel);
 	}
 	
 	public double getCostoDeTanque(ModeloTanque tankModel){
-		return _costs.get((Object)tankModel);
+		//FIX ME: NO SESETEAN COSTOS EN EL READER
+		return  100;// _costs.get((Object)tankModel);
 	}
 	
 	public double getPrice(Object obj){
-		double result =this._costs.get(obj);		
+		//FIX ME: NO SESETEAN COSTOS EN EL READER
+		double result =10;//this._costs.get(obj);		
+		return result; 
+	}
+	
+	public double getPrecioPetroleo(){
+		//FIX ME: NO SESETEAN COSTOS EN EL READER
+		double result =20;//this._costs.get(obj);		
 		return result; 
 	}
 	

@@ -31,6 +31,7 @@ public class Simulacion {
 			/*this._logger.Log("Estado financiero actual: "+
 					String.valueOf(this._equipoIngenieria.getEstadoFinanciero().getStatus()));*/
 			this._logger.Log("Finaliza el dia "+ String.valueOf(this._context.GetDay()));
+			this._logger.Log("El presupuesto actual es de "+ this._equipoIngenieria.getEstadoFinanciero().getStatus());
 			this._context.FinishDay();
 
 		}

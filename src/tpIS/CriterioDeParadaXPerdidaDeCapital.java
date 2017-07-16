@@ -5,11 +5,10 @@ import java.util.List;
 public class CriterioDeParadaXPerdidaDeCapital extends CriterioParada {
 	
 private double limitCapital;
-private EstadoFinanciero unEstadoFinanciero;
 	
 	public CriterioDeParadaXPerdidaDeCapital(Equipo equipo) {
 		super(equipo);	
-		unEstadoFinanciero = equipo._estadoFinanciero; 
+		
 		this.limitCapital = this._reader.getLimitFinancialStatus();
 	}
 
@@ -19,7 +18,7 @@ private EstadoFinanciero unEstadoFinanciero;
 	public List<Closure> Evaluate(Context context) {
 		// TODO Auto-generated method stub
 		List<Closure> result = super.Evaluate(context);
-		if(unEstadoFinanciero.getStatus() < this.limitCapital){
+		if(this.getEstadoFinanciero().getStatus() < this.limitCapital){
 			Function parar = new Function() {
 		        @Override
 		        public void Apply(Context context, Equipo equipo)  {

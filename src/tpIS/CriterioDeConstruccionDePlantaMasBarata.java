@@ -30,6 +30,9 @@ public class CriterioDeConstruccionDePlantaMasBarata extends CriterioDeConstrucc
 		        	//ModeloPlanta MP = new ModeloPlanta(1,2);
 				Planta P= new Planta(MP ,context);
 		        	context.attachPlanta(P);
+		        	
+		        	equipo.getEstadoFinanciero().debit(equipo.getPresupuesto()
+		        			.getCostoDePlanta( P.getModelo()));
 		        }
 		        @Override
 		        public void LogAction(Context context)  {

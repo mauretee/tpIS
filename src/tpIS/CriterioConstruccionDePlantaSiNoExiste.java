@@ -31,6 +31,8 @@ public class CriterioConstruccionDePlantaSiNoExiste extends CriterioDeConstrucci
 						//ModeloPlanta MP = new ModeloPlanta(1,2);
 						Planta P= new Planta(MP ,context);
 			        	context.attachPlanta(P);
+			        	equipo.getEstadoFinanciero().debit(equipo.getPresupuesto()
+			        			.getCostoDePlanta( P.getModelo()));
 						this.textToLog = "se construye planta";
 					}
 					else{
