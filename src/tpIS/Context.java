@@ -61,6 +61,7 @@ public class Context {
 	
 	public void addVolumenExtraido(double volumen){
 		this.volumenExtraido+=volumen;
+		System.out.println(volumenExtraido);
 	}
 	
 	public double getVolumenExtraido(){
@@ -165,6 +166,7 @@ public class Context {
 	
 	public void SalePetroleo(double volumen){
 		this.volumenExtraido -= volumen;
+		System.out.println(volumenExtraido);
 	}
 	
 	public void Extract(Pozo pozo, double volumen, Yacimiento yacimiento){

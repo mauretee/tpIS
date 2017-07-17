@@ -443,8 +443,6 @@ public class Reader {
 		return deposit;		
 	}
 	
-	//FIXME LOS COSTOS NO SE LEVANTAN DEL READER
-	
 	public Presupuesto getPresupuesto(){
 		Map<Object, Double> costos = new HashMap<Object, Double>();
 		

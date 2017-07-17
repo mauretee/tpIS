@@ -75,8 +75,8 @@ public class CriterioDeEleccionMasBaratoYPerforacionEnTodaParcela extends Criter
 			        				}
 			        				this.textToLog = this.textToLog + "se cava en parcela nro: "+String.valueOf(nroParcela) +" con un rig de valor: "+ String.valueOf(selectedRig.getModelo().getPrecioRig());
 			        			}
-			        			else
-			        				break;
+			        			/*else
+			        				break;*/
 			        			
 			        			
 				        		//TODO: llamar al calculador de costo y 

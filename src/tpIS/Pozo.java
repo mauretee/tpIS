@@ -2,7 +2,7 @@ package tpIS;
 
 public class Pozo {
 	private Estado estado;
-	private int presion;
+	private double presion;
 	//private int capacidadPotencial;
 	private static int cantidadPozosAbiertos;
 	private static int cantidadDePozos;
@@ -22,12 +22,12 @@ public class Pozo {
 			return potencial;
 		}
 		else {
-			System.err.println("DIVICION POR 0 EN POZO");
+			//System.err.println("DIVICION POR 0 EN POZO");
 			double potencial = 0;
 			return potencial;
 		}
 	}
-	public int getPresion() {
+	public double getPresion() {
 		return presion;
 	}
 	public Estado getEstado() {
@@ -55,7 +55,7 @@ public class Pozo {
 	}
 	//FIXME PRESION ES UN INT O UN DOUBLE?????
 	public void actualizarPresion(double eBeta) {
-		presion = (int) (presion * eBeta);
+		presion = (presion * eBeta);
 	}
 	public static int getCantidadTotalDePozos() {
 		return cantidadDePozos;
