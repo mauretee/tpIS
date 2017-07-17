@@ -13,7 +13,7 @@ public class Context {
 	private List<Tanque> _tanquesAgua;	
 	private List<Tanque> _tanquesGas;
 	private List<ContextObserver> Observadores;
-	private Parcela parcela_ACavar;
+	//private Parcela parcela_ACavar;
 	private Rig rigElegido;
 	private double volumenExtraido;
 	
@@ -27,9 +27,9 @@ public class Context {
 		_tanquesAgua = new ArrayList<Tanque> ();
 		_tanquesGas = new ArrayList<Tanque> ();
 		TerrenoArenoso terrenoNulo = new TerrenoArenoso(1);
-		Parcela unaParcela = new Parcela(0 ,terrenoNulo , 0, 0, this);
+		//Parcela unaParcela = new Parcela(0 ,terrenoNulo , 0, 0);
 		
-		parcela_ACavar = unaParcela;
+		//parcela_ACavar = unaParcela;
 		
 	}
 	
@@ -122,20 +122,20 @@ public class Context {
 		_tanquesGas.add(unTanque);
 	}
 
-	public Parcela getParcela_ACavar() {
+/*	public Parcela getParcela_ACavar() {
 		if(parcela_ACavar != null)
 			return parcela_ACavar;
 		else {
 			System.err.println("ERROR en Contexto! No hay parcela para cavar elegida.");
 			TerrenoArenoso terrenoNulo = new TerrenoArenoso(1);
-			Parcela unaParcela = new Parcela(0 ,terrenoNulo , 0, 0, this);
+			Parcela unaParcela = new Parcela(0 ,terrenoNulo , 0, 0);
 			return unaParcela;
 		}
-	}
+	}*/
 
-	public void setParcela_ACavar(Parcela parcela_ACavar) {
+	/*public void setParcela_ACavar(Parcela parcela_ACavar) {
 		this.parcela_ACavar = parcela_ACavar;
-	}
+	}*/
 
 	public Rig getRigElegidoParaCavar() {
 		return rigElegido;

@@ -31,5 +31,11 @@ public abstract class Equipo {
 		return this._yacimiento;		
 	}
 	
+	public double getAlpha1() {
+		return _reader.getAlfa1();
+	}
+	public double getAlpha2() {
+		return _reader.getAlfa2();
+	}
 
 }

@@ -408,21 +408,21 @@ public class Reader {
 	}
 	
 	
-	public List<Parcela> getParcelas(Context unContexto){
+	public List<Parcela> getParcelas(){
 		List<Parcela> parcels = new ArrayList<Parcela>();
 		for( int i = 0; i < this.getCantidadDeParcelas(); ++i){
 			//FIXME Tipo de terreno siempre es rocoso!!!
 			Parcela parcela  = new Parcela(this.getPresionInicialDeParcelas().get(i),
-					new TerrenoRocoso(tipoDeParcelas.get(i)), this.getPresionInicialDeParcelas().get(i), this.getResistenciaDeParcelas().get(i), unContexto);
+					new TerrenoRocoso(tipoDeParcelas.get(i)), this.getPresionInicialDeParcelas().get(i), this.getResistenciaDeParcelas().get(i));
 			parcels.add(parcela);
 		}
 		return parcels;
 	}
 	
-	
+	//FIXMI GUARDA EL VOLUMEN DEBERIA SER UN DOUBLE!!!
 	public Yacimiento getYacimiento(Context unContexto){
 		Yacimiento deposit = new Yacimiento(this.getVolumenYacimiento(),this.getComposicion(),
-				this.getParcelas(unContexto));
+				this.getParcelas(), unContexto);
 		
 		return deposit;		
 	}

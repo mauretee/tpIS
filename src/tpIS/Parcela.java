@@ -1,19 +1,17 @@
 package tpIS;
 
-public class Parcela extends ContextObserver{
+public class Parcela {
 	private int profundidadNecesaria;
 	private int profundidadActua;
 	private int presionInicial;
 	private Terreno tipoDeTerreno;
-	//private int resistencia; //Deprecated (?
 	private Pozo pozo;
 	
-	public Parcela(int profundidad, Terreno tipoDeTerreno, int presion, int resistencia, Context unContexto){
-		super(unContexto);
+	public Parcela(int profundidad, Terreno tipoDeTerreno, int presion, int resistencia){
+		//super(unContexto);
 		this.profundidadNecesaria =profundidad;
 		this.tipoDeTerreno = tipoDeTerreno;
 		this.presionInicial = presion;
-		//this.resistencia = resistencia;
 	}
 	
 	public Terreno getTipoDeTerreno() {
@@ -30,8 +28,7 @@ public class Parcela extends ContextObserver{
 	private void crearPozo() {
 		if(!tienePozo()) {
 			Estado unEstado = Estado.ParadoPorSindicato ;
-			int capacidad = 10; // QUE ERA ESTO ??
-			pozo = new Pozo(unEstado, presionInicial, capacidad);
+			pozo = new Pozo(unEstado, presionInicial);
 		}
 		else 
 			System.err.println("Esta parcela ya posee un pozo.");
@@ -60,19 +57,28 @@ public class Parcela extends ContextObserver{
 	}
 	
 	public Pozo getPozo() {
-		Estado unEstado = Estado.ParadoPorSindicato ;
-		Pozo dummy = new Pozo(unEstado, 0, 0);
 		if(tienePozo())
 			return pozo;
 		else
 			System.err.println("Esta parzela NO TIENE POZO AUN!!!");
 		
+		Estado unEstado = Estado.ParadoPorSindicato ;
+		Pozo dummy = new Pozo(unEstado, 0);
 		return dummy;
 	}
 	
-	public void updateDay() {
+	/*public void updateDay() {
 		if(tienePozo()) 
 			pozo.cerrarValvula();
+	}*/
+	
+	public void updatePresionPozo(double volumenR, double volumenTotal) {
+		if(tienePozo()) {
+			pozo.cerrarValvula();
+			double beta = 0.1*(volumenR/volumenTotal)/(Math.pow(pozo.getCantidadTotalDePozos(), ((double)2/3)));
+			pozo.actualizarPresion(Math.pow(Math.E, -beta));
+		}
+		
 	}
 	
 }
