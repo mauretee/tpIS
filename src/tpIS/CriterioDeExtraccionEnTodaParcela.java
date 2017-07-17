@@ -18,7 +18,7 @@ public class CriterioDeExtraccionEnTodaParcela extends CriterioExtraccion{
 		        public void Apply(Context context, Equipo equipo)  {
 		        	int nroParcela = 0;
 		        	for(Parcela parcela : equipo.getYacimiento().listaDeParcelas){		        		
-		        		if(parcela.tienePozo() && parcela.getPozo().getEstado()!= Estado.Extrayendo && context.getCapacityToExtract()>0 ) {
+		        		if(context.getCapacityToExtract()>0  && parcela.tienePozo() && parcela.getPozo().getEstado()!= Estado.Extrayendo  ) {
 		        					        		
 		        			//revisar
 		        			context.Extract(parcela.getPozo(), parcela.getPozo().getCapacidadPotencial(equipo.getAlpha1(), equipo.getAlpha2()), equipo.getYacimiento());

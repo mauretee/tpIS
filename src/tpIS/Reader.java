@@ -411,9 +411,25 @@ public class Reader {
 	public List<Parcela> getParcelas(){
 		List<Parcela> parcels = new ArrayList<Parcela>();
 		for( int i = 0; i < this.getCantidadDeParcelas(); ++i){
-			//FIXME Tipo de terreno siempre es rocoso!!!
+			//TODO 3 tipos de terreno Rocos, Arenoso, Arcilloso
+			Terreno unTerreno;
+			switch(tipoDeParcelas.get(i)) {
+			case 1:
+				unTerreno = new TerrenoRocoso(getResistenciaDeParcelas().get(i));
+				break;
+			case 2: 
+				unTerreno = new TerrenoArenoso(getResistenciaDeParcelas().get(i));
+				break;
+			case 3:
+				unTerreno = new TerrenoArcilloso(getResistenciaDeParcelas().get(i));
+				break;
+			default:
+					System.err.println("ERROR AL INGRESAR UN TERRENO NO VALIDO, reader getParcelas pos: "+i);
+					unTerreno = new TerrenoRocoso(getResistenciaDeParcelas().get(i));
+					break;
+			}
 			Parcela parcela  = new Parcela(this.getPresionInicialDeParcelas().get(i),
-					new TerrenoRocoso(tipoDeParcelas.get(i)), this.getPresionInicialDeParcelas().get(i), this.getResistenciaDeParcelas().get(i));
+					unTerreno, this.getPresionInicialDeParcelas().get(i), this.getResistenciaDeParcelas().get(i));
 			parcels.add(parcela);
 		}
 		return parcels;

@@ -4,7 +4,7 @@ Porcentaje de gas en la composicion del producto (numero entre 0 y 100).
 Porcentaje de petroleo en la composicion del producto (numero entre 0 y 100).
 Cantidad maxima de RIGS.
 Volumen de yacimiento en metros cubicos.
-Presion inicial de boca de poso de la primer Parcela 1, tipo de Parcela de la parcela 1, profundidad en metros, resistencia %(0..100).
+Presion inicial de boca de poso de la primer Parcela 1, tipo de Parcela de la parcela 1, profundidad en metros, resistencia %(0..100). (*Los tipos, estan predefinidos y numerados)
 ...
 Presion inicial de boca de poso de la primer Parcela N, tipo de Parcela de la parcela N, profundidad en metros, resistencia %(0..100).
 Cantidad de dias de la consecion del yacimiento.

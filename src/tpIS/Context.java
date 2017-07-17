@@ -26,7 +26,7 @@ public class Context {
 		_plantas = new ArrayList<Planta>();
 		_tanquesAgua = new ArrayList<Tanque> ();
 		_tanquesGas = new ArrayList<Tanque> ();
-		TerrenoArenoso terrenoNulo = new TerrenoArenoso(1);
+		//TerrenoArenoso terrenoNulo = new TerrenoArenoso(1);
 		//Parcela unaParcela = new Parcela(0 ,terrenoNulo , 0, 0);
 		
 		//parcela_ACavar = unaParcela;
