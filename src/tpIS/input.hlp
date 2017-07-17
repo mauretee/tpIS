@@ -31,3 +31,4 @@ Volumen maximo diario de reinyeccion en metros cubicos.
 Monto m�ximo de gastos (para criterio de parada) en pesos.
 Presi�n critica en (psia).
 Diluci�n cr�tica (%).
+Capital inicial de la simulacion en pesos.

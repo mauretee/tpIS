@@ -8,7 +8,7 @@ import java.util.*;
 
 public class Reader {
 	//"/Users/mauro/Desktop/Computacion/IS1/Tp/tpIS/src/tpIS/input.txt"
-	//"D:\School\UBA\Ing del sorf\tpIS-master\src\tpIS\input.txt"
+	//"D:\School\UBA\Ing del sorf\tpIS\tpIS\src\tpIS\input.txt"
 	private int cantidadDeParcelas;
 	private int composicionDeAgua;
 	private int composicionDeGas;
@@ -43,15 +43,17 @@ public class Reader {
 	private Map<Integer, Integer> diasDeConstrucionDeTanque;
 	private Map<Integer, Double> costoDeTanques;
 	// Precios
-	private int precioDeCompraDeAgua;
-	private int ventaDePetroleo;
-	private int precioCompraConbustibleRigs; 
+	private double precioDeCompraDeAgua;
+	private double ventaDePetroleo;
+	private double ventaDeGas;
+	private double precioCompraConbustibleRigs; 
 	private double alfa1;
 	private double alfa2;
 	private double volumenMaxDeReinyecionDiario;
 	private double montoMinimoDeGastos;
 	private double presionCritica;
-	private double dilucionCritica; // ?
+	private double dilucionCritica; 
+	private double capitalInicial;
 	public Reader(){
 		BufferedReader br = null;
 		FileReader fr = null;
@@ -212,6 +214,53 @@ public class Reader {
 				costoDeTanques.put(indice, costoDeTanquesInt);
 			}
 			
+			//INICIALIZAMOS LOS PARAMENTROS FALTANTES
+			String line = br.readLine();
+			precioDeCompraDeAgua = new Double(Double.parseDouble(line));
+			System.out.println(precioDeCompraDeAgua);
+			line = null;
+			line = br.readLine();
+			ventaDePetroleo =new Double(Double.parseDouble(line));
+			System.out.println(ventaDePetroleo);
+			line = null;
+			line = br.readLine();
+			ventaDeGas =new Double(Double.parseDouble(line));
+			System.out.println(ventaDeGas);
+			line = null;
+			line = br.readLine();
+			precioCompraConbustibleRigs =new Double(Double.parseDouble(line));
+			System.out.println(precioCompraConbustibleRigs);
+			line = null;
+			line = br.readLine();
+			alfa1 =new Double(Double.parseDouble(line));
+			System.out.println(alfa1);
+			line = null;
+			line = br.readLine();
+			alfa2 =new Double(Double.parseDouble(line));
+			System.out.println(alfa2);
+			line = null;
+			line = br.readLine();
+			volumenMaxDeReinyecionDiario =new Double(Double.parseDouble(line));
+			System.out.println(volumenMaxDeReinyecionDiario);
+			line = null;
+			line = br.readLine();
+			montoMinimoDeGastos =new Double(Double.parseDouble(line));
+			System.out.println(montoMinimoDeGastos);
+			line = null;
+			line = br.readLine();
+			presionCritica =new Double(Double.parseDouble(line));
+			System.out.println(presionCritica);
+			line = null;
+			line = br.readLine();
+			dilucionCritica =new Double(Double.parseDouble(line));
+			System.out.println(dilucionCritica);
+			
+			//EL CAPITAL INICIAL DE LA SIMULACION. CREO Q DEBERIA SER EL PRIMER PARAMETRO
+			line = null;
+			line = br.readLine();
+			capitalInicial = new Double(Double.parseDouble(line));
+			System.out.println(capitalInicial);
+			
 		} catch (IOException e) {
 
 			e.printStackTrace();
@@ -319,14 +368,17 @@ public class Reader {
 		return cantidadDePososAConstruir;
 	}
 	
-	public int getPrecioDeCompraDeAgua(){
+	public double getPrecioDeCompraDeAgua(){
 		return precioDeCompraDeAgua;
 	}
 	
-	public int getVentaDePetroleo(){
+	public double getVentaDePetroleo(){
 		return ventaDePetroleo;
 	}
-	public int getPrecioCompraConbustibleRigs(){
+	public double getVentaDeGas(){
+		return ventaDeGas;
+	}
+	public double getPrecioCompraConbustibleRigs(){
 		return precioCompraConbustibleRigs;
 	}
 	public double getAlfa1(){
@@ -380,12 +432,12 @@ public class Reader {
 	public Presupuesto getPresupuesto(){
 		Map<Object, Double> costos = new HashMap<Object, Double>();
 		
-		Presupuesto budget = new Presupuesto(costos);
+		Presupuesto budget = new Presupuesto(costos, ventaDePetroleo, ventaDeGas, precioDeCompraDeAgua);
 		return budget;
 	}
-	//FIXME HARCODEADO!!!
+	
 	public EstadoFinanciero getEstadoFinanciero(){
-		return new EstadoFinanciero(10000);
+		return new EstadoFinanciero(capitalInicial);
 	}
 	
 	public Equipo getEquipoIngenieria(Context unContexto){

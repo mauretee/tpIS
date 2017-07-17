@@ -5,13 +5,20 @@ import java.util.Map;
 public class Presupuesto {	
 	
 	private Map<Object, Double> _costs;
+	private double precioPetroleo;
+	private double precioGas;
+	private double precioAgua;
 	
-	public Presupuesto(Map<Object, Double> costs) {		
+	public Presupuesto(Map<Object, Double> costs, double petroleo, double gas, double agua) {		
 		this._costs = costs;
+		precioPetroleo = petroleo;
+		precioGas = gas;
+		precioAgua = agua;
 	}
 	
 	public void agregarArticulo(Object unArticulo, double unCostos) {
-		
+		Double price = new Double(unCostos);
+		_costs.put(unArticulo, price);
 	}
 
 	public double getCostoDeRig(ModeloRig rigModel){
@@ -20,7 +27,7 @@ public class Presupuesto {
 	
 	public double getCostoDeRigHastaElDia(int CantidadDeDias, ModeloRig rigModel){	
 							
-		double costoRig = 10; // _costs.get((Object)rigModel);
+		double costoRig = _costs.get((Object)rigModel);
 		
 		if(rigModel.getDiasMinimoDeAlquiler() <= CantidadDeDias) {
 			costoRig *= CantidadDeDias;
@@ -34,24 +41,28 @@ public class Presupuesto {
 
 	public double getCostoDePlanta(ModeloPlanta plantModel){
 		//FIX ME: NO SESETEAN COSTOS EN EL READER
-		return 100;//_costs.get((Object)plantModel);
+		return _costs.get((Object)plantModel);
 	}
 	
 	public double getCostoDeTanque(ModeloTanque tankModel){
-		//FIX ME: NO SESETEAN COSTOS EN EL READER
-		return  100;// _costs.get((Object)tankModel);
+		return _costs.get((Object)tankModel);
 	}
 	
 	public double getPrice(Object obj){
-		//FIX ME: NO SESETEAN COSTOS EN EL READER
-		double result =10;//this._costs.get(obj);		
+		double result =this._costs.get(obj);		
 		return result; 
 	}
 	
-	public double getPrecioPetroleo(){
-		//FIX ME: NO SESETEAN COSTOS EN EL READER
-		double result =20;//this._costs.get(obj);		
-		return result; 
+	public double getPrecioPetroleo(){	
+		return precioPetroleo; 
+	}
+
+	public double getPrecioGas() {
+		return precioGas;
+	}
+
+	public double getPrecioAgua() {
+		return precioAgua;
 	}
 	
 }
