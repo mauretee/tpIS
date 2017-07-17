@@ -167,20 +167,37 @@ public class Context {
 		this.volumenExtraido -= volumen;
 	}
 	
-	public void Extract(Pozo pozo, double volumen){
+	public void Extract(Pozo pozo, double volumen, Yacimiento yacimiento){
+		
 		pozo.extraer();
+		double realVolumenToExtract = this.CalculateRealVolumenToExtract(volumen);
+		
 		for(Planta planta: this.getPlantas()){
 	
-			if(volumen>0 && !planta.plantaEnConstruccion()){
-				
+			if(realVolumenToExtract>0 && !planta.plantaEnConstruccion()){
+
+	
 				if(planta.getCapacidadDeProcesamientoRestante() >= volumen ){
 					planta.procesar(volumen);
-					this.addVolumenExtraido(volumen);
+
+					//agregar volumen de petroleo extraido y almacenar agua y gas
+					this.addVolumenExtraido(volumen * yacimiento.getComposicion().getPetroleo()/100);
+
+					this.addExtractProduct(volumen * yacimiento.getComposicion().getGas()/100, this.getTanquesDeGas());
+					
+					this.addExtractProduct(volumen * yacimiento.getComposicion().getAgua()/100, this.getTanquesDeAgua());
 					break;
 				}
 				else{
-					volumen -= planta.getCapacidadDeProcesamientoRestante();
-					this.addVolumenExtraido(planta.getCapacidadDeProcesamientoRestante());
+					realVolumenToExtract -= planta.getCapacidadDeProcesamientoRestante();
+
+					this.addVolumenExtraido(planta.getCapacidadDeProcesamientoRestante() * yacimiento.getComposicion().getPetroleo()/100);
+
+					this.addExtractProduct(planta.getCapacidadDeProcesamientoRestante() * yacimiento.getComposicion().getGas()/100, this.getTanquesDeGas());
+					
+					this.addExtractProduct(planta.getCapacidadDeProcesamientoRestante() * yacimiento.getComposicion().getAgua()/100 , this.getTanquesDeAgua());
+					
+					
 					planta.procesar(planta.getCapacidadDeProcesamientoRestante());
 					
 				}				
@@ -188,7 +205,49 @@ public class Context {
 			}
 						
 		}
+		
+			
+	}
 	
+	
+	private void addExtractProduct(double vol, List<Tanque> tanks){
+		for(Tanque tank: tanks){
+			if(vol>0 && tank.estaConstruido()){
+				if(tank.getCapacidadAlmacenamientoRestante() >= vol ){
+					tank.llenar(vol);
+				}
+				else{
+					vol -= tank.getCapacidadAlmacenamientoRestante();
+					tank.llenar(tank.getCapacidadAlmacenamientoRestante());
+				}
+				
+			}
+		}
+		
+		
+	}
+	
+	private double CalculateRealVolumenToExtract(double volumen){
+		double result = volumen;		
+		double gasStorageCapacity = this.GetStorageCapacity(this.getTanquesDeGas());
+		if(gasStorageCapacity < result){
+			result = gasStorageCapacity;
+		}
+		double waterStorageCapacity = this.GetStorageCapacity(this.getTanquesDeAgua());
+		if(waterStorageCapacity < result){
+			result = waterStorageCapacity;
+		}
+		
+		return result;
+	}
+	
+	
+	private double GetStorageCapacity(List<Tanque> tanques){
+		double result = 0;
+		for(Tanque tanque: tanques){
+			result += tanque.getCapacidadAlmacenamientoRestante();
+		}
+		return result;
 	}
 }
 

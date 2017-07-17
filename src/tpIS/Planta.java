@@ -41,8 +41,13 @@ public class Planta extends ContextObserver {
 	}
 	
 	public void updateDay() {
-		if(plantaEnConstruccion())
+		if(plantaEnConstruccion()){
 			construirUnDia();
+		}
+		else{
+			cantidadProcesamientoRestante = this.modelo.getPoderProcesamientoDia();
+		}
+			
 	}
 
 	public ModeloPlanta getModelo() {

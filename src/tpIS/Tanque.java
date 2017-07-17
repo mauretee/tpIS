@@ -19,6 +19,10 @@ public abstract class Tanque extends ContextObserver {
 		return volumenOcupadoActual;
 	}
 	
+	public double getCapacidadAlmacenamientoRestante() {
+		return this.modelo.getVolumenTotal() - volumenOcupadoActual;
+	}
+	
 	public ModeloTanque getModelo() {
 		return modelo;
 	}

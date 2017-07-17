@@ -21,7 +21,7 @@ public class CriterioDeExtraccionEnTodaParcela extends CriterioExtraccion{
 		        		if(parcela.tienePozo() && parcela.getPozo().getEstado()!= Estado.Extrayendo && context.getCapacityToExtract()>0 ) {
 		        					        		
 		        			//revisar
-		        			context.Extract(parcela.getPozo(), parcela.getPozo().getCapacidad());
+		        			context.Extract(parcela.getPozo(), parcela.getPozo().getCapacidad(), equipo.getYacimiento());
 		        			if(!this.textToLog.isEmpty()){
 	        					this.textToLog = this.textToLog+ " - ";	
 	        				}
