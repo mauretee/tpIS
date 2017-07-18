@@ -435,7 +435,7 @@ public class Reader {
 		return parcels;
 	}
 	
-	//FIXMI GUARDA EL VOLUMEN DEBERIA SER UN DOUBLE!!!
+	//FIXME GUARDA EL VOLUMEN DEBERIA SER UN DOUBLE!!!
 	public Yacimiento getYacimiento(Context unContexto){
 		Yacimiento deposit = new Yacimiento(this.getVolumenYacimiento(),this.getComposicion(),
 				this.getParcelas(), unContexto);

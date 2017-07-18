@@ -20,10 +20,6 @@ public class Parcela {
 	public int getProfundidadNecesaria() {
 		return profundidadNecesaria;
 	}
-	
-	/*public int getResistencia(){
-		return resistencia;
-	}*/
 
 	private void crearPozo() {
 		if(!tienePozo()) {
@@ -71,7 +67,7 @@ public class Parcela {
 		if(tienePozo()) 
 			pozo.cerrarValvula();
 	}*/
-	
+	//se actualiza la presion del pozo en base a la formula 2
 	public void updatePresionPozo(double volumenR, double volumenTotal) {
 		if(tienePozo()) {
 			pozo.cerrarValvula();

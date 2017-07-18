@@ -7,7 +7,6 @@ public class Yacimiento extends ContextObserver {
 	private double volumenActual;
 	private Composicion composicion;
 	List<Parcela> listaDeParcelas;
-	private int cantidadDePozosCavados;
 	
 	public Yacimiento(double volumen, Composicion composicion,List<Parcela> listaDeParcelas, Context unContexto){
 		super(unContexto);
@@ -15,7 +14,6 @@ public class Yacimiento extends ContextObserver {
 		this.composicion = composicion;
 		this.listaDeParcelas = listaDeParcelas;
 		volumenActual = volumen;
-		cantidadDePozosCavados = 0;
 	}
 	public double getVolumen() {
 		return volumenActual;
@@ -26,12 +24,14 @@ public class Yacimiento extends ContextObserver {
 	public List<Parcela> getListaDeParcelas() {
 		return listaDeParcelas;
 	}
-	public int getCantidadDePozosCavados() {
-		return cantidadDePozosCavados;
+	
+	public void extraerDelReservorio(double volumenAgua, double volumenPetroleo, double volumenGas) {
+		//Ver como convertir en porsentajes y cambiar la compisicion.
 	}
-	/*public void addNewPozo() {
-		cantidadDePozosCavados++;
-	}*/
+	
+	public void reinyectarEnPozo(Pozo unPozo) {
+		
+	}
 	
 	public void updateDay() {
 		for(Parcela unaParcela :listaDeParcelas) {
