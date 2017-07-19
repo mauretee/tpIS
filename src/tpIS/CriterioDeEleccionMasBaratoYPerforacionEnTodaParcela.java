@@ -3,16 +3,16 @@ package tpIS;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CriterioDeEleccionMasBaratoYPerforacionEnTodaParcela extends CriterioDeEleccioRigYPerforacion{
+public class CriterioDeEleccionMasBaratoYPerforacionEnTodaParcela extends CriterioAdherido{
 	
-	public CriterioDeEleccionMasBaratoYPerforacionEnTodaParcela(Equipo equipo) {
-		super(equipo);			
+	public CriterioDeEleccionMasBaratoYPerforacionEnTodaParcela(Criterio criterio) {
+		super(criterio);			
 	}
 
 	@Override
-	public List<Closure> Evaluate(Context context) {
+	public List<Closure> Evaluate(Context context, EstadoFinanciero estado) {
 
-		List<Closure> result = super.Evaluate(context);
+		List<Closure> result = super.Evaluate(context, estado);
 			Function perforar = new Function() {
 
 				private String textToLog = "";

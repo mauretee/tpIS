@@ -12,14 +12,12 @@ public class Pozo {
 		cantidadDePozos++;
 	}
 	//Se calcula el potencial del Pozo en base a la formula 1 del tp
-	public double getCapacidadPotencial(double alpha1, double alpha2) {
+	public double getCapacidadPotencial(double alpha1, double alpha2, CalculadorPotencialDeExtraccion calculador) {
 		if(cantidadPozosAbiertos > 0){
-			double num = presion/cantidadPozosAbiertos;
-			double potencial = alpha1*num + alpha2*Math.pow(num, 2);
+			double potencial = calculador.Calculate(presion, cantidadPozosAbiertos, alpha1, alpha2);			
 			return potencial;
 		}
 		else {
-			System.err.println("DIVICION POR 0 EN POZO");
 			double potencial = 0;
 			return potencial;
 		}

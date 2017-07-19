@@ -456,8 +456,15 @@ public class Reader {
 	
 	public Equipo getEquipoIngenieria(Context unContexto){
 		Equipo result = new EquipoIngenieria(this, unContexto);
-		result = new CriterioParadaPorDia(result);		
-		result = new CriterioDeParadaXPerdidaDeCapital(result);
+		
+		
+		return result;
+	}
+	
+	public Criterio getCriterio(){
+		Criterio result = new CriterioDeEquipo();
+		result = new CriterioParadaPorDia(result, this.getLimitDaysQuantity());		
+		result = new CriterioDeParadaXPerdidaDeCapital(result, this.getLimitFinancialStatus());
 		result = new CriterioDeAlquilerDeRigXPrecioYCantidadMenorAParcelas(result);	
 		result = new CriterioConstruccionDeTanqueDeAguaSiNoExiste(result);		
 		result = new CriterioConstruccionDeTanqueDeGasSiNoExiste(result);
@@ -465,10 +472,9 @@ public class Reader {
 		result = new CriterioDeEleccionMasBaratoYPerforacionEnTodaParcela(result);
 		result = new CriterioDeExtraccionEnTodaParcela(result);
 		result = new CriterioDeVentaDeTodoElPetroleoAcumulado(result);
-		
 		return result;
+		
 	}
-	
 	
 	//TODO Testear...
 	public Catalogo getCatalogo(Presupuesto unPresupuesto) {

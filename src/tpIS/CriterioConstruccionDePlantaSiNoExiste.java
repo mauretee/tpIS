@@ -2,16 +2,16 @@ package tpIS;
 
 import java.util.List;
 
-public class CriterioConstruccionDePlantaSiNoExiste extends CriterioDeConstruccionDePlanta{
+public class CriterioConstruccionDePlantaSiNoExiste extends CriterioAdherido{
 	
-	public CriterioConstruccionDePlantaSiNoExiste(Equipo equipo) {
-		super(equipo);			
+	public CriterioConstruccionDePlantaSiNoExiste(Criterio criterio) {
+		super(criterio);			
 	}
 	
 	@Override
-	public List<Closure> Evaluate(Context context) {
+	public List<Closure> Evaluate(Context context, EstadoFinanciero estado) {
 
-		List<Closure> result = super.Evaluate(context);
+		List<Closure> result = super.Evaluate(context, estado);
 			Function construirPlanta = new Function() {
 				/*
 				 * (non-Javadoc)

@@ -2,21 +2,21 @@ package tpIS;
 
 import java.util.List;
 
-public class CriterioParadaPorDia extends CriterioParada {
+public class CriterioParadaPorDia extends CriterioAdherido {
 
 	private int _limitDay;
 	
-	public CriterioParadaPorDia(Equipo equipo) {
-		super(equipo);				
-		this._limitDay = this._reader.getLimitDaysQuantity();
+	public CriterioParadaPorDia(Criterio criterio, int limitDay) {
+		super(criterio);				
+		this._limitDay = limitDay;
 	}
 
 	
 	
 	@Override
-	public List<Closure> Evaluate(Context context) {
-		// TODO Auto-generated method stub
-		List<Closure> result = super.Evaluate(context);
+	public List<Closure> Evaluate(Context context, EstadoFinanciero estado) {
+
+		List<Closure> result = super.Evaluate(context, estado);
 		if(context.GetDay() >= this._limitDay){
 			Function parar = new Function() {
 		        @Override

@@ -2,20 +2,19 @@ package tpIS;
 
 import java.util.List;
 
-public class CriterioDeVentaDeTodoElPetroleoAcumulado extends CriterioVentaPetroleo {
+public class CriterioDeVentaDeTodoElPetroleoAcumulado extends CriterioAdherido {
 	
 	
-	public CriterioDeVentaDeTodoElPetroleoAcumulado(Equipo equipo) {
-		super(equipo);			
+	public CriterioDeVentaDeTodoElPetroleoAcumulado(Criterio criterio) {
+		super(criterio);			
 	}
 
 	
 	
 	@Override
-	public List<Closure> Evaluate(Context context) {
-		// TODO Auto-generated method stub
-		
-		List<Closure> result = super.Evaluate(context);
+	public List<Closure> Evaluate(Context context, EstadoFinanciero estado) {
+
+		List<Closure> result = super.Evaluate(context, estado);
 		if(context.getVolumenExtraido()>0){
 			
 			Function vender = new Function() {

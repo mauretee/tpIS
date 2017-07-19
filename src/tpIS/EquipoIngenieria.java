@@ -12,13 +12,14 @@ public class EquipoIngenieria extends Equipo{
 		this._presupuesto = reader.getPresupuesto();
 		this._estadoFinanciero = reader.getEstadoFinanciero();	
 		this.unCatalogo = reader.getCatalogo(_presupuesto);
-				
+		this._criterio = reader.getCriterio();
+		this._calculadorPotencialExtraccion = new CalculadorPotencialDeExtraccion();
 	}
 	
 	@Override
 	public List<Closure> Evaluate(Context context){
 		
-		List<Closure> actions = new ArrayList<Closure>();		
+		List<Closure> actions = this._criterio.Evaluate(context, this.getEstadoFinanciero());		
 		return actions; 
 	}
 	

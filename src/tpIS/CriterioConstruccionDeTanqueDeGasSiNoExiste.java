@@ -2,16 +2,16 @@ package tpIS;
 
 import java.util.List;
 
-public class CriterioConstruccionDeTanqueDeGasSiNoExiste extends CriterioDeConstruccionDeTanque{
+public class CriterioConstruccionDeTanqueDeGasSiNoExiste extends CriterioAdherido{
 	
-	public CriterioConstruccionDeTanqueDeGasSiNoExiste(Equipo equipo) {
-		super(equipo);			
+	public CriterioConstruccionDeTanqueDeGasSiNoExiste(Criterio criterio) {
+		super(criterio);			
 	}
 	
 	@Override
-	public List<Closure> Evaluate(Context context) {
+	public List<Closure> Evaluate(Context context, EstadoFinanciero estado) {
 
-		List<Closure> result = super.Evaluate(context);
+		List<Closure> result = super.Evaluate(context, estado);
 			Function construirTanque = new Function() {
 				/*
 				 * (non-Javadoc)

@@ -2,17 +2,17 @@ package tpIS;
 
 import java.util.List;
 
-public class CriterioDeConstruccionDePlantaMasBarata extends CriterioDeConstruccionDePlanta {
+public class CriterioDeConstruccionDePlantaMasBarata extends CriterioAdherido {
 
-	public CriterioDeConstruccionDePlantaMasBarata(Equipo equipo) {
-		super(equipo);
+	public CriterioDeConstruccionDePlantaMasBarata(Criterio criterio) {
+		super(criterio);
 		// TODO Auto-generated constructor stub
 	}
 	
 	@Override
-	public List<Closure> Evaluate(Context context) {
+	public List<Closure> Evaluate(Context context, EstadoFinanciero estado) {
 
-		List<Closure> result = super.Evaluate(context);
+		List<Closure> result = super.Evaluate(context, estado);
 			Function elegirRig = new Function() {
 				/*
 				 * (non-Javadoc)

@@ -9,9 +9,11 @@ public abstract class Equipo {
 	public Catalogo unCatalogo;
 	public EstadoFinanciero _estadoFinanciero;	
 	public Reader _reader;
+	public Criterio _criterio;
+	public CalculadorPotencialDeExtraccion _calculadorPotencialExtraccion;
 	
 	public abstract List<Closure> Evaluate(Context context);
-	
+		
 	
 	public Catalogo getCatalogo(){
 		return this.unCatalogo;		
@@ -36,6 +38,10 @@ public abstract class Equipo {
 	}
 	public double getAlpha2() {
 		return _reader.getAlfa2();
+	}
+	
+	public CalculadorPotencialDeExtraccion getCalculadorPotencialDeExtraccion(){
+		return this._calculadorPotencialExtraccion;
 	}
 
 }

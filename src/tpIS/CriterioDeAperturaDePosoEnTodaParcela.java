@@ -2,17 +2,17 @@ package tpIS;
 
 import java.util.List;
 
-public class CriterioDeAperturaDePosoEnTodaParcela extends CriterioDeAperturaDePozo {
+public class CriterioDeAperturaDePosoEnTodaParcela extends CriterioAdherido {
 
-	public CriterioDeAperturaDePosoEnTodaParcela(Equipo equipo) {
-		super(equipo);
+	public CriterioDeAperturaDePosoEnTodaParcela(Criterio criterio) {
+		super(criterio);
 		// TODO Auto-generated constructor stub
 	}
 	
 	@Override
-	public List<Closure> Evaluate(Context context) {
+	public List<Closure> Evaluate(Context context, EstadoFinanciero estado) {
 
-		List<Closure> result = super.Evaluate(context);
+		List<Closure> result = super.Evaluate(context, estado);
 			Function perforar = new Function() {
 		        @Override
 		        public void Apply(Context context, Equipo equipo)  {

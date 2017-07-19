@@ -2,16 +2,16 @@ package tpIS;
 
 import java.util.List;
 
-public class CriterioDeAlquilerDeRigXPrecio extends CriterioEleccionDeRigs {
+public class CriterioDeAlquilerDeRigXPrecio extends CriterioAdherido {
 
-	public CriterioDeAlquilerDeRigXPrecio(Equipo equipo) {
-		super(equipo);
+	public CriterioDeAlquilerDeRigXPrecio(Criterio criterio) {
+		super(criterio);
 	}
 	
 	@Override
-	public List<Closure> Evaluate(Context context) {
+	public List<Closure> Evaluate(Context context, EstadoFinanciero estado) {
 
-		List<Closure> result = super.Evaluate(context);
+		List<Closure> result = super.Evaluate(context, estado);
 			Function elegirRig = new Function() {
 				/*
 				 * (non-Javadoc)

@@ -2,16 +2,16 @@ package tpIS;
 
 import java.util.List;
 
-public class CriterioDeAlquilerDeRigXPrecioYCantidadMenorAParcelas extends CriterioEleccionDeRigs {
+public class CriterioDeAlquilerDeRigXPrecioYCantidadMenorAParcelas extends CriterioAdherido {
 
-	public CriterioDeAlquilerDeRigXPrecioYCantidadMenorAParcelas(Equipo equipo) {
-		super(equipo);
+	public CriterioDeAlquilerDeRigXPrecioYCantidadMenorAParcelas(Criterio criterio) {
+		super(criterio);
 	}
 	
 	@Override
-	public List<Closure> Evaluate(Context context) {
+	public List<Closure> Evaluate(Context context, EstadoFinanciero estado) {
 
-		List<Closure> result = super.Evaluate(context);
+		List<Closure> result = super.Evaluate(context, estado);
 			Function elegirRig = new Function() {
 				/*
 				 * (non-Javadoc)
@@ -28,7 +28,8 @@ public class CriterioDeAlquilerDeRigXPrecioYCantidadMenorAParcelas extends Crite
 		        	 * de no haber ninguno que se pueda utilizar alli, creamos el modelo mas barato
 		        	 */
 		        	this.textToLog="";
-		        	if(context.getRigs().size() < equipo.getYacimiento().listaDeParcelas.size()){
+		        	if(context.getRigs().size() < equipo.getYacimiento().listaDeParcelas.size() 
+		        			&& context.getRigs().size() < equipo._reader.getMaximaCantidadDeRigs() ){
 		        	
 		        		if(!equipo.getCatalogo().getModelosRigs().isEmpty()) {
 		        			ModeloRig mejorModelo = equipo.getCatalogo().getModelosRigs().get(0);
