@@ -1,0 +1,1213 @@
+Inicia el dia 0
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :1
+se construye tanque de agua
+se construye tanque de gas
+se construye planta procesadora con capacidad diaria de procesamiento de: 3000.0
+no se puede perforar en parcela nro: 0 porque todos los rigs estan siendo utilizados - se cava en parcela nro: 0 con un rig de valor: 10.0 - no se puede perforar en parcela nro: 1 porque todos los rigs estan siendo utilizados - no se puede perforar en parcela nro: 2 porque todos los rigs estan siendo utilizados - no se puede perforar en parcela nro: 3 porque todos los rigs estan siendo utilizados - no se puede perforar en parcela nro: 4 porque todos los rigs estan siendo utilizados
+no se puede perforar en parcela nro: 0 porque todos los rigs estan siendo utilizados - se cava en parcela nro: 0 con un rig de valor: 10.0 - no se puede perforar en parcela nro: 1 porque todos los rigs estan siendo utilizados - no se puede perforar en parcela nro: 2 porque todos los rigs estan siendo utilizados - no se puede perforar en parcela nro: 3 porque todos los rigs estan siendo utilizados - no se puede perforar en parcela nro: 4 porque todos los rigs estan siendo utilizados
+no se puede perforar en parcela nro: 0 porque todos los rigs estan siendo utilizados - se cava en parcela nro: 0 con un rig de valor: 10.0 - no se puede perforar en parcela nro: 1 porque todos los rigs estan siendo utilizados - no se puede perforar en parcela nro: 2 porque todos los rigs estan siendo utilizados - no se puede perforar en parcela nro: 3 porque todos los rigs estan siendo utilizados - no se puede perforar en parcela nro: 4 porque todos los rigs estan siendo utilizados
+Finaliza el dia 0
+El presupuesto actual es de 96900.0
+Inicia el dia 1
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :2
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :2
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :2
+se construye planta procesadora con capacidad diaria de procesamiento de: 3000.0
+se cava en parcela nro: 0 con un rig de valor: 10.0 - no se puede perforar en parcela nro: 1 porque todos los rigs estan siendo utilizados - no se puede perforar en parcela nro: 2 porque todos los rigs estan siendo utilizados - no se puede perforar en parcela nro: 3 porque todos los rigs estan siendo utilizados
+se cava en parcela nro: 0 con un rig de valor: 10.0 - no se puede perforar en parcela nro: 1 porque todos los rigs estan siendo utilizados - no se puede perforar en parcela nro: 2 porque todos los rigs estan siendo utilizados - no se puede perforar en parcela nro: 3 porque todos los rigs estan siendo utilizados
+se cava en parcela nro: 0 con un rig de valor: 10.0 - no se puede perforar en parcela nro: 1 porque todos los rigs estan siendo utilizados - no se puede perforar en parcela nro: 2 porque todos los rigs estan siendo utilizados - no se puede perforar en parcela nro: 3 porque todos los rigs estan siendo utilizados
+Finaliza el dia 1
+El presupuesto actual es de 95800.0
+Inicia el dia 2
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :3
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :3
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :3
+se construye planta procesadora con capacidad diaria de procesamiento de: 3000.0
+se cava en parcela nro: 0 con un rig de valor: 10.0 - no se puede perforar en parcela nro: 1 porque todos los rigs estan siendo utilizados - no se puede perforar en parcela nro: 2 porque todos los rigs estan siendo utilizados
+se cava en parcela nro: 0 con un rig de valor: 10.0 - no se puede perforar en parcela nro: 1 porque todos los rigs estan siendo utilizados - no se puede perforar en parcela nro: 2 porque todos los rigs estan siendo utilizados
+se cava en parcela nro: 0 con un rig de valor: 10.0 - no se puede perforar en parcela nro: 1 porque todos los rigs estan siendo utilizados - no se puede perforar en parcela nro: 2 porque todos los rigs estan siendo utilizados
+Finaliza el dia 2
+El presupuesto actual es de 94700.0
+Inicia el dia 3
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se construye planta procesadora con capacidad diaria de procesamiento de: 3000.0
+se cava en parcela nro: 0 con un rig de valor: 10.0 - no se puede perforar en parcela nro: 1 porque todos los rigs estan siendo utilizados
+se cava en parcela nro: 0 con un rig de valor: 10.0 - no se puede perforar en parcela nro: 1 porque todos los rigs estan siendo utilizados
+se cava en parcela nro: 0 con un rig de valor: 10.0 - no se puede perforar en parcela nro: 1 porque todos los rigs estan siendo utilizados
+Finaliza el dia 3
+El presupuesto actual es de 93600.0
+Inicia el dia 4
+
+
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+se construye planta procesadora con capacidad diaria de procesamiento de: 3000.0
+se cava en parcela nro: 0 con un rig de valor: 10.0
+se cava en parcela nro: 0 con un rig de valor: 10.0
+se cava en parcela nro: 0 con un rig de valor: 10.0
+Finaliza el dia 4
+El presupuesto actual es de 92600.0
+Inicia el dia 5
+
+
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+Finaliza el dia 5
+El presupuesto actual es de 92600.0
+Inicia el dia 6
+
+
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+Finaliza el dia 6
+El presupuesto actual es de 92600.0
+Inicia el dia 7
+
+
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+Finaliza el dia 7
+El presupuesto actual es de 92600.0
+Inicia el dia 8
+
+
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+Finaliza el dia 8
+El presupuesto actual es de 92600.0
+Inicia el dia 9
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+Finaliza el dia 9
+El presupuesto actual es de 92500.0
+Inicia el dia 10
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+Finaliza el dia 10
+El presupuesto actual es de 92400.0
+Inicia el dia 11
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+Finaliza el dia 11
+El presupuesto actual es de 92300.0
+Inicia el dia 12
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+Finaliza el dia 12
+El presupuesto actual es de 92200.0
+Inicia el dia 13
+
+
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+se venden: 0.28519976222601173m3 a un precio de: 100.0por m3
+Finaliza el dia 13
+El presupuesto actual es de 92228.5199762226
+Inicia el dia 14
+
+
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+Finaliza el dia 14
+El presupuesto actual es de 92228.5199762226
+Inicia el dia 15
+
+
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+se venden: 0.23179333475004896m3 a un precio de: 100.0por m3
+Finaliza el dia 15
+El presupuesto actual es de 92251.69930969761
+Inicia el dia 16
+
+
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+Finaliza el dia 16
+El presupuesto actual es de 92251.69930969761
+Inicia el dia 17
+
+
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+se venden: 0.1890848485580646m3 a un precio de: 100.0por m3
+Finaliza el dia 17
+El presupuesto actual es de 92270.60779455342
+Inicia el dia 18
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+Finaliza el dia 18
+El presupuesto actual es de 92170.60779455342
+Inicia el dia 19
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+se venden: 0.15483322528238463m3 a un precio de: 100.0por m3
+Finaliza el dia 19
+El presupuesto actual es de 92086.09111708165
+Inicia el dia 20
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+Finaliza el dia 20
+El presupuesto actual es de 91986.09111708165
+Inicia el dia 21
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+se venden: 0.12727978347706775m3 a un precio de: 100.0por m3
+Finaliza el dia 21
+El presupuesto actual es de 91898.81909542937
+Inicia el dia 22
+
+
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+Finaliza el dia 22
+El presupuesto actual es de 91898.81909542937
+Inicia el dia 23
+
+
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+se venden: 0.1050427753681378m3 a un precio de: 100.0por m3
+Finaliza el dia 23
+El presupuesto actual es de 91909.32337296619
+Inicia el dia 24
+
+
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+Finaliza el dia 24
+El presupuesto actual es de 91909.32337296619
+Inicia el dia 25
+
+
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+se venden: 0.08703517955239876m3 a un precio de: 100.0por m3
+Finaliza el dia 25
+El presupuesto actual es de 91918.02689092142
+Inicia el dia 26
+
+
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+Finaliza el dia 26
+El presupuesto actual es de 91918.02689092142
+Inicia el dia 27
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+se venden: 0.07240059739390747m3 a un precio de: 100.0por m3
+Finaliza el dia 27
+El presupuesto actual es de 91825.2669506608
+Inicia el dia 28
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+Finaliza el dia 28
+El presupuesto actual es de 91725.2669506608
+Inicia el dia 29
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+se venden: 0.06046324519828753m3 a un precio de: 100.0por m3
+Finaliza el dia 29
+El presupuesto actual es de 91631.31327518064
+Inicia el dia 30
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+Finaliza el dia 30
+El presupuesto actual es de 91531.31327518064
+Inicia el dia 31
+
+
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+se venden: 0.050688924074696814m3 a un precio de: 100.0por m3
+Finaliza el dia 31
+El presupuesto actual es de 91536.3821675881
+Inicia el dia 32
+
+
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+Finaliza el dia 32
+El presupuesto actual es de 91536.3821675881
+Inicia el dia 33
+
+
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+se venden: 0.042654541365633514m3 a un precio de: 100.0por m3
+Finaliza el dia 33
+El presupuesto actual es de 91540.64762172467
+Inicia el dia 34
+
+
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+Finaliza el dia 34
+El presupuesto actual es de 91540.64762172467
+Inicia el dia 35
+
+
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+se venden: 0.03602429566691767m3 a un precio de: 100.0por m3
+Finaliza el dia 35
+El presupuesto actual es de 91544.25005129135
+Inicia el dia 36
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+Finaliza el dia 36
+El presupuesto actual es de 91444.25005129135
+Inicia el dia 37
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+se venden: 0.03053105600236382m3 a un precio de: 100.0por m3
+Finaliza el dia 37
+El presupuesto actual es de 91347.30315689159
+Inicia el dia 38
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+Finaliza el dia 38
+El presupuesto actual es de 91247.30315689159
+Inicia el dia 39
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+se venden: 0.025961791268267156m3 a un precio de: 100.0por m3
+Finaliza el dia 39
+El presupuesto actual es de 91149.89933601841
+Inicia el dia 40
+
+
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+Finaliza el dia 40
+El presupuesto actual es de 91149.89933601841
+Inicia el dia 41
+
+
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+se venden: 0.022146159307170253m3 a un precio de: 100.0por m3
+Finaliza el dia 41
+El presupuesto actual es de 91152.11395194913
+Inicia el dia 42
+
+
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+Finaliza el dia 42
+El presupuesto actual es de 91152.11395194913
+Inicia el dia 43
+
+
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+se venden: 0.018947561989568935m3 a un precio de: 100.0por m3
+Finaliza el dia 43
+El presupuesto actual es de 91154.00870814809
+Inicia el dia 44
+
+
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+Finaliza el dia 44
+El presupuesto actual es de 91154.00870814809
+Inicia el dia 45
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+se venden: 0.01625612597831895m3 a un precio de: 100.0por m3
+Finaliza el dia 45
+El presupuesto actual es de 91055.63432074591
+Inicia el dia 46
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+Finaliza el dia 46
+El presupuesto actual es de 90955.63432074591
+Inicia el dia 47
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+se venden: 0.013983188143407588m3 a un precio de: 100.0por m3
+Finaliza el dia 47
+El presupuesto actual es de 90857.03263956026
+Inicia el dia 48
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+Finaliza el dia 48
+El presupuesto actual es de 90757.03263956026
+Inicia el dia 49
+
+
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+se venden: 0.012056957441569364m3 a un precio de: 100.0por m3
+Finaliza el dia 49
+El presupuesto actual es de 90758.23833530441
+Inicia el dia 50
+
+
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+Finaliza el dia 50
+El presupuesto actual es de 90758.23833530441
+Inicia el dia 51
+
+
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+se venden: 0.010419097351768552m3 a un precio de: 100.0por m3
+Finaliza el dia 51
+El presupuesto actual es de 90759.28024503958
+Inicia el dia 52
+
+
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+Finaliza el dia 52
+El presupuesto actual es de 90759.28024503958
+Inicia el dia 53
+
+
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+se venden: 0.009022029232621928m3 a un precio de: 100.0por m3
+Finaliza el dia 53
+El presupuesto actual es de 90760.18244796284
+Inicia el dia 54
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+Finaliza el dia 54
+El presupuesto actual es de 90660.18244796284
+Inicia el dia 55
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+se venden: 0.007826800794059681m3 a un precio de: 100.0por m3
+Finaliza el dia 55
+El presupuesto actual es de 90560.96512804224
+Inicia el dia 56
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+Finaliza el dia 56
+El presupuesto actual es de 90460.96512804224
+Inicia el dia 57
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+se venden: 0.006801398015623161m3 a un precio de: 100.0por m3
+Finaliza el dia 57
+El presupuesto actual es de 90361.6452678438
+Inicia el dia 58
+
+
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+Finaliza el dia 58
+El presupuesto actual es de 90361.6452678438
+Inicia el dia 59
+
+
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+se venden: 0.0059194054463113325m3 a un precio de: 100.0por m3
+Finaliza el dia 59
+El presupuesto actual es de 90362.23720838844
+Inicia el dia 60
+
+
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+Finaliza el dia 60
+El presupuesto actual es de 90362.23720838844
+Inicia el dia 61
+
+
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+se venden: 0.0051589405568409595m3 a un precio de: 100.0por m3
+Finaliza el dia 61
+El presupuesto actual es de 90362.75310244413
+Inicia el dia 62
+
+
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+Finaliza el dia 62
+El presupuesto actual es de 90362.75310244413
+Inicia el dia 63
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+se venden: 0.004501803984333639m3 a un precio de: 100.0por m3
+Finaliza el dia 63
+El presupuesto actual es de 90263.20328284256
+Inicia el dia 64
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+Finaliza el dia 64
+El presupuesto actual es de 90163.20328284256
+Inicia el dia 65
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+se venden: 0.003932800122856272m3 a un precio de: 100.0por m3
+Finaliza el dia 65
+El presupuesto actual es de 90063.59656285484
+Inicia el dia 66
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+Finaliza el dia 66
+El presupuesto actual es de 89963.59656285484
+Inicia el dia 67
+
+
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+se venden: 0.003439192357509837m3 a un precio de: 100.0por m3
+Finaliza el dia 67
+El presupuesto actual es de 89963.94048209059
+Inicia el dia 68
+
+
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+Finaliza el dia 68
+El presupuesto actual es de 89963.94048209059
+Inicia el dia 69
+
+
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+se venden: 0.0030102649269093396m3 a un precio de: 100.0por m3
+Finaliza el dia 69
+El presupuesto actual es de 89964.24150858328
+Inicia el dia 70
+
+
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+Finaliza el dia 70
+El presupuesto actual es de 89964.24150858328
+Inicia el dia 71
+
+
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+se venden: 0.002636969405191982m3 a un precio de: 100.0por m3
+Finaliza el dia 71
+El presupuesto actual es de 89964.50520552379
+Inicia el dia 72
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+Finaliza el dia 72
+El presupuesto actual es de 89864.50520552379
+Inicia el dia 73
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+se venden: 0.0023116384908118837m3 a un precio de: 100.0por m3
+Finaliza el dia 73
+El presupuesto actual es de 89764.73636937287
+Inicia el dia 74
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+Finaliza el dia 74
+El presupuesto actual es de 89664.73636937287
+Inicia el dia 75
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+se venden: 0.0020277534638822488m3 a un precio de: 100.0por m3
+Finaliza el dia 75
+El presupuesto actual es de 89564.93914471926
+Inicia el dia 76
+
+
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+Finaliza el dia 76
+El presupuesto actual es de 89564.93914471926
+Inicia el dia 77
+
+
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+se venden: 0.0017797545513786556m3 a un precio de: 100.0por m3
+Finaliza el dia 77
+El presupuesto actual es de 89565.1171201744
+Inicia el dia 78
+
+
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+Finaliza el dia 78
+El presupuesto actual es de 89565.1171201744
+Inicia el dia 79
+
+
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+se venden: 0.0015628856950876398m3 a un precio de: 100.0por m3
+Finaliza el dia 79
+El presupuesto actual es de 89565.2734087439
+Inicia el dia 80
+
+
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+Finaliza el dia 80
+El presupuesto actual es de 89565.2734087439
+Inicia el dia 81
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+se venden: 0.0013730669870691554m3 a un precio de: 100.0por m3
+Finaliza el dia 81
+El presupuesto actual es de 89465.4107154426
+Inicia el dia 82
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+Finaliza el dia 82
+El presupuesto actual es de 89365.4107154426
+Inicia el dia 83
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+se venden: 0.001206789427803031m3 a un precio de: 100.0por m3
+Finaliza el dia 83
+El presupuesto actual es de 89265.53139438538
+Inicia el dia 84
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+Finaliza el dia 84
+El presupuesto actual es de 89165.53139438538
+Inicia el dia 85
+
+
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+se venden: 0.00106102775588964m3 a un precio de: 100.0por m3
+Finaliza el dia 85
+El presupuesto actual es de 89165.63749716098
+Inicia el dia 86
+
+
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+Finaliza el dia 86
+El presupuesto actual es de 89165.63749716098
+Inicia el dia 87
+
+
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+se venden: 9.331679597228376E-4m3 a un precio de: 100.0por m3
+Finaliza el dia 87
+El presupuesto actual es de 89165.73081395695
+Inicia el dia 88
+
+
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+Finaliza el dia 88
+El presupuesto actual es de 89165.73081395695
+Inicia el dia 89
+
+
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+se venden: 8.20946761302261E-4m3 a un precio de: 100.0por m3
+Finaliza el dia 89
+El presupuesto actual es de 89165.81290863307
+Inicia el dia 90
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+Finaliza el dia 90
+El presupuesto actual es de 89065.81290863307
+Inicia el dia 91
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+se venden: 7.224008996005247E-4m3 a un precio de: 100.0por m3
+Finaliza el dia 91
+El presupuesto actual es de 88965.88514872303
+Inicia el dia 92
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+Finaliza el dia 92
+El presupuesto actual es de 88865.88514872303
+Inicia el dia 93
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+se venden: 6.358244663351108E-4m3 a un precio de: 100.0por m3
+Finaliza el dia 93
+El presupuesto actual es de 88765.94873116966
+Inicia el dia 94
+
+
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+Finaliza el dia 94
+El presupuesto actual es de 88765.94873116966
+Inicia el dia 95
+
+
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+se venden: 5.597328845908813E-4m3 a un precio de: 100.0por m3
+Finaliza el dia 95
+El presupuesto actual es de 88766.00470445812
+Inicia el dia 96
+
+
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+Finaliza el dia 96
+El presupuesto actual es de 88766.00470445812
+Inicia el dia 97
+
+
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+se venden: 4.928323892427902E-4m3 a un precio de: 100.0por m3
+Finaliza el dia 97
+El presupuesto actual es de 88766.05398769704
+Inicia el dia 98
+
+
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+NO SE ALQUILAN RIGS
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+Finaliza el dia 98
+El presupuesto actual es de 88766.05398769704
+Inicia el dia 99
+
+
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+se venden: 4.3399408220674287E-4m3 a un precio de: 100.0por m3
+Finaliza el dia 99
+El presupuesto actual es de 88666.09738710527
+Inicia el dia 100
+se llego al criterio de parada por dia
+se llego al criterio de parada por dia
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se Alquila un rig por el precio de: 10.0- cantidad de rigs alquilados :4
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+se extrae en parcela nro: 0 - se extrae en parcela nro: 1
+Finaliza el dia 100
+El presupuesto actual es de 88566.09738710527
+Finaliza la simulacion

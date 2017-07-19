@@ -78,10 +78,11 @@ public class CriterioDeEleccionMasBaratoYPerforacionEnTodaParcela extends Criter
 			        			/*else
 			        				break;*/
 			        			
-			        			
+			        		
+			        			nroParcela +=1;
 				        		//TODO: llamar al calculador de costo y 
 			        		}
-			        		nroParcela ++;
+			        		
 			        		
 			        	}
 		        	
