@@ -40,12 +40,16 @@ public class Parcela {
 	
 	public void cavar(int cantidad) {
 		if(!tienePozo()) {
-			this.profundidadActua += cantidad;
+			this.actualizarProfundidad(cantidad);
 			if(profundidadActua >= profundidadNecesaria)
 				crearPozo();
 		}
 		else
 			System.err.println("La profundidad necesaria ya fue alcanzada en el pozo de esta parcela");
+	}
+	
+	private void actualizarProfundidad(int cantidad){
+		this.profundidadActua += cantidad;
 	}
 	
 	public boolean pozoEnConstruccion() {
@@ -63,10 +67,7 @@ public class Parcela {
 		return dummy;
 	}
 	
-	/*public void updateDay() {
-		if(tienePozo()) 
-			pozo.cerrarValvula();
-	}*/
+	
 	//se actualiza la presion del pozo en base a la formula 2
 	public void updatePresionPozo(double volumenR, double volumenTotal) {
 		if(tienePozo()) {

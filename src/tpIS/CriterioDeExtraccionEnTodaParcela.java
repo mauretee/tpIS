@@ -24,7 +24,7 @@ public class CriterioDeExtraccionEnTodaParcela extends CriterioAdherido{
 	        				this.textToLog = this.textToLog + "se extrae en parcela nro: "+String.valueOf(nroParcela)+ System.lineSeparator();
 		        					        					        						        		
 		        		}else{
-		        			this.textToLog = this.textToLog + "no se puede extraer en parcela nro: "+String.valueOf(nroParcela)+ System.lineSeparator();
+		        			this.textToLog = this.textToLog + "no hay modificación en extracción de la parcela nro: "+String.valueOf(nroParcela)+ System.lineSeparator();
 		        		}
 		        		nroParcela += 1;
 		        	}

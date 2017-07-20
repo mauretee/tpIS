@@ -16,13 +16,17 @@ public class Rig extends ContextObserver {
 	
 	public void cavarPozoEnParcela(Parcela unaParcela) {
 		if(!cavando) {
-			cavando = true;
+			this.actualizarEstadoCavando(true);
 			unaParcela.cavar(modelo.getVelocidadDeCavadoXDia()/((modelo.getVelocidadDeCavadoXDia()*unaParcela.getTipoDeTerreno().resistenciaAlRig())/100));
 		}
 		else 
 			System.err.println("Un Rig no puede cavar en mas de un pozo a la ves");
 	}
 
+	private void actualizarEstadoCavando(boolean isCavando){
+		this.cavando = isCavando;
+	}
+	
 	public boolean isCavando() {
 		return cavando;
 	}
