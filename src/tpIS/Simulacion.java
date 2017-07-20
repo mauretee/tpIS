@@ -18,8 +18,11 @@ public class Simulacion {
 
 
 	public void Simular(){
+		this._logger.Log("INICIO DE SIMULACION GRUPO 13 B");
+		this._logger.Log("===============================");
 		while(this._context.Continue()){
 			this._logger.Log("Inicia el dia "+ String.valueOf(this._context.GetDay()));
+			this._logger.Log("------------------");
 			List<Closure> actions = this._equipoIngenieria.Evaluate(this._context);
 			for(Closure action : actions)
 			{
@@ -31,14 +34,16 @@ public class Simulacion {
 				}
 									
 			}
-			/*this._logger.Log("Estado financiero actual: "+
-					String.valueOf(this._equipoIngenieria.getEstadoFinanciero().getStatus()));*/
+			this._logger.Log("El presupuesto actual es de $"+ this._equipoIngenieria.getEstadoFinanciero().getStatus());
 			this._logger.Log("Finaliza el dia "+ String.valueOf(this._context.GetDay()) + System.lineSeparator());
-			this._logger.Log("El presupuesto actual es de "+ this._equipoIngenieria.getEstadoFinanciero().getStatus());
+			this._logger.Log("****************************************************************************************");
+			this._logger.Log("****************************************************************************************");
+			
 			this._context.FinishDay();
 
 		}
 		this._logger.Log("Finaliza la simulacion");
+		this._logger.Log("===============================");
 
 	}
 	

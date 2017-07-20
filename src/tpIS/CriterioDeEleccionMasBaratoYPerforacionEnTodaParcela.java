@@ -22,7 +22,8 @@ public class CriterioDeEleccionMasBaratoYPerforacionEnTodaParcela extends Criter
 		        public void Apply(Context context, Equipo equipo)  {
 		        		int nroParcela = 0;
 		        		for(Parcela parcela : equipo.getYacimiento().listaDeParcelas){		        		
-			        		if(!parcela.tienePozo() && !parcela.pozoEnConstruccion()) {
+			        		//if(!parcela.tienePozo() && !parcela.pozoEnConstruccion()) {
+		        			if(!parcela.tienePozo()) {
 			        			
 					        	boolean noElegido = true;
 					        	Rig selectedRig = null;

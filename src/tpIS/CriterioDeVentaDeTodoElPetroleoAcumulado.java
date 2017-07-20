@@ -21,7 +21,7 @@ public class CriterioDeVentaDeTodoElPetroleoAcumulado extends CriterioAdherido {
 				private String textToLog ="";
 		        @Override
 		        public void Apply(Context context, Equipo equipo)  {
-		        	textToLog ="se venden: "+ context.getVolumenExtraido() +"m3 a un precio de: "+equipo.getPresupuesto()
+		        	textToLog ="se venden: "+ context.getVolumenExtraido() +"m3 a un precio de: $"+equipo.getPresupuesto()
         			.getPrecioPetroleo()+"por m3"+ System.lineSeparator();
 		        			        	
 		        	//FIX: esto deberia hacerlo el calculador

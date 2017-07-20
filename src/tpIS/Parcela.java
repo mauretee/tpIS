@@ -38,7 +38,7 @@ public class Parcela {
 		return profundidadActua;
 	}
 	
-	public void cavar(int cantidad) {
+	public void aumentarProfundidad(int cantidad) {
 		if(!tienePozo()) {
 			this.actualizarProfundidad(cantidad);
 			if(profundidadActua >= profundidadNecesaria)

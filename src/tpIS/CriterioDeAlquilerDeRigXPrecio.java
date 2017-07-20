@@ -37,7 +37,7 @@ public class CriterioDeAlquilerDeRigXPrecio extends CriterioAdherido {
 		        		}
 		        		Rig rigElegido= new Rig(mejorModelo, context, mejorModelo.getDiasMinimoDeAlquiler());
 		        		context.alquilarUnRig(rigElegido);
-		        		this.textToLog = "se Alquila un rig por el precio de: "+ String.valueOf(rigElegido.getModelo().getPrecioRig()) + System.lineSeparator();		        		//
+		        		this.textToLog = "se Alquila un rig por el precio de: $"+ String.valueOf(rigElegido.getModelo().getPrecioRig()) + System.lineSeparator();		        		//
 		        		equipo.getEstadoFinanciero().debit(equipo.getPresupuesto().getCostoDeRigHastaElDia(mejorModelo.getDiasMinimoDeAlquiler(), rigElegido.getModelo()));
 	        		}
 	        		else {

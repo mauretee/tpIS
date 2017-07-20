@@ -17,7 +17,7 @@ public class Rig extends ContextObserver {
 	public void cavarPozoEnParcela(Parcela unaParcela) {
 		if(!cavando) {
 			this.actualizarEstadoCavando(true);
-			unaParcela.cavar(modelo.getVelocidadDeCavadoXDia()/((modelo.getVelocidadDeCavadoXDia()*unaParcela.getTipoDeTerreno().resistenciaAlRig())/100));
+			unaParcela.aumentarProfundidad(modelo.getVelocidadDeCavadoXDia()/((modelo.getVelocidadDeCavadoXDia()*unaParcela.getTipoDeTerreno().resistenciaAlRig())/100));
 		}
 		else 
 			System.err.println("Un Rig no puede cavar en mas de un pozo a la ves");
