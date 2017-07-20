@@ -26,11 +26,14 @@ public class Simulacion {
 				//System.out.println("Entro a las actions");
 				action.Apply(this._context, this._equipoIngenieria);
 				action.LogAction(this._context);
-				this._logger.Log(this._context.GetLastEventsToLog());				
+				if(this._context.GetLastEventsToLog()!= null && this._context.GetLastEventsToLog()!= ""){
+					this._logger.Log(this._context);					
+				}
+									
 			}
 			/*this._logger.Log("Estado financiero actual: "+
 					String.valueOf(this._equipoIngenieria.getEstadoFinanciero().getStatus()));*/
-			this._logger.Log("Finaliza el dia "+ String.valueOf(this._context.GetDay()));
+			this._logger.Log("Finaliza el dia "+ String.valueOf(this._context.GetDay()) + System.lineSeparator());
 			this._logger.Log("El presupuesto actual es de "+ this._equipoIngenieria.getEstadoFinanciero().getStatus());
 			this._context.FinishDay();
 

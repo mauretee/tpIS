@@ -39,7 +39,7 @@ public class CriterioDeAlquilerDeRigXPrecioYCantidadMenorAParcelas extends Crite
 			        		}
 			        		Rig rigElegido= new Rig(mejorModelo, context, mejorModelo.getDiasMinimoDeAlquiler());
 			        		context.alquilarUnRig(rigElegido);			        		
-			        		this.textToLog = "se Alquila un rig por el precio de: "+ String.valueOf(rigElegido.getModelo().getPrecioRig())+"- cantidad de rigs alquilados :"+ String.valueOf(context.getRigs().size()) ;
+			        		this.textToLog = "se Alquila un rig por el precio de: "+ String.valueOf(rigElegido.getModelo().getPrecioRig())+"- cantidad de rigs alquilados :"+ String.valueOf(context.getRigs().size()) + System.lineSeparator();
 
 			        		equipo.getEstadoFinanciero().debit(equipo.getPresupuesto().getCostoDeRigHastaElDia(mejorModelo.getDiasMinimoDeAlquiler(), rigElegido.getModelo()));
 		        		}
@@ -54,8 +54,7 @@ public class CriterioDeAlquilerDeRigXPrecioYCantidadMenorAParcelas extends Crite
 		        }
 		        
 		        @Override		        
-		        public void LogAction(Context context)  {
-		        	if(this.textToLog != null && this.textToLog != "")
+		        public void LogAction(Context context)  {		        	
 		        	context.SetLastEventsToLog(this.textToLog);
 		        }		        
 		        

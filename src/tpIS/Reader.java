@@ -358,6 +358,7 @@ public class Reader {
 	
 	public int getLimitDaysQuantity(){
 		return this.limitDayQuantity;
+		
 	}
 
 	public int getLimitFinancialStatus(){

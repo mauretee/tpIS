@@ -33,7 +33,7 @@ public class CriterioConstruccionDePlantaSiNoExiste extends CriterioAdherido{
 			        	context.attachPlanta(P);
 			        	equipo.getEstadoFinanciero().debit(equipo.getPresupuesto()
 			        			.getCostoDePlanta( P.getModelo()));
-						this.textToLog = "se construye planta";
+						this.textToLog = "se construye planta"+ System.lineSeparator();;
 					}
 					else{
 						this.textToLog = "";
@@ -41,8 +41,7 @@ public class CriterioConstruccionDePlantaSiNoExiste extends CriterioAdherido{
 		        	
 		        }
 		        @Override
-		        public void LogAction(Context context)  {
-		        	if(this.textToLog != null && this.textToLog != "")
+		        public void LogAction(Context context)  {		        	
 		        	context.SetLastEventsToLog(this.textToLog);
 		        }		        
 		    };

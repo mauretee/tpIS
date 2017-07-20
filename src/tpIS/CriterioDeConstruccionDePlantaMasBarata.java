@@ -36,7 +36,7 @@ public class CriterioDeConstruccionDePlantaMasBarata extends CriterioAdherido {
 		        }
 		        @Override
 		        public void LogAction(Context context)  {
-		        	context.SetLastEventsToLog("se Comienza la construccion de una planta, de modelo: ");
+		        	context.SetLastEventsToLog("se Comienza la construccion de una planta, de modelo: "+ System.lineSeparator());
 		        }
 		        
 		    };

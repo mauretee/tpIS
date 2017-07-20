@@ -56,7 +56,7 @@ public class Parcela {
 		if(tienePozo())
 			return pozo;
 		else
-			System.err.println("Esta parzela NO TIENE POZO AUN!!!");
+			System.err.println("Esta parcela NO TIENE POZO AUN!!!");
 		
 		Estado unEstado = Estado.ParadoPorSindicato ;
 		Pozo dummy = new Pozo(unEstado, 0);

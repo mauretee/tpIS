@@ -39,4 +39,19 @@ public class Logger {
         }
 	}
 	
+	public void Log(Context context){
+        BufferedWriter output = null;
+        try {
+            output = new BufferedWriter(new FileWriter(file, true));
+            output.append(context.GetLastEventsToLog());
+            context.SetLastEventsToLog("");
+            output.newLine();
+        } catch ( IOException e ) {
+            e.printStackTrace();
+        } finally {
+        	try {output.close();}
+        	catch (IOException e) {e.printStackTrace();}
+        }
+	}
+	
 }

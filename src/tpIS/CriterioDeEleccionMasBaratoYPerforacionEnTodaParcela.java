@@ -24,13 +24,6 @@ public class CriterioDeEleccionMasBaratoYPerforacionEnTodaParcela extends Criter
 		        		for(Parcela parcela : equipo.getYacimiento().listaDeParcelas){		        		
 			        		if(!parcela.tienePozo() && !parcela.pozoEnConstruccion()) {
 			        			
-			        			
-			        			//ELECCION
-					        	/*
-					        	 * Este criterio en particular ignora por completo la parcela.
-					        	 * Buscamos el rig mas barato en la lista de rigs alquilados
-					        	 * de no haber ninguno que se pueda utilizar alli, creamos el modelo mas barato
-					        	 */
 					        	boolean noElegido = true;
 					        	Rig selectedRig = null;
 					        	if(!context.getRigs().isEmpty()) {
@@ -51,12 +44,9 @@ public class CriterioDeEleccionMasBaratoYPerforacionEnTodaParcela extends Criter
 						        			noElegido = false;
 						        		}
 						        		
-						        		if(YaElegidos.size() == context.getRigs().size()) {
-						        			if(!this.textToLog.isEmpty()){
-					        					this.textToLog = this.textToLog+ " - ";	
-					        				}
-					        				this.textToLog = this.textToLog + "no se puede perforar en parcela nro: "+String.valueOf(nroParcela) +" porque todos los rigs estan siendo utilizados";
-
+						        		if(YaElegidos.size() == context.getRigs().size()) {						        			
+					        				this.textToLog = this.textToLog + "no se puede perforar en parcela nro: "+String.valueOf(nroParcela) +" porque no hay rigs disponibles" + System.lineSeparator();
+					        				selectedRig = null;
 						        			noElegido=false;
 						        		}
 					        		}
@@ -69,31 +59,25 @@ public class CriterioDeEleccionMasBaratoYPerforacionEnTodaParcela extends Criter
 			        			 */
 			        					        			
 			        			if(selectedRig!=null){
-			        				selectedRig.cavarPozoEnParcela(parcela);
-			        				if(!this.textToLog.isEmpty()){
-			        					this.textToLog = this.textToLog+ " - ";	
-			        				}
-			        				this.textToLog = this.textToLog + "se cava en parcela nro: "+String.valueOf(nroParcela) +" con un rig de valor: "+ String.valueOf(selectedRig.getModelo().getPrecioRig());
+			        				selectedRig.cavarPozoEnParcela(parcela);			        				
+			        				this.textToLog = this.textToLog + "se cava en parcela nro: "+String.valueOf(nroParcela) +" con un rig de valor: "+ String.valueOf(selectedRig.getModelo().getPrecioRig())+ System.lineSeparator();
 			        			}
 			        			/*else
 			        				break;*/
-			        			
-			        		
-			        			nroParcela +=1;
+			        						        	
 				        		//TODO: llamar al calculador de costo y 
 			        		}
 			        		
-			        		
+
+		        			nroParcela +=1;
 			        	}
 		        	
 		        
 		        }
 		        
 		        @Override
-		        public void LogAction(Context context)  {
-		        	if(this.textToLog != null && this.textToLog != ""){
-		        		context.SetLastEventsToLog(this.textToLog);	
-		        	}		        	
+		        public void LogAction(Context context)  {		        	
+		        	context.SetLastEventsToLog(this.textToLog);			        			        	
 		        }		        
 		    };
 		    result.add(new Closure(perforar));

@@ -20,24 +20,19 @@ public class CriterioDeExtraccionEnTodaParcela extends CriterioAdherido{
 		        	for(Parcela parcela : equipo.getYacimiento().listaDeParcelas){		        		
 		        		if(context.getCapacityToExtract()>0  && parcela.tienePozo() && parcela.getPozo().getEstado()!= Estado.Extrayendo  ) {
 		        		//revisar
-		        			context.Extract(parcela.getPozo(), parcela.getPozo().getCapacidadPotencial(equipo.getAlpha1(), equipo.getAlpha2(), equipo.getCalculadorPotencialDeExtraccion()), equipo.getYacimiento());
-		        			if(!this.textToLog.isEmpty()){
-	        					this.textToLog = this.textToLog+ " - ";	
-	        				}
-	        				this.textToLog = this.textToLog + "se extrae en parcela nro: "+String.valueOf(nroParcela);
+		        			context.Extract(parcela.getPozo(), parcela.getPozo().getCapacidadPotencial(equipo.getAlpha1(), equipo.getAlpha2(), equipo.getCalculadorPotencialDeExtraccion()), equipo.getYacimiento());		        			
+	        				this.textToLog = this.textToLog + "se extrae en parcela nro: "+String.valueOf(nroParcela)+ System.lineSeparator();
 		        					        					        						        		
+		        		}else{
+		        			this.textToLog = this.textToLog + "no se puede extraer en parcela nro: "+String.valueOf(nroParcela)+ System.lineSeparator();
 		        		}
-		        		nroParcela++;
+		        		nroParcela += 1;
 		        	}
 		        }
 		        
 		        @Override
-		        public void LogAction(Context context)  {
-		        	if(this.textToLog != null && this.textToLog != ""){
-		        		context.SetLastEventsToLog(this.textToLog);
-		        		
-		        	}
-		        	
+		        public void LogAction(Context context)  {		        			        
+		        	context.SetLastEventsToLog(this.textToLog);		        				        		        	
 		        }
 		        
 		    };

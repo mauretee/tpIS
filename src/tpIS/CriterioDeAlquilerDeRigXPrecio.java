@@ -37,17 +37,16 @@ public class CriterioDeAlquilerDeRigXPrecio extends CriterioAdherido {
 		        		}
 		        		Rig rigElegido= new Rig(mejorModelo, context, mejorModelo.getDiasMinimoDeAlquiler());
 		        		context.alquilarUnRig(rigElegido);
-		        		this.textToLog = "se Alquila un rig por el precio de: "+ String.valueOf(rigElegido.getModelo().getPrecioRig()) ;		        		//
+		        		this.textToLog = "se Alquila un rig por el precio de: "+ String.valueOf(rigElegido.getModelo().getPrecioRig()) + System.lineSeparator();		        		//
 		        		equipo.getEstadoFinanciero().debit(equipo.getPresupuesto().getCostoDeRigHastaElDia(mejorModelo.getDiasMinimoDeAlquiler(), rigElegido.getModelo()));
 	        		}
 	        		else {
-	        			this.textToLog = "NO EXITEN MODELOS DE RIGS";		        		
+	        			this.textToLog = "NO EXITEN MODELOS DE RIGS"+ System.lineSeparator();		        		
 		        	}
 		        }
 		        
 		        @Override		        
-		        public void LogAction(Context context)  {
-		        	if(this.textToLog != null && this.textToLog != "")
+		        public void LogAction(Context context)  {		        	
 		        	context.SetLastEventsToLog(this.textToLog);
 		        }		        
 		        

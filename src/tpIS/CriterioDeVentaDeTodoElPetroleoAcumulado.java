@@ -22,7 +22,7 @@ public class CriterioDeVentaDeTodoElPetroleoAcumulado extends CriterioAdherido {
 		        @Override
 		        public void Apply(Context context, Equipo equipo)  {
 		        	textToLog ="se venden: "+ context.getVolumenExtraido() +"m3 a un precio de: "+equipo.getPresupuesto()
-        			.getPrecioPetroleo()+"por m3";
+        			.getPrecioPetroleo()+"por m3"+ System.lineSeparator();
 		        			        	
 		        	//FIX: esto deberia hacerlo el calculador
 		        	equipo.getEstadoFinanciero().acredit(equipo.getPresupuesto()
@@ -30,11 +30,8 @@ public class CriterioDeVentaDeTodoElPetroleoAcumulado extends CriterioAdherido {
 		        	context.SalePetroleo(context.getVolumenExtraido());
 		        }
 		        @Override
-		        public void LogAction(Context context)  {
-		        	if(textToLog != null && textToLog!=""){
-		        		context.SetLastEventsToLog(textToLog);	
-		        	}
-		        	
+		        public void LogAction(Context context)  {		        	
+		        	context.SetLastEventsToLog(textToLog);			        	
 		        }
 		    };
 			

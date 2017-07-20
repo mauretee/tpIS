@@ -25,7 +25,7 @@ private double limitCapital;
 		        }
 		        @Override
 		        public void LogAction(Context context)  {
-		        	context.SetLastEventsToLog("se llegó al criterio de parada por falta de capital");
+		        	context.SetLastEventsToLog("se llegó al criterio de parada por falta de capital"+ System.lineSeparator());
 		        }
 		    };
 		    

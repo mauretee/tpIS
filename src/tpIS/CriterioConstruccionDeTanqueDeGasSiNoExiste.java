@@ -28,7 +28,7 @@ public class CriterioConstruccionDeTanqueDeGasSiNoExiste extends CriterioAdherid
 						Tanque tanque= new TanqueGas(MP ,context);			        	
 			        	equipo.getEstadoFinanciero().debit(equipo.getPresupuesto()
 			        			.getCostoDeTanque(tanque.getModelo()));
-						this.textToLog = "se construye tanque de gas";
+						this.textToLog = "se construye tanque de gas"+ System.lineSeparator();
 					}
 					else{
 						this.textToLog = "";
@@ -36,8 +36,7 @@ public class CriterioConstruccionDeTanqueDeGasSiNoExiste extends CriterioAdherid
 		        	
 		        }
 		        @Override
-		        public void LogAction(Context context)  {
-		        	if(this.textToLog != null && this.textToLog != "")
+		        public void LogAction(Context context)  {		        	
 		        	context.SetLastEventsToLog(this.textToLog);
 		        }		        
 		    };

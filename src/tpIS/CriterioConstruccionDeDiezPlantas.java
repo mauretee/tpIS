@@ -33,7 +33,7 @@ public class CriterioConstruccionDeDiezPlantas extends CriterioAdherido{
 			        	context.attachPlanta(P);
 			        	equipo.getEstadoFinanciero().debit(equipo.getPresupuesto()
 			        			.getCostoDePlanta( P.getModelo()));
-						this.textToLog = "se construye planta procesadora con capacidad diaria de procesamiento de: "+ String.valueOf(P.getModelo().getPoderProcesamientoDia()) ;
+						this.textToLog = "se construye planta procesadora con capacidad diaria de procesamiento de: "+ String.valueOf(P.getModelo().getPoderProcesamientoDia())+ System.lineSeparator(); ;
 					}
 					else{
 						this.textToLog = "";
@@ -41,8 +41,7 @@ public class CriterioConstruccionDeDiezPlantas extends CriterioAdherido{
 		        	
 		        }
 		        @Override
-		        public void LogAction(Context context)  {
-		        	if(this.textToLog != null && this.textToLog != "")
+		        public void LogAction(Context context)  {		        	
 		        	context.SetLastEventsToLog(this.textToLog);
 		        }		        
 		    };
