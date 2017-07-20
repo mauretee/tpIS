@@ -62,6 +62,8 @@ public class CriterioDeEleccionMasBaratoYPerforacionEnTodaParcela extends Criter
 			        			if(selectedRig!=null){
 			        				selectedRig.cavarPozoEnParcela(parcela);			        				
 			        				this.textToLog = this.textToLog + "se cava en parcela nro: "+String.valueOf(nroParcela) +" con un rig de valor: "+ String.valueOf(selectedRig.getModelo().getPrecioRig())+ System.lineSeparator();
+			        				if(parcela.tienePozo())
+			        					this.textToLog = this.textToLog + "se crea pozo en parcela nro: "+String.valueOf(nroParcela) + System.lineSeparator();	
 			        			}
 			        			/*else
 			        				break;*/

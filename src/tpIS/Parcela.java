@@ -45,6 +45,7 @@ public class Parcela {
 				crearPozo();
 		}
 		else
+			
 			System.err.println("La profundidad necesaria ya fue alcanzada en el pozo de esta parcela");
 	}
 	
